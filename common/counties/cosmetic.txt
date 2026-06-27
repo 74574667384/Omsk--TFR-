@@ -1,0 +1,7 @@
+YAK = {
+	color = rgb { 30 30 35 }
+}
+
+# FRA = {
+# 	color = rgb {  }
+# }

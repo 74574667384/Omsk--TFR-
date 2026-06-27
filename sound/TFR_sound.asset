@@ -1,0 +1,58 @@
+	# sound = {
+	# 	name = "TFR_se_American_iranian_war"
+	# 	file = "Super_Events/TRF_se_American_iran_war.wav"
+	# }	
+	
+	# sound = {
+	# 	name = "TFR_se_American_intervention_against_communist_Iran_war"
+	# 	file = "Super_Events/American_invasion_of_communist_Iran.wav"
+	# }
+	
+	# sound = {
+	# 	name = "TFR_se_the_final_war_isis_american_war"
+	# 	file = "Super_Events/the_final_war_isis_american_war.wav"
+	# }	
+	
+	# sound = {
+	# 	name = "TRF_se_american_victory_in_iran"
+	# 	file = "Super_Events/TRF_se_american_victory_in_iran.wav"
+	# }
+	
+	# sound = {
+	# 	name = "TRF_se_third_gulf_war"
+	# 	file = "Super_Events/TRF_se_third_gulf_war.wav"
+	# }	
+	
+	# sound = {
+	# 	name = "TFR_se_nazbol_plamenev_victory"
+	# 	file = "Super_Events/TFR_se_nazbol_plamenev_victory.wav"
+	# }
+	
+	# sound = {
+	# 	name = "TFR_se_nazbol_svetov_war"
+	# 	file = "Super_Events/TFR_se_nazbol_svetov_war.wav"
+	# }	
+	
+	# sound = {
+	# 	name = "TFR_se_nazbol_svetov_victory"
+	# 	file = "Super_Events/TFR_se_nazbol_svetov_victory.wav"
+	# }
+	
+	# sound = {
+	# 	name = "TFR_se_nazbol_dmitriev_war"
+	# 	file = "Super_Events/TFR_se_nazbol_dmitriev_war.wav"
+	# }	
+	
+	# sound = {
+	# 	name = "TFR_se_nazbol_dmitriev_victory"
+	# 	file = "Super_Events/TFR_se_nazbol_dmitriev_victory.wav"
+	# }
+	
+	# sound = {
+	# 	name = "TAFP_shot"
+	# 	file = "ambient/TAFP_shot.wav"
+	# }
+	 sound = {
+		name = "TFR_se_great_trial"
+		file = "Super_Events/TFR_great_trial.wav"
+	 }

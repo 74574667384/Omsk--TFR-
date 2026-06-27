@@ -1,0 +1,628 @@
+focus_tree = {
+	id = YAK_wake_up
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = YAK
+		}
+	}
+	focus = {
+		id = YAK_new_path_omsk
+		icon = GFX_new_path_omsk
+		cost = 10
+		x = 14
+		y = 2
+	}
+
+	focus = {
+		id = YAK_We_remebmer
+		cost = 10
+		x = 14
+		y = 3
+		prerequisite = {
+			focus = YAK_new_path_omsk
+		}
+	}
+
+
+	focus = {
+		id = YAK_ban_nazbol
+		icon = GFX_ban_nazi
+		cost = 10
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = YAK_We_remebmer
+		}
+
+		completion_reward = {
+			country_event = {
+				id = omsk.2
+		}
+	}
+}
+
+	focus = {
+		id = YAK_we_revenge
+		icon = GFX_we_revenge
+		cost = 10
+		x = 14
+		y = 5
+		prerequisite = {
+			focus = YAK_ban_nazbol
+		}
+	}
+
+	#Economy #############################
+
+	focus = {
+		id = YAK_restore_the_economy
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = YAK_we_revenge
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 1
+		y = 8
+		prerequisite = {
+			focus = YAK_mitally_path_economy
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ4
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 1
+		y = 9
+		prerequisite = {
+			focus = YAK_ZZZ
+			focus = YAK_update_omsk
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ5
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 2
+		y = 10
+		prerequisite = {
+			focus = YAK_ZZZ4
+			focus = YAK_ZZZ7
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ7
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 3
+		y = 9
+		prerequisite = {
+			focus = YAK_ZZZ
+			focus = YAK_update_omsk
+		}
+	}
+
+	focus = {
+		id = YAK_mitally_path_economy
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 2
+		y = 7
+		prerequisite = {
+			focus = YAK_restore_the_economy
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ2
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 5
+		y = 7
+		prerequisite = {
+			focus = YAK_restore_the_economy
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ9
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = YAK_restore_the_economy
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ10
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 7
+		y = 8
+		prerequisite = {
+			focus = YAK_ZZZ9
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ17
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 9
+		y = 8
+		prerequisite = {
+			focus = YAK_ZZZ9
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ20
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 11
+		y = 8
+		prerequisite = {
+			focus = YAK_ZZZ9
+		}
+	}
+
+
+	focus = {
+		id = YAK_ZZZ12
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 8
+		y = 9
+		prerequisite = {
+			focus = YAK_ZZZ10
+		}
+	}
+
+	# focus = {
+	# 	id = YAK_ZZZ3
+	# 	icon = GFX_surrender_tiny_flag
+	# 	cost = 10
+	# 	x = 3
+	# 	y = 9
+	# 	prerequisite = {
+	# 		focus = YAK_ZZZ2
+	# 	}
+	# }
+
+	focus = {
+		id = YAK_update_omsk
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 3
+		y = 8
+		prerequisite = {
+			focus = YAK_mitally_path_economy
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ3
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 5
+		y = 8
+		prerequisite = {
+			focus = YAK_ZZZ2
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ6
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 5
+		y = 9
+		prerequisite = {
+			focus = YAK_ZZZ2
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ8
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 5
+		y = 10
+		prerequisite = {
+			focus = YAK_ZZZ6
+		}
+	}
+
+
+	
+	focus = {
+		id = YAK_ZZZ11
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 13
+		y = 8
+		prerequisite = {
+			focus = YAK_ZZZ9
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ13
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 12
+		y = 9
+		prerequisite = {
+			focus = YAK_ZZZ11
+			focus = YAK_ZZZ10
+		}
+	}
+
+	# focus = {
+	# 	id = YAK_ZZZ48
+	# 	# icon = GFX_surrender_tiny_flag
+	# 	cost = 10
+	# 	x = 11.3
+	# 	y = 10
+	# 	prerequisite = {
+	# 		focus = YAK_ZZZ10
+	# 		focus = YAK_ZZZ48
+	# 	}
+	# }
+
+	focus = {
+		id = YAK_ZZZ14
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 11
+		y = 10
+		prerequisite = {
+			focus = YAK_ZZZ11
+			focus = YAK_ZZZ10
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ18
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 11
+		y = 10
+		prerequisite = {
+			focus = YAK_ZZZ12
+		}
+	}
+
+	focus = {
+		id = YAK_ZZZ14
+		# icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 9
+		y = 10
+		prerequisite = {
+			focus = YAK_ZZZ12
+		}
+	}
+
+
+
+	######################################
+
+	#Army
+	focus = {
+		id = YAK_form_national_vengeance
+		cost = 10
+		relative_position_id = YAK_we_revenge
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = YAK_we_revenge
+		}
+	}
+
+	focus = {
+		id = YAK_hi
+		cost = 10
+		relative_position_id = YAK_we_revenge
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = YAK_form_national_vengeance
+		}
+	}
+
+	focus = {
+		id = YAK_hi2
+		cost = 10
+		
+		x = 18
+		y = 8
+		prerequisite = {
+			focus = YAK_hi
+		}
+	}
+
+	focus = {
+		id = YAK_hi7
+		cost = 10
+		x = 20
+		y = 9
+		prerequisite = {
+			focus = YAK_hi
+			focus = YAK_hi2
+			focus = YAK_hi3
+
+		}
+	}
+
+		focus = {
+		id = YAK_hi8
+		cost = 10
+		x = 18
+		y = 9
+		prerequisite = {
+			focus = YAK_hi2
+		}
+	}
+	
+	focus = {
+		id = YAK_hi9
+		cost = 10
+		x = 19
+		y = 10
+		prerequisite = {
+			focus = YAK_hi2
+		}
+	}
+
+	focus = {
+		id = YAK_hi3
+		cost = 10
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = YAK_hi
+		}
+	}
+
+
+	focus = {
+		id = YAK_legacy_army_USSR_air
+		cost = 10
+		x = 25
+		y = 7
+		prerequisite = {
+			focus = YAK_form_national_vengeance
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR2
+		cost = 10
+		x = 23
+		y = 8
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR4
+		cost = 10
+		x = 22
+		y = 9
+		prerequisite = {
+			focus = YAK_legacy_army_USSR2
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR12
+		cost = 10
+		x = 23
+		y = 10
+		prerequisite = {
+			focus = YAK_legacy_army_USSR2
+		}
+	}
+
+
+	focus = {
+		id = YAK_legacy_army_USSR8
+		cost = 10
+		x = 25
+		y = 11
+		prerequisite = {
+			focus = YAK_legacy_army_USSR7
+		}
+	}
+
+
+	focus = {
+		id = YAK_legacy_army_USSR5
+		cost = 10
+		x = 26
+		y = 8
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR9
+		cost = 10
+		x = 26
+		y = 10
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR8
+		cost = 10
+		x = 27
+		y = 9
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+
+	focus = {
+		id = the_great_trial_awaits
+		icon = GFX_great_trial_awaits
+		cost = 10
+		x = 25
+		y = 11
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR6
+		cost = 10
+		x = 28
+		y = 10
+		prerequisite = {
+			focus = YAK_legacy_army_USSR3
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR7
+		cost = 10
+		x = 24
+		y = 9
+		prerequisite = {
+			focus = YAK_legacy_army_USSR2
+		}
+	}
+
+	focus = {
+		id = YAK_legacy_army_USSR3
+		cost = 10
+		x = 28
+		y = 8
+		prerequisite = {
+			focus = YAK_legacy_army_USSR_air
+		}
+	}
+	######################################
+
+
+
+
+	#Trojan
+
+
+	focus = {
+		id = trojan
+		cost = 10
+		x = 24
+		y = 13
+		available = {
+			OR = {
+			check_variable = { memz_progress < 100 }
+            check_variable = { petya_progress < 100 }
+            check_variable = { suxnet_progress < 100 }
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = trojan_focus_effects_tt
+			hidden_effect = {
+				ROOT ={
+			add_to_variable = { memz_progress = 10 }
+			add_to_variable = { petya_progress = 10 }
+			add_to_variable = { suxnet_progress = 10 }
+
+			if = {
+				limit = {check_variable = {memz_progress > 100}}
+				set_variable = {
+					memz_progress = 100
+				}
+			}
+			if = {
+                limit = { check_variable = { petya_progress > 100 } }
+                set_variable = { petya_progress = 100 }
+            }
+			if = {
+                limit = { check_variable = { suxnet_progress > 100 } }
+                set_variable = { suxnet_progress = 100 }
+            }
+		}
+	}
+}
+}
+
+	focus = {
+		id = trojan_2
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = trojan
+		prerequisite = {
+			focus = trojan
+		}
+	}
+	focus = {
+		id = trojan_3
+		cost = 10
+		relative_position_id = trojan
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = trojan
+		}
+	}
+	focus = {
+		id = trojan_4
+		cost = 10
+		relative_position_id = trojan
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = trojan_3
+		}
+	}
+	
+	focus = {
+		id = trojan_5
+		cost = 10
+		x = 1
+		y = 2
+		relative_position_id = trojan
+		prerequisite = {
+			focus = trojan_2
+		}
+	}
+
+	focus = {
+		id = trojan_6
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = trojan
+		prerequisite = {
+			focus = trojan_5
+			focus = trojan_4
+		}
+		completion_reward = {
+			
+		}
+	}
+}

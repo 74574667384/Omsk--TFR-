@@ -1,0 +1,19 @@
+# on_action = {
+	
+
+# 	on_state_control_changed = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					FROM = {has_country_flag = omsk_league_active}
+# 					NOT = {is_core_of = FROM}
+# 					NOT = {has_state_flag = omsk_integration}
+# 				}
+# 				set_state_flag = omsk_integration
+# 				add_state_modifier = {
+# 					modifier = omsk_liberation_pending
+# 				}
+# 			}
+# 		}
+# 	}
+# }

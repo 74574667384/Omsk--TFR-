@@ -1,0 +1,10 @@
+character = {
+	TTS_Richo = {
+		name = "GFX_portrait_Richo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TTS/TTS_Terraces.png"
+			}
+		}
+	}
+}

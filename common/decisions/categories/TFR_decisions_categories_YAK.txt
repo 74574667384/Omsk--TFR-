@@ -1,0 +1,47 @@
+russian_unification = {
+	icon = generic_political_actions
+	priority = 100
+
+	allowed = {
+		original_tag = YAK
+	}
+
+	visible = {
+		tag = YAK
+
+	}
+}
+
+build_virus_for_veagen = {
+	icon = generic_political_actions
+	picture = GFX_decisions_creata_virus
+	priority = 101
+	# scripted_gui = my_custom_gui
+	allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        # available = {
+        #     has_war = no
+        #     has_government = nationalist
+        # }
+
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+}
+
+debug_do_not_touch = {
+	icon = generic_political_actions
+	visible = {
+		is_debug = yes
+		tag = YAK
+        has_government = nationalist
+	}
+	allowed = {
+		original_tag = YAK
+	}
+		priority = 102
+}

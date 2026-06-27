@@ -1,0 +1,18 @@
+scripted_gui = {
+	YAK_war_super_event = {
+		context_type = player_context
+		window_name = "YAK_war_super_event"
+
+		visible = {
+			has_country_flag = YAK_war_se_flag
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = YAK_war_se_flag
+			}
+		}
+	}
+}

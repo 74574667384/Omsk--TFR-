@@ -1,0 +1,7 @@
+spriteTypes = { 
+	spriteType = {
+		name = "GFX_decisions_creata_virus"
+		texturefile = "gfx/texticons/banners/decisions/yak_creata_virus4.png"
+		legacy_lazy_load = no
+	}
+}

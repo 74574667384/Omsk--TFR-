@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_omsk_ecomyne"
+		texturefile = "gfx/interface/ideas/omsk_ecomyk.png"
+	}
+	spriteType = {
+		name = "GFX_trojans_injector"
+		texturefile = "gfx/interface/ideas/trojans_injector.png"
+	}
+}

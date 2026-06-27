@@ -1,0 +1,28 @@
+# category = {
+# 	name = "PER_Super_Event"
+# 	soundeffects = {
+# 		TFR_se_American_iranian_war
+# 		TFR_se_American_intervention_against_communist_Iran_war
+# 		TFR_se_the_final_war_isis_american_war
+# 		TRF_se_american_victory_in_iran
+# 		TRF_se_third_gulf_war
+# 		TFR_se_nazbol_plamenev_victory
+# 		TFR_se_nazbol_svetov_war
+# 		TFR_se_nazbol_svetov_victory
+# 		TFR_se_nazbol_dmitriev_war
+# 		TFR_se_nazbol_dmitriev_victory
+# 	}
+# }
+# category = {
+# 	name = "TAFP_category"
+# 	soundeffects = {
+# 		TAFP_shot
+# 	}
+# }
+
+category = {
+	name = "TFR_super_event"
+	soundeffects = {
+		TFR_se_great_trial
+	}
+}

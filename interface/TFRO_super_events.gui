@@ -1,0 +1,58 @@
+guiTypes = {
+
+	containerWindowType = { ##this file is inside interface
+		name = "OSMK_war_super_event" #name of the scripted gui
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name ="YAK_bg"
+			spriteType = "GFX_OSMK_WAR_super_event" #give the name of the image
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg" #ignore it
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox" #ignore it
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "Hi" ## event title
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "OSMK_quote" #the sentence of the super event in a person
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close" #ignore it
+			position = { x = 350 y = 585 }
+			buttonText = "OSMK_close" # close button
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+}

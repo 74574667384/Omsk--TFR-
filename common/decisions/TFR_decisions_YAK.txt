@@ -1,0 +1,923 @@
+# В файле common/decisions/YAK_decision.txt
+russian_unification = {
+    YAK_black_league_unification = {
+        cancel_if_not_visible = yes
+        cost = 0
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+            has_completed_focus = YAK_We_remebmer
+            FLN = { exists = no }
+            YAM = { exists = no }
+            NFJ = { exists = no }
+            OCC = { exists = no }
+            KIR = { exists = no }
+            PUR = { exists = no }
+            SOL = { exists = no }
+            CKK = { exists = no }
+            STV = { exists = no }
+            GLC = { exists = no }
+            UDM = { exists = no }
+            CHU = { exists = no }
+            BSK = { exists = no }
+            SEY = { exists = no }
+            KKP = { exists = no }
+        }
+
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = black_league_unification_of_russia
+        }
+
+        remove_effect = {
+            custom_effect_tooltip = "Operation finish"
+
+            hidden_effect = {
+                if = {
+                    limit = { has_country_flag = advanced_operation_active }
+                }
+            }
+        }
+    }
+
+    war_warload = {
+
+        fire_only_once = yes
+
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+
+        }
+
+        available = {
+            has_government = nationalist
+            has_war = no
+            always = yes
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+            always = yes
+        }
+            
+        complete_effect = {
+            declare_war_on = {
+                target = YAM
+                type = annex_everything
+            }
+            hidden_effect = {
+                OR = {
+                     403 = {
+                add_core_of = ROOT
+                set_resistance = 0
+                set_compliance = 100
+            }
+                     580 = {
+                add_core_of = ROOT
+                set_resistance = 0
+                set_compliance = 100
+            }
+                    577 = {
+                add_core_of = ROOT
+                set_resistance = 0
+                set_compliance = 100
+            }
+                    579 = {
+                add_core_of = ROOT
+                set_resistance = 0
+                set_compliance = 100
+            }
+                }
+            }
+            custom_effect_tooltip = "===========after the end of the war==========="
+    }
+}
+    war_warloar_2 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = GLC
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            653 = {
+                add_core_of = ROOT
+            }
+            582 = {
+                add_core_of = ROOT
+            }
+            572 = {
+                add_core_of = ROOT
+            }
+            398 = {
+                add_core_of = ROOT
+            }
+
+        }
+    }
+
+    war_warload_3 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = STV
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            397 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_4 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = PUR
+                type = annex_everything
+            }
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            400 = {
+                add_core_of = ROOT
+            }
+            351 = {
+                add_core_of = ROOT
+            }
+            264 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_5 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = BSK
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            651 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_6 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = NFJ
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            214 = {
+                add_core_of = ROOT
+            }
+            262 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_8 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = UDM
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = BSK
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = SOL
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = CKK
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = CHU
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+            399 = {
+                add_core_of = ROOT
+            }
+            1392 = {
+                add_core_of = ROOT
+            }
+            249 = {
+                add_core_of = ROOT
+            }
+            851 = {
+                add_core_of = ROOT
+            }
+            256 = {
+                add_core_of = ROOT
+            }
+
+        }
+    }
+
+    war_warload_9 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = FLN
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+
+        }
+    }
+
+    war_warload_11 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = OCC
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+            564 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_12 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = SEY
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+            574 = {
+                add_core_of = ROOT
+            }
+            644 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_13 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = KIR
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+            563 = {
+                add_core_of = ROOT
+            }
+            1293 = {
+                add_core_of = ROOT
+            }
+            1328 = {
+                add_core_of = ROOT
+            }
+            560 = {
+                add_core_of = ROOT
+            }
+            561 = {
+                add_core_of = ROOT
+            }
+            537 = {
+                add_core_of = ROOT
+            }
+            409 = {
+                add_core_of = ROOT
+            }
+            408 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+
+    war_warload_14 = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        complete_effect = {
+            declare_war_on = {
+                target = KKP
+                type = annex_everything
+            }
+            set_country_flag = yak_integration_unlocked
+            custom_effect_tooltip = "===========after the end of the war==========="
+            652 = {
+                add_core_of = ROOT
+            }
+            251 = {
+                add_core_of = ROOT
+            }
+            401 = {
+                add_core_of = ROOT
+            }
+            407 = {
+                add_core_of = ROOT
+            }
+            250 = {
+                add_core_of = ROOT
+            }
+        }
+    }
+}
+
+build_virus_for_veagen = {
+    research_memz = {
+        available = {
+            check_variable = {
+                # memz_progress < 100
+                var = memz_progress value = 100 compare = less_than
+            }
+        }
+        cost = 50
+        days_rearm = 30
+        days_remove = 60
+        modifier = {
+            research_speed_factor = -0.05 # Пока пишем вирус, ученые заняты (-5% к науке)
+            }
+        complete_effect = {
+            add_to_variable = { memz_progress = 25 }
+            if = {
+                limit = {
+                    check_variable = {
+                        memz_progress > 100
+                    }
+                }
+                set_variable = { memz_progress = 100 }
+            }
+            custom_effect_tooltip = memz_progress_tt
+        }
+    }
+
+    research_suxnet = {
+        available = {
+            check_variable = {
+                suxnet_progress < 100
+            }
+        }
+
+        visible = { always = yes }
+
+        cost = 50
+        days_remove = 1
+
+        complete_effect = {
+            add_to_variable = { suxnet_progress = 25 }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        suxnet_progress = 100
+                    }
+                }
+                set_variable = { suxnet_progress = 100 }
+            }
+            custom_effect_tooltip = suxnet_progress_tt
+        }
+    }
+
+    research_petya = {
+        available = {
+            check_variable = {
+                # petya_progress < 100
+                var = memz_progress value = 100 compare = less_than
+            }
+        }
+
+        visible = { always = yes }
+        cost = 50
+        days_remove = 1
+
+        complete_effect = {
+            add_to_variable = { petya_progress = 25 }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        petya_progress = 100
+                    }
+                }
+                set_variable = { petya_progress = 100 }
+            }
+
+            custom_effect_tooltip = petya_progress_tt
+        }
+    }
+    combine_viruses = {
+        available = {
+        check_variable = { memz_progress >= 50 }
+        check_variable = { suxnet_progress >= 50 }
+        check_variable = { petya_progress >= 50 }
+        }
+        cost = 10
+        days_remove = 1
+
+        fire_only_once = yes
+
+        complete_effect = {
+            # add_country_flag = day_zero_ready
+            custom_effect_tooltip = combine_viruses_tt
+            add_country_flag = day_zero_ready
+            every_country = {
+                limit = {
+                    is_in_faction_with = GER
+                    NOT = {tag = ROOT}
+                }
+                add_idea = infection_of_tunnel_systems
+        }
+        }
+    }
+    }
+}
+debug_do_not_touch = {
+    debug_spits = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+            is_ai = no
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+            check_variable = { var = memz_progress value = 100 compare = less_than }
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+        complete_effect = {
+            swap_ideas = {
+                remove_idea = Armed_Forces
+                add_idea = army_Great_Trial
+            }
+            add_ideas = omsk_economy
+            
+        }
+    }
+    debug_check_germany = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+        complete_effect = {
+         every_country = {
+            limit = {
+                is_in_faction_with = ITA
+            }
+            add_ideas = infection_of_tunnel_systems
+        }
+        }   
+    }
+    debug_check_italy = {
+        allowed = {
+            tag = YAK
+            has_government = nationalist
+        }
+
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            is_debug = yes
+            tag = YAK
+            has_government = nationalist
+        }
+        complete_effect = {
+        # if = {
+        #     limit = {
+        #         ITA = {has_idea = infection_of_tunnel_systems}
+        #     }
+        # } 
+        every_country = {
+            limit = {
+                is_in_faction_with = ITA
+            }
+            add_ideas = infection_of_tunnel_systems
+        }  
+    } 
+  }
+  sally_rag_days = {
+    visible = {
+        tag = YAK
+    }
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+        USA = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+            create_country_leader = {
+            name = "Mister Sally"
+            picture = "GFX_mister_sally"
+            ideology = mafia_state
+        }
+        add_popularity = 100
+       }
+    }
+  }
+  belarus_and_ukraine = {
+    visible = {
+        tag = YAK
+    }
+    ai_will_do = {
+        ai_chance = 0
+    }
+    complete_effect = {
+        UKR = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+            create_country_leader = {
+                name = "Gleb Vasilye"
+                picture = "GFX_portrait_Nikolayevich"
+                ideology = military_junta
+            }
+            set_party_name = {
+            ideology = nationalist
+            # long_name = nationalist_league_long_party
+            name = nationalist_ukraine_name
+        }
+            set_cosmetic_tag = UKR_puppet_league
+
+            add_ideas = {
+                death_teutonic_slava_ukraine
+                march_new_army
+            }
+        }
+
+        BLR = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+
+            create_country_leader = {
+                name = "Slavamir Adamovich"
+                picture = "GFX_portrait_Henrichovich"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = BLR_puppet_league
+
+            set_party_name = {
+                ideology = nationalist
+                name = nationalist_belarus_name
+            }
+        }
+        
+        TTS = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+            
+            create_country_leader = {
+                name = "Richo Terraces"
+                picture = "GFX_portrait_Richo"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = TTS_puppet_league
+        }
+
+        GER = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+
+            create_country_leader = {
+                name = "Oleg"
+                picture = "GFX_portrait_oleg"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = GER_puppet_league
+        }
+
+        FRA = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Vova"
+                # picture = "TODO"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = FRA_puppet_league
+
+                annex_country = {
+                target = SPR
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = POR
+                transfer_troops = yes
+            }
+
+            every_owned_state = {
+                add_core_of = FRA
+            }
+        }
+
+        LUX = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Supreme Commander-in-Chief of the Directorate"
+                picture = "GFX_portrait_Sccd"
+                ideology = military_junta
+            }
+
+            set_party_name = {
+                ideology = nationalist
+                name = nationalist_lux_name
+                long_name = "State Committee for Emergency Situations — Europe"
+            }
+
+            set_cosmetic_tag = LUX_puppet_league
+
+
+            annex_country = {
+                target = BEL
+                transfer_troops = no
+            }
+            
+            annex_country = {
+                target = BRS
+                transfer_troops = no
+            }
+            
+            annex_country = {
+                target = HOL
+                transfer_troops = no
+            }
+        }
+
+        SER = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Nikola Selaković"
+                picture = "GFX_portrait_Nikola"
+                ideology = military_junta
+            }
+
+            annex_country = {
+                target = KOS
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = MNT
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = BOS
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = CRO
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SLV
+                transfer_troops = yes
+            }
+
+            set_cosmetic_tag = SER_puppet_league
+        }
+
+        HUN = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Alex"
+                # picture = "TODO"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = HUN_puppet_league
+
+            annex_country = {
+                target = SLO
+                election_frequency = no
+            }
+            annex_country = {
+                target = AUS
+                election_frequency = no
+            }
+            annex_country = {
+                target = CZE
+                election_frequency = no
+            }
+
+            transfer_state = 45
+        }
+    }
+  }
+}

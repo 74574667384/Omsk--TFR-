@@ -1,0 +1,41 @@
+# Ожидает освобождения
+omsk_liberation_pending = {
+    resistance_target = 0.15
+    resistance_growth = 0.10
+    local_org = -0.05
+}
+
+# Националистическая оккупация
+omsk_nationalist_occupation = {
+    local_manpower = 0.20
+    local_org = 0.10
+    recruitable_population_factor = 0.08
+    resistance_growth = 0.25
+    local_factories = 0.05
+    resistance_damage_to_garrison = 0.15
+}
+
+# Национальное возрождение
+omsk_national_revival = {
+    state_production_speed_buildings_factor = 0.15
+    local_resources_factor = 0.20
+    resistance_decay = -0.30
+    local_building_slots_factor = 0.10
+}
+
+# Жёсткий контроль
+omsk_harsh_control = {
+    resistance_decay = 0.25
+    resistance_target = -0.20
+    local_manpower = -0.10
+    recruitable_population_factor = -0.05
+    local_org = -0.05
+}
+
+# Партизанская активность
+omsk_partisan_activity = {
+    resistance_growth = 0.30
+    resistance_damage_to_garrison = 0.25
+    army_speed_factor = -0.10
+    attrition = 0.15
+}

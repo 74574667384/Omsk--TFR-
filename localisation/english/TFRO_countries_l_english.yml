@@ -1,0 +1,21 @@
+﻿l_english:
+black_league:0 "Siberian Black League"
+black_league_DEF:0 "Siberian Black League"
+
+#puppet
+
+KAZ_puppet_league:0 "Kazakhstan Military Reclamation"
+UKR_puppet_league:0 "Ukraine Reclamation Government"
+BLR_puppet_league:0 "Belarus Reclamation Government"
+TTS_puppet_league:0 "Estonian Defense League"
+GER_puppet_league:0 "Germany Reclamation Government"
+POL_puppet_league:0 "Poland Reclamation Government"
+FRA_puppet_league:0 "France Reclamation Government"
+LUX_puppet_league:0 "Luxemburg Reclamation Government"
+SWE_puppet_league:0 "Sweden Reclamation Government"
+SER_puppet_league:0 "Serbia Reclamation Government"
+HUN_puppet_league:0 "Hungary Reclamation Government"
+
+#unification
+
+black_league_unification_of_russia:0 "Russian National Reclamation Government"

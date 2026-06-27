@@ -1,0 +1,16 @@
+character = {
+	BLR_Nikolayevich = {
+		name = "GFX_portrait_Henrichovich"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_Henrichovich"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+﻿l_english: 
+ YAK_black_league_unification:0 "§8Russian Unification§!"
+ russian_unification:0 "Russian Unification"
+
+ #War warload
+
+ war_warload:0 "Operation: §ARed Sunset§!"
+ war_warloar_2:0 "Operation: §YKarbyshev§!"
+ war_warload_3:0 "Operation: §GIron Belt§!"
+ war_warload_4:0 "Operation: §CUranium§!"
+ war_warload_5:0 "Operation: §OSaturn§!"
+ war_warload_6:0 "Operation: §PShip§!"
+ war_warload_8:0 "Operation: §LRing§!"
+ war_warload_9:0 "Operation: §5Karbyshevsky Border Post§!"
+ war_warload_11:0 "Operation: §dRed Uda§!"
+ war_warload_12:0 "Operation: §4Snow§!"
+ war_warload_13:0 "Operation: §pFar East§!"
+ war_warload_14:0 "Operation: §GVolga§!"
+
+
+ #DO NOT TOUND
+
+ debug_do_not_touch:0 "debug Omsk Resurrection"
+
+ #Trojan attack decisions
+
+ build_virus_for_veagen:0 "Day Zero"
+ build_virus_for_veagen_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n§!The global network is not a space for freedom; it is the Steel Pact’s Achilles’ heel. While the enemy relies on its automated communication systems, radars, and logistical supercomputers, we will turn their technology into their own tombstone. The complete isolation of our own servers is now complete. It is time to unleash the dormant Trojans. The Great Trial will begin in the digital realm and end on the battlefield.\n\n Project MEMZ-T: §Y[?YAK.memz_progress]%§!\n\n Ptoject Sukhorukov: §Y[?YAK.suxnet_progress]%§! \n\n Ptoject Redemption-26: §Y[?YAK.petya_progress]%§!"
+ research_memz:0 "Reseacrh memz"
+ memz_progress_tt:0 "Development progress on MEMZ-T has increased by §G+25%§!"
+ research_suxnet:0 "Reseacrh suxnet"
+ suxnet_progress_tt:0 "Progress on the ‘Sukhorukov’ project has increased by §G+25%§!"
+ research_petya:0 "Reseacrh petya"
+ petya_progress_tt:0 "Progress on ‘Redemption-26’ has increased by §G+25%§!"
+ combine_viruses:0 "create trojan "Yazov" "
+ combine_viruses_desc:0 "We have managed to create deadly viruses that spread through network tunnels, as well as military capabilities that give us more time to launch an offensive"
+
+
+ problem_army_tt:0 "Army"

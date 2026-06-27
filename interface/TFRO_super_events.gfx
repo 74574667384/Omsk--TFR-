@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_OSMK_WAR_super_event"
+		texturefile = "gfx/super_events/omsk_war.png" #you have to create a folder called super events
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}	
+}

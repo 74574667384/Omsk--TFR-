@@ -1,0 +1,16 @@
+character = {
+	SER_Nikola ={
+		name = "GFX_portrait_Nikola"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SER/SER_Nikola"
+			}	
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

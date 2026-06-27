@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_League_Path_Banner"
+		texturefile = "gfx/texticons/banners/League_path_banner.png"
+		legacy_lazy_load = no
+	}
+}

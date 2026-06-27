@@ -1,0 +1,342 @@
+add_namespace = Omsk
+add_namespace = europe
+add_namespace = Omsk_flavor
+
+# country_event = {
+# 	id = omsk.1
+# 	title = omsk.1.t
+# 	desc = omsk.1.d
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		tag = YAK
+# 		date > 2018.1.1
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
+
+# 	option = {
+# 		name = omsk.1.a
+
+# 		set_party_name = {
+# 			ideology = nationalist
+# 			long_name = nationalist_league_long_party
+# 			name = nationalist_league_name
+# 		}
+
+# 		set_politics = {
+# 			ruling_party = nationalist
+# 			elections_allowed = yes
+# 		}
+
+# 		set_country_leader_portrait = {
+# 			portrait = GFX_portrait_ai_Yazov
+# 		}
+
+# 		add_popularity = {
+# 			ideology = nationalist
+# 			popularity = 0.2
+# 		}
+# 		set_cosmetic_tag = black_league
+# 	}
+# }
+
+country_event = {
+    id = omsk.1
+    title = omsk.1.t
+    desc = omsk.1.d
+        picture = GFX_we_get_back_up #you demystified here
+    fire_only_once = yes
+
+    trigger = {
+        tag = YAK
+        date > 2018.1.1
+    }
+    mean_time_to_happen = {
+        days = 30
+    }
+
+       option = {
+        name = omsk.1.a
+
+        set_party_name = {
+            ideology = nationalist
+            long_name = nationalist_league_long_party
+            name = nationalist_league_name
+        }
+
+
+        set_politics = {
+            ruling_party = nationalist
+            elections_allowed = yes
+        }
+
+		set_country_leader_portrait = {
+ 			portrait = GFX_portrait_ai_Yazov
+ 		}
+
+        create_country_leader = {
+        name = YAK_ai_Yazov
+        desc = "POLITICS_YAZOV_DESC"
+        picture = "GFX_portrait_ai_Yazov"
+            }
+                focus_unlock = yes
+                complete_national_focus = YAK_new_path_omsk
+
+                hidden_effect = {
+            set_country_flag = YAK_desire_for_revenge
+            load_focus_tree = {
+                tree = YAK_wake_up
+                keep_completed = yes
+            }
+            mark_focus_tree_layout_dirty = yes
+                 } 
+
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.2
+        }
+        set_cosmetic_tag = black_league
+    }
+}
+
+country_event = {
+	id = omsk.2
+	title = "future of the National Bolshevik party"
+	desc = "After we took power in Omsk, the National Bolshevik Party collapsed, but it is still popular among a certain part of the population and would like to create a government coalition with us. However, there have been reports that within the far-right wing of the party there are infiltrators from the pact of steel who are planning attacks against the local population and against us. Now it is up to us to decide the future of the National Bolshevik Party."
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = YAK
+        date > 2018.1.1
+    }
+
+	option = {
+		name = "They are still §RNazi§! scum who disguise themseleves as commuinsts like §afascist§! so ban them immediately"
+
+		add_popularity = { ideology = national_socialist popularity = -1.0 }
+		add_popularity = { ideology = fascist popularity = -1.0 }
+
+		set_party_name = {
+			ideology = national_socialist
+			long_name = banned_national_socialist_long
+			name = banned_national_socialist
+		}
+
+		set_party_name = {
+			ideology = fascist
+			long_name = banned_fascist_long
+			name = banned_fascist
+		}
+
+		# set_country_flag = national_socialist_banned
+		# set_country_flag = fascist_banned
+		# set_cosmetic_tag = banned
+	}
+
+	option = {
+		name = "keep only the far-left socialists and moderate nationalist but arrect the far-right ones"
+	}
+}
+
+country_event = {
+    id = omsk.3
+    title = "The Fate of Kazakhstan"
+    desc = "After the operation in Kazakhstan, all the ministers in Omsk and the leader of Kazakhstan gathered to discuss the country future whether to turn it into a puppet state and have it join the CSTO, or to leave things as they are with the occupied territory"
+    is_triggered_only = yes
+    option = {
+        name = "Let’s make our country a puppet state"
+
+        KAZ = {
+            set_politics = {
+                ruling_party = nationalist
+                elections_allowed = no
+            }
+
+            create_country_leader = {
+                name = "Nursultan Nazarbayev"
+                picture = "GFX_portrait_nursultan_nazarbayev"
+                ideology = despotism
+            }
+        set_cosmetic_tag = KAZ_puppet_league
+        add_ideas = Shield_of_the_Great_Trial
+        
+        YAK = {
+            set_autonomy = {
+                target = KAZ
+                autonomy_state = autonomy_puppet
+            }
+        }
+    }
+    }
+    option = {
+        name = "Let’s keep the captured territories under our control"
+    }
+}
+
+# News
+
+news_event = {
+    id = omsk.league
+    title = "Black February"
+    picture = GFX_Black_February
+    desc = "Europe lies in smoldering ruins under the fascist boot, and all hope for external liberation has finally withered away.
+    In the heart of Siberia, within the walls of Omsk, simmering resentment has boiled over into bloody chaos. Massive riots, fueled by the bitter sting of defeat in the Second European War, paralyzed the city. The National Bolsheviks, unable to offer anything but empty slogans, fled the halls of power in disgrace amidst the jeers of the mob. In the ensuing vacuum, the clatter of tank treads echoed through the streets."
+    is_triggered_only = yes
+    option = {
+        name = "We're back"
+    }
+}
+
+news_event = {
+    id = omsk.war
+    title = "The Great Trial"
+    picture = GFX_Black_February
+    desc = "Just destroy facsim in europe lol"
+    is_triggered_only = yes
+    option = {
+        name = "No step to back"
+		ai_chance = { factor = 1 }
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_ai = no
+                }
+                set_country_flag = OSMK_se_flag ##puts the flag
+                scoped_sound_effect = TFR_se_great_trial #music name 
+                scoped_play_song = "one_minute_of_silence"
+            }
+        }
+    }
+}
+
+#Russian reunification
+news_event = {
+    id = europe.1
+    title = europe.1.t
+    desc = europe.1.d
+    picture = GFX_russian_reunification
+
+    is_triggered_only = yes 
+
+    option = {
+        name = europe.1.a
+        trigger = {
+            is_ai = no
+        }
+        hidden_effect = {
+            set_country_flag = Omsk_reunfication_se_flag
+            scoped_sound_effect = TRF_se_russian_unfication
+            scoped_play_song = "one_minute_of_silence"
+        }
+    }
+} #and now the other events #nationalist movements support Germany
+country_event = { 
+    id = europe.3
+    title = europe.3.t
+    desc = europe.3.d
+    picture = GFX_nationalist_movements_support_Germany
+    is_triggered_only = yes
+    trigger = {
+        tag = GER
+    }
+
+    option = {
+        name = europe.3.a 
+        add_manpower = 10000
+        unlock_decision_tooltip = GER_organizes_riots_against_Omsk
+        YAK = { 
+               country_event = { id = Omsk_flavor.1 days = 2 }
+        }
+    } 
+}
+#Separatist movements revolt against Omsk
+country_event = {
+    id = Omsk_flavor.1
+    title = OMsk_falvor_1.t
+    desc = omsk_falvor_1.d
+    picture = GFX_YAK_Omsk_riots
+    major = yes
+    is_triggered_only = yes
+    trigger = {
+        tag = YAK
+    }
+
+    option = {
+        name = Omsk_flavor.1.a
+
+        add_stability = -0.15
+        add_war_support = -0.09
+
+        add_popularity = {
+            ideology = national_socialist
+            popularity = 0.10
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.10
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = 0.10
+        }
+        add_popularity = {
+            ideology = totalitarian_socialist
+            popularity = 0.10
+        }
+    }
+}
+
+
+#victory omsk 
+
+# country_event = {
+#     id = omsk_victory
+#     title = "Omsk victory"
+
+#     desc = "you win"
+
+#     picture = GFX_YAK_omsk_victory
+
+#     is_triggered_only = yes
+
+#     immediate = {
+#         super_event = {
+#             id = "victory_omsk"
+#         }
+#     }
+#     trigger = {
+#         tag = YAK
+#     }
+
+#     option = {
+#         name = "The Great Trial Complete"
+
+#         YAK = {
+#             id = super_omsk.1
+#         }
+#     }
+# }
+
+news_event = {
+    id = Omsk_flavor.1
+    title = Omsk_flavor.1.t
+    desc = Omsk_flavor.1.d
+
+    picture = test
+
+    major = yes
+    is_triggered_only = yes
+    immediate = {
+        play_music = "super_event"
+        set_country_flag = tfr_my_superevent_active
+
+        # set_global_flag = super_event_1
+    }
+
+    option = {
+        name = "test"
+    }
+}

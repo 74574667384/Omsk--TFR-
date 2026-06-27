@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ai_Yazov"
+		texturefile = "gfx/leaders/YAK/YAK_portrait_ai_yazov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Anatolye"
+		texturefile = "gfx/leaders/general/general_portait_Anatolye.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_nursultan_nazarbayev"
+		texturefile = "gfx/leaders/KAZ/KAZ_nursultan_nazarbayev.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Nikonov"
+		texturefile = "gfx/leaders/general/general_portait_Nikonov.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Dmitrievich"
+		texturefile = "gfx/leaders/general/general_portait_Dmitrievich.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Stepan"
+		texturefile = "gfx/leaders/general/general_portait_Stepan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Georgy"
+		texturefile = "gfx/leaders/general/general_portait_Georgy.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Oleg"
+		texturefile = "gfx/leaders/general/general_portait_Tkachev.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Nikita"
+		texturefile = "gfx/leaders/general/general_portait_Fyodorovich.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Nikolayevich"
+		texturefile = "gfx/leaders/UKR/UKR_Nikolayevich.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Henrichovich"
+		texturefile = "gfx/leaders/BLR/BLR_Henrichovich.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Richo"
+		texturefile = "gfx/leaders/TTS/TTS_Terraces.png" 
+	}
+	spriteType = {
+		name = "GFX_oleg"
+		texturefile = "gfx/leaders/GER/GER_Oleg.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Sccd"
+		texturefile = "gfx/leaders/LUX/LUX_SCCD.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Nikola"
+		texturefile = "gfx/leaders/SER/SER_Nikola.png" 
+	}
+	#fun
+	spriteType = {
+		name = "GFX_mister_sally"
+		texturefile = "gfx/leaders/USA/USA_mister_sally.dds"
+	}
+}

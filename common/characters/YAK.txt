@@ -1,0 +1,113 @@
+characters = {
+	YAK_ai_Yazov = {
+		# name = "GFX_portrait_ai_Yazov"
+		name = "YAK_ai_Yazov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YAK/portrait_ai_yazov.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+
+				}
+		}
+	}
+
+	YAK_Anatolye = {
+		name = "YAK_Anatolye"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Anatolye.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			id = -1
+
+			traits = {
+				
+			}
+		}
+	}
+	YAK_Nikonov = {
+		name = "YAK_Nikonov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Nikonov.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 5
+		}
+	}
+	YAK_Dmitrievich = {
+		name = "YAK_Dmitrievich"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Dmitrievich.png"				
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	YAK_Stepan = {
+		name = "YAK_Stepan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Stepan.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	YAK_Georgy = {
+		name = "YAK_Georgy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Georgy.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 7
+			defense_skill = 9
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+	YAK_Oleg = {
+		name = "YAK_Oleg"
+		portraits = {
+			army = {
+				large = "gfx/leaders/general/general_portait_Tkachev.png"
+			}
+		}
+		corps_commander = {
+			skill =  1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

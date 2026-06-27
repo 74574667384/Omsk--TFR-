@@ -1,0 +1,16 @@
+character = {
+	LUX_SCCD = {
+		name = "GFX_portrait_SCCD"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LUX/LUX_SCCD.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

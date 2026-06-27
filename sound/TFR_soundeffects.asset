@@ -1,0 +1,90 @@
+	
+	
+	soundeffect = {
+		name = "TFR_se_great_trial" #name of the music
+		sounds = {
+			sound = TFR_se_great_trial #name of the music  #ignore these or replace them
+		}
+		volume = 3.0
+	}
+	
+        ##ignore these or replace them
+	# soundeffect = {
+	# 	name = "TFR_se_American_intervention_against_communist_Iran_war"
+	# 	sounds = {
+	# 		sound = TFR_se_American_intervention_against_communist_Iran_war
+	# 	}
+	# 	volume = 3.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TFR_se_the_final_war_isis_american_war"
+	# 	sounds = {
+	# 		sound = TFR_se_the_final_war_isis_american_war
+	# 	}
+	# 	volume = 6.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TRF_se_american_victory_in_iran"
+	# 	sounds = {
+	# 		sound = TRF_se_american_victory_in_iran
+	# 	}
+	# 	volume = 6.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TRF_se_third_gulf_war"
+	# 	sounds = {
+	# 		sound = TRF_se_third_gulf_war
+	# 	}
+	# 	volume = 3.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TRF_se_what_if_american_iranian_war"
+	# 	sounds = {
+	# 		sound = TRF_se_what_if_american_iranian_war
+	# 	}
+	# 	volume = 3.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TFR_se_nazbol_svetov_war"
+	# 	sounds = {
+	# 		sound = TFR_se_nazbol_svetov_war
+	# 	}
+	# 	volume = 6.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TFR_se_nazbol_svetov_victory"
+	# 	sounds = {
+	# 		sound = TFR_se_nazbol_svetov_victory
+	# 	}
+	# 	volume = 6.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TFR_se_nazbol_dmitriev_war"
+	# 	sounds = {
+	# 		sound = TFR_se_nazbol_dmitriev_war
+	# 	}
+	# 	volume = 6.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TFR_se_nazbol_dmitriev_victory"
+	# 	sounds = {
+	# 		sound = TFR_se_nazbol_dmitriev_victory
+	# 	}
+	# 	volume = 9.0
+	# }
+	
+	# soundeffect = {
+	# 	name = "TAFP_shot"
+	# 	sounds = {
+	# 		sound = TAFP_shot
+	# 	}
+	# 	volume = 0.85
+	# }

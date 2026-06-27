@@ -1,0 +1,17 @@
+characters = {
+	YAK_ai_Yazov = {
+		# name = "GFX_portrait_ai_Yazov"
+		name = "GFX_portrait_nursultan_nazarbayev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAZ/KAZ_nursultan_nazarbayev.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+
+				}
+		}
+	}
+}

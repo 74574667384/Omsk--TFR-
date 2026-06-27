@@ -1,0 +1,18 @@
+characters = {
+	USA_mister_sally = {
+		# name = "GFX_portrait_ai_Yazov"
+		name = "GFX_mister_sally"
+		portraits = {
+			civilian = {
+				# large = "gfx/leaders/USA/USA_mister_sally.dds"
+				large = "gfx/leaders/USA/USA_mister_sally.dds"
+			}
+		}
+		country_leader = {
+			ideology = mafia_state
+			traits = {
+				
+				}
+		}
+	}
+}

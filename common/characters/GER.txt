@@ -1,0 +1,16 @@
+character = {
+	GER_Oleg ={
+		name = "GFX_portrait_oleg"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_Oleg.png"
+			}		
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

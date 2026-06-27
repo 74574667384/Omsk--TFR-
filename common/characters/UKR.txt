@@ -1,0 +1,16 @@
+character = {
+	UKR_Nikolayevich = {
+		name = "GFX_portrait_Nikolayevich"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Nikolayevich"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

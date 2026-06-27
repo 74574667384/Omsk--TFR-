@@ -1,7 +1,11 @@
-version="1.17.*"
+version="1.18.0"
 tags={
 	"Alternative History"
-	"National Focuses"
+	"Events"
+	"Gameplay"
+	"Fixes"
 }
+dependencies = {"The Fire Rises"}
 name="TFR Submod: Omsk Resurrection"
-supported_version="1.17.5.2"
+supported_version="1.18.*"
+picture="thumbnail.png"
