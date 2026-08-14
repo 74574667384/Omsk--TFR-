@@ -8,7 +8,6 @@ russian_unification = {
 
 	visible = {
 		tag = YAK
-
 	}
 }
 
@@ -22,14 +21,16 @@ build_virus_for_veagen = {
             has_government = nationalist
         }
 
-        # available = {
-        #     has_war = no
-        #     has_government = nationalist
-        # }
+        available = {
+            has_war = no
+            has_government = nationalist
+			# has_country_flag = unlocked_day_zero
+        }
 
         visible = {
             tag = YAK
             has_government = nationalist
+			has_completed_focus = trojan
         }
 }
 
@@ -44,4 +45,40 @@ debug_do_not_touch = {
 		original_tag = YAK
 	}
 		priority = 102
+}
+
+army_reform = {
+	icon = generic_political_actions
+	visible = {
+		tag = YAK
+        has_government = nationalist
+	}
+	allowed = {
+		original_tag = YAK
+	}
+	priority = 99
+}
+
+
+YAK_4nd_European_War_category = {
+	icon = GFX_SOV_decision_nato_war_category
+	visible_when_empty = yes
+	allowed = {
+		tag = YAK
+	}
+	priority = 98
+	visible = {
+		tag = YAK
+		# OR = {
+		# 		has_completed_focus = SOV_ultimatum_to_the_kuban
+		# 		has_completed_focus = SOV_march_on_the_west
+		# 		has_completed_focus = SOV_prepare_for_the_march
+		# 		has_global_flag = second_nato_war_flag	
+		# 	}
+			OR = {
+				NOT = {
+					has_global_flag = YAK_league_4nd_victory_global
+				}
+			}
+	}
 }

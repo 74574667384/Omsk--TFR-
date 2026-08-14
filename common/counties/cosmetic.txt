@@ -1,5 +1,6 @@
-YAK = {
-	color = rgb { 30 30 35 }
+YAK_nationalist = {
+	color = rgb { 15 14 14 }
+	color_ui = rgb { 15 14 14 }
 }
 
 # FRA = {

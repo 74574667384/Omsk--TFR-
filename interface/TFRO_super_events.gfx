@@ -1,9 +1,16 @@
 spriteTypes = {	
 
 	spriteType = {
-		name = "GFX_OSMK_WAR_super_event"
-		texturefile = "gfx/super_events/omsk_war.png" #you have to create a folder called super events
+		name = "GFX_victory_omsk_4EW_super_event"
+		texturefile = "gfx/super_events/super_event_victory_omsk.png"
 		legacy_lazy_load = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}	
+	}
+	
+	spriteType = {
+		name = "GFX_4EW_omsk_super_event"
+		texturefile = "gfx/super_events/4EW_war.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 }

@@ -1,0 +1,661 @@
+# on_actions = {
+# 	on_capitulation = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					FROM = {
+# 						OR = {
+# 							original_tag = YAK
+# 							is_ally_with = YAK
+# 						}
+# 					}
+# 					ROOT = {
+# 						OR = {
+# 							original_tag = KAZ
+# 						}
+# 					}
+# 				}
+# 				YAK = {	
+# 					if = {
+# 						limit = {
+# 							YAK = {
+# 								OR = {
+# 									has_government = nationalist
+# 								}
+# 								NOT = {
+# 									has_country_leader = {
+# 										character = YAK_ai_Yazov
+# 										ruling_only = yes
+# 									}
+# 								}
+# 							}
+# 						}
+# 						white_peace = ROOT
+# 						puppet = ROOT
+# 						if = {
+# 							limit = {
+# 								ROOT = {
+# 									tag = KAZ
+# 								}
+# 							}
+# 							    transfer_state = 583
+# 								transfer_state = 590
+# 								transfer_state = 588
+# 								add_state_core = 583
+# 								add_state_core = 590
+# 								add_state_core = 588
+# 							ROOT = {
+# 								set_politics = {
+# 									ruling_party = nationalist
+# 									elections_allowed = no
+# 								}
+# 								set_popularities = {
+# 									nationalist = 80
+# 									fascism = 10
+# 								}
+# 								create_country_leader = {
+# 									name = KAZ_nursultan_nazarbayev
+# 									picture = "GFX_portrait_nursultan_nazarbayev"
+# 									ideology = military_junta
+# 								}
+# 								set_cosmetic_tag = KAZ_puppet_league
+# 							}
+# 						}
+# 					}
+# 				}
+# 				if = {
+# 					limit = {
+# 						NOT = { has_global_flag = YAK_league_4nd_victory_global }
+# 						FROM = {
+# 							OR = {
+# 								original_tag = YAK
+# 								is_ally_with = YAK
+# 							}
+# 						}
+# 						ROOT = {
+# 							OR = {
+# 								original_tag = GER
+# 								original_tag = LUX
+# 								original_tag = ITA
+# 								original_tag = MLD
+# 								original_tag = GRE
+# 								original_tag = UKR
+# 								original_tag = BLR
+# 								original_tag = TTS
+# 								original_tag = SWE
+# 								original_tag = ENG
+# 								original_tag = ITA
+# 								original_tag = TUR
+# 								original_tag = ROM
+# 								original_tag = SOV
+# 								is_ally_with = GER
+# 								is_ally_with = FPR
+# 								is_ally_with = FAF
+# 								is_ally_with = ITA
+# 								is_ally_with = ENG
+# 								is_ally_with = UK2
+# 							}
+# 						}
+# 					}
+# 					YAK = {
+# 						if = {
+# 							limit = {
+# 								YAK = {
+# 									has_country_leader = {
+# 										character = YAK_ai_Yazov
+# 										ruling_only = yes
+# 									}
+# 								}
+# 								has_global_flag = SOV_USSR_defeat_in_2nd_European_War
+# 							}
+# 							puppet = ROOT
+# 							white_peace = ROOT
+# 							every_country = {
+# 								limit = {
+# 									is_in_faction = ROOT
+# 									any_controlled_state = {
+# 										NOT = { is_controlled_by = ROOT }
+# 										is_core_of = ROOT
+# 										NOT = {is_core_of = PREV}
+# 									}
+# 								}
+# 								every_controlled_state = {
+# 									limit = {
+# 										NOT = { is_controlled_by = ROOT }
+# 										is_core_of = ROOT
+# 										NOT = { is_core_of = PREV }
+# 									}
+# 									transfer_state_to = ROOT
+# 									set_state_owner_to = ROOT
+# 									set_state_controller_to = ROOT
+# 								}
+# 							}
+# 							ROOT = {
+# 								clr_global_flag = global_ass_lol
+# 								load_focus_tree = generic_focus
+# 								set_popularities = {
+# 									nationalist = 40.2
+# 									fascist = 12.6
+# 									conservative = 1
+# 									social_democrat = 0.5
+# 									market_liberal = 1
+# 									market_liberal = 2
+# 									communist = 15.2
+# 								}
+# 							}
+# 						}
+# 						add_popularity = {
+# 							ideology = nationalist
+# 							popularity = 30.25
+# 						}
+# 						set_politics = {
+# 							ruling_party = nationalist
+# 							elections_allowed = no
+# 						}
+# 					}
+# 				}
+# 					if = {
+# 						limit = {
+# 							ROOT = {
+# 								tag = GER
+# 							}
+# 						}
+# 						if = {
+# 							limit = {
+# 								FRA = {
+# 									is_faction_leader = yes
+# 								}
+# 							}
+# 							YAK = {
+# 								declare_war_on = {
+# 									target = FRA
+# 									type = annex_everything
+# 								}
+# 							}
+# 						}
+# 					}
+# 					if = {
+# 						limit = {
+# 							ROOT = {
+# 								tag = FRA
+# 							}
+# 						}
+# 						every_country = {
+# 							limit = {
+# 								has_war_with = YAK
+# 							}
+# 						}
+# 						drop_cosmetic_tag = yes
+# 						white_peace = YAK
+# 						leave_faction = yes
+# 					}
+# 				}
+# 				if = {
+# 					limit = {
+# 						ITA = {
+# 							is_faction_leader = yes
+# 						}
+# 					}
+# 					YAK = {
+# 						declare_war_on = {
+# 							target = ITA
+# 							type = annex_everything
+# 						}
+# 					}
+# 				}
+# 				if = {
+# 				limit = {
+# 					has_global_flag = YAK_league_russia_flag
+# 					ROOT = {
+# 						OR = {
+# 							tag = FER
+# 							tag = CHE
+# 							tag = KBK
+# 							tag = BYA
+# 							tag = UNN
+# 							tag = SHL
+# 							tag = LIT
+# 							tag = LAT
+# 							tag = EST
+# 							tag = MOL
+# 							tag = GEO
+# 							tag = AZR
+# 							tag = ARM
+# 							tag = HRZ
+# 						}
+# 					}
+# 				}
+# 				annex_country = {
+# 					target = ROOT
+# 					transfer_troops = no
+# 				} 
+# 			}
+# 			set_global_flag = skip_default_capitulation
+# 		}
+# 	}
+# }
+
+
+
+
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							is_in_faction = yes
+							any_other_country = {
+								is_in_faction_with = PREV
+								has_capitulated = no
+							}
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						NOT = {has_global_flag = SOV_nato_second_nato_war_victory_global}
+						FROM = {
+							OR = {
+								original_tag = YAK
+								is_ally_with = YAK
+							}
+						}
+						ROOT = {
+							OR = {
+								original_tag = GER
+								original_tag = HOL
+								original_tag = BEL
+								original_tag = LUX
+								original_tag = SPR
+								original_tag = SNS
+							    original_tag = PLD
+								original_tag = PRP
+								original_tag = ITA
+								original_tag = CZE
+								original_tag = GRE
+								original_tag = TUR
+								original_tag = DEN
+								original_tag = FRA
+								original_tag = FAF
+								original_tag = FPR
+								original_tag = SNS
+								original_tag = POR
+								original_tag = TUR
+								original_tag = UK2
+								original_tag = FER
+								original_tag = CHE
+								original_tag = KBK
+								original_tag = BYA
+								original_tag = UNN
+								original_tag = UKR
+								original_tag = BLR
+								original_tag = LIT
+								original_tag = LAT
+								original_tag = EST
+								original_tag = MOL
+								original_tag = GEO
+								original_tag = AZR
+								original_tag = ARM
+								original_tag = ENG
+								original_tag = AUS
+								original_tag = SWE
+								original_tag = FIN
+								original_tag = ICE
+								original_tag = ARM
+								original_tag = HRZ
+								is_ally_with = GER
+								is_ally_with = FAF
+								is_ally_with = ENG
+							}
+						}
+					}
+					YAK = {
+						if = {
+							limit = {
+								has_global_flag = YAK_league_won
+							}
+							set_autonomy = {
+								target = ROOT
+								autonomous_state = autonomy_league_puppet
+							}
+							white_peace = ROOT
+							every_country = {
+								limit = {
+									is_in_faction_with = ROOT
+									any_controlled_state = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+								}
+								every_controlled_state = {
+									limit = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+									transfer_state_to = ROOT
+									set_state_owner_to = ROOT
+									set_state_controller_to = ROOT
+								}
+							}
+							ROOT = {
+								clr_country_flag = global_ass_lol
+								EU_leave_effect = yes
+								load_focus_tree = generic_focus
+
+								set_popularities = {
+									nationalist = 35
+									communist = 11
+									libertarian_socialist = 2
+									social_democrat = 1
+									social_liberal = 1
+									market_liberal = 1
+									conservative = 1
+									authoritarian_democrat = 14
+									fascist = 21
+									national_socialist = 0.1
+								}
+								random_list = {
+									34 = {
+										add_popularity = {
+											ideology = nationalist
+											popularity = 0.35
+										}
+									}
+									34 = {
+										add_popularity = {
+											ideology = nationalist
+											popularity = 0.10
+										}
+										add_popularity = {
+											ideology = fascist
+											popularity = 0.14
+										}
+									}
+									34 = {
+										add_popularity = {
+											ideology = communist
+											popularity = 0.05
+										}
+										add_popularity = {
+											ideology = libertarian_socialist
+											popularity = 0.05
+										}
+									}
+									1 = {
+										add_popularity = {
+											ideology = conservative
+											popularity = 0.12
+										}
+									}
+								}
+								set_politics = {
+									ruling_party = nationalist
+									elections_allowed = no
+								}
+								set_party_name = {
+									ideology = nationalist
+									long_name = nationalist_long
+									name = nationalist_name
+								}
+								if = {
+									limit = {
+										YAK = {
+											OR = {
+												has_country_leader = {
+													character = YAK_ai_Yazov
+													ruling_only = yes
+												}
+											}
+										}
+									}
+									set_cosmetic_tag = YAK_league_military_administration
+								}
+							}
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									tag = GER
+								}
+							}
+							if = {
+								limit = {
+									has_idea = GER_gotterdammerung_society
+								}
+								remove_ideas = {
+									idea = GER_gotterdammerung_society
+								}		
+							}
+							if = {
+								limit = {
+									FAF = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = FAF
+										type = annex_everything
+									}
+								}
+							}
+							if = {
+								limit = {
+									ITA = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = ITA
+										type = annex_everything
+									}
+								}
+							}
+							if = {
+								limit = {
+									SPR = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = SPR
+										type = annex_everything
+									}
+								}
+							}
+							if = {
+								limit = {
+									EMG = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = ENG
+										type = annex_everything
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									tag = FAF
+								}
+							}
+							FAF = {
+								end_puppet = QUE
+								end_puppet = CHA
+								end_puppet = CMR
+								end_puppet = GAB
+								end_puppet = EQG
+								end_puppet = CSF
+							}
+							every_country = {
+								limit = {
+									has_war_with = YAK
+									OR = {
+										tag = QUE
+										tag = CHA
+										tag = CMR
+										tag = GAB
+										tag = EQS
+										tag = ARR
+										tag = CSF
+										tag = BRA
+										tag = HRL
+										tag = PER
+										tag = ZET
+										tag = EGY
+									}
+								}
+								drop_cosmetic_tag = yes
+								white_peace = YAK
+								leave_faction = yes
+							}
+							CAN = {
+								declare_war_on = {
+									target = QUE
+									type = annex_everything
+								}
+							}
+							if = {
+								limit = {
+									ITA = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = ITA
+										type = annex_everything
+									}
+								}
+							}
+							if = {
+								limit = {
+									SPR = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = SPR
+										type = annex_everything
+									}
+								}
+							}
+							if = {
+								limit = {
+									ENG = {
+										is_faction_leader = yes
+									}
+								}
+								YAK = {
+									declare_war_on = {
+										target = ENG
+										type = annex_everything
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									OR = {
+										tag = FER
+										tag = CHE
+										tag = KBK
+										tag = BYA
+										tag = UNN
+										tag = SHL
+										tag = UKR
+										tag = BLR
+										tag = LIT
+										tag = LAT
+										tag = EST
+										tag = MOL
+										tag = GEO
+										tag = AZR
+										tag = ARM
+										tag = HRZ
+										tag = FIN
+									}
+								}
+							}
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									tag = UKR
+								}
+							}
+							YAK = {
+								annex_country = {
+									target = KBK
+									transfer_troops = no
+								}
+								annex_country = {
+									target = BYA
+									transfer_troops = no
+								}
+								annex_country = {
+									target = SHL 
+									transfer_troops = no
+								}
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									OR = {
+										tag = PLD
+										tag = MLD
+									}
+								}
+							}
+							YAK = { 
+								transfer_troops = 741
+							}
+							reset_province_name = 6332
+						}
+						if = {
+							limit = {
+								ROOT = {
+									tag = TUR
+								}
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									tag = ENG
+								}
+							}
+							every_state = {
+								limit = {
+									is_core_of = ICE
+								}
+								set_state_controller_to = YAK
+							}
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+			}
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+}

@@ -4,18 +4,26 @@ black_league_DEF:0 "Siberian Black League"
 
 #puppet
 
-KAZ_puppet_league:0 "Kazakhstan Military Reclamation"
-UKR_puppet_league:0 "Ukraine Reclamation Government"
-BLR_puppet_league:0 "Belarus Reclamation Government"
-TTS_puppet_league:0 "Estonian Defense League"
-GER_puppet_league:0 "Germany Reclamation Government"
-POL_puppet_league:0 "Poland Reclamation Government"
-FRA_puppet_league:0 "France Reclamation Government"
+KAZ_puppet_league:0 "Kazakhstan Military Reclamation" #! 14
+UKR_puppet_league:0 "Ukraine Reclamation Government" #! 11
+BLR_puppet_league:0 "Belarus Reclamation Government" # 13
+TTS_puppet_league:0 "Estonian Defense League" #! 12
+GER_puppet_league:0 "Germany Reclamation Government" #! 3
+PLD_puppet_league:0 "Poland Reclamation Government"
+FRA_puppet_league:0 "France Reclamation Government" #! 2 FAF
 LUX_puppet_league:0 "Luxemburg Reclamation Government"
-SWE_puppet_league:0 "Sweden Reclamation Government"
-SER_puppet_league:0 "Serbia Reclamation Government"
-HUN_puppet_league:0 "Hungary Reclamation Government"
+SWE_puppet_league:0 "Sweden Reclamation Government" #! 5
+SER_puppet_league:0 "Serbia Reclamation Government" #! 4
+HUN_puppet_league:0 "Hungary Reclamation Government" #! 10
+ENG_puppet_league:0 "League Protectorate England" #! 1
+GRE_puppet_league:0 "Hellenic Reclamation Government" #! 6
+TUR_puppet_league:0 "Anatolian Military Directorate" #! 7
+ITA_puppet_league:0 "Italian Directorate of National Salvation" #! 8
+ROM_puppet_league:0 "Romanian Reclamation Government" #! 9
 
 #unification
 
-black_league_unification_of_russia:0 "Russian National Reclamation Government"
+YAK_black_league_unification_of_russia:0 "Russian National Reclamation Government"
+
+YAK_league_europa_occupation_leader:0 "Kommandant of the Great Trial"
+YAK_league_military_administration:0 "League Occupation Zone Command"

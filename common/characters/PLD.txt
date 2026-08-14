@@ -1,0 +1,18 @@
+
+character = {
+	PLD_Piskorski = {
+		name = "GFX_Mateusz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PLD/PLD_Mateusz.png"
+			}
+		}
+
+		country_leader = {
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

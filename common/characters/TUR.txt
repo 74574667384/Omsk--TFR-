@@ -1,0 +1,9 @@
+character = {
+	TUR_Ozdag ={
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/TUR_Umit.png"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+character = {
+	ITA_Figliuolo = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/ITA_Paolo.png"
+			}
+		}
+	}
+}

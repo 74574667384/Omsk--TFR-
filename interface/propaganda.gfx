@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_YAK_league_will_get_everyone"
+		texturefile = "gfx/texticons/banners/YAK/league_will_get_everyone.png" 
+	}
+	spriteType = {
+		name = "GFX_YAK_we_will_restore_glory"
+		texturefile = "gfx/texticons/banners/YAK/We_will_restore_glory.png"
+	}
+	spriteType = {
+		name = "GFX_YAK_our_revenge_will_continue"
+		texturefile = "gfx/texticons/banners/YAK/our_revenge_will_continue.png"
+	}
+	spriteType = {
+		name = "GFX_YAK_so_just_kill_him_then"
+		texturefile = "gfx/texticons/banners/YAK/so_just_kill_him_then.png"
+	}
+	spriteType = {
+		name = "GFX_YAK_destroy_germany"
+		texturefile = "gfx/texticons/banners/YAK/destroy_germany.png"
+	}
+}

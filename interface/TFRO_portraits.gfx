@@ -48,7 +48,7 @@ spriteTypes = {
 		texturefile = "gfx/leaders/TTS/TTS_Terraces.png" 
 	}
 	spriteType = {
-		name = "GFX_oleg"
+		name = "GFX_portrait_military_Oleg"
 		texturefile = "gfx/leaders/GER/GER_Oleg.png"
 	}
 	spriteType = {
@@ -58,6 +58,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_Nikola"
 		texturefile = "gfx/leaders/SER/SER_Nikola.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_PLD_Mateusz"
+		texturefile = "gfx/leaders/PLD/PLD_Mateusz.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Klasson"
+		texturefile = "gfx/leaders/SWE/SWE_Mikael.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Floros"
+		texturefile = "gfx/leaders/GRE/GRE_Konstantinos.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Carlton-Smith"
+		texturefile = "gfx/leaders/ENG/ENG_Mark.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Umit_Ozdag"
+		texturefile = "gfx/leaders/TUR/TUR_Umit.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Figliuolo"
+		texturefile = "gfx/leaders/ITA/ITA_Paolo.png" 
+	}
+	spriteType = {
+		name = "GFX_portrait_Georgice"
+		texturefile = "gfx/leaders/ROM/ROM_Vlad.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Penava"
+		texturefile = "gfx/leaders/HUN/HUN_Vlad.png" 
 	}
 	#fun
 	spriteType = {

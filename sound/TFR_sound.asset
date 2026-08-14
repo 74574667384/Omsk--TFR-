@@ -56,3 +56,7 @@
 		name = "TFR_se_great_trial"
 		file = "Super_Events/TFR_great_trial.wav"
 	 }
+	 sound = {
+		name = "TFR_se_victory_omsk"
+		file = "Super_Events/TFR_omsk_victory.wav"
+	 }

@@ -1,0 +1,541 @@
+defined_text = {
+	name = get_omsk_capital_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 571
+				}
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					any_country = {
+						is_ally_with = YAK
+						controls_state = 571
+					}
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 571
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_moscow_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 1339
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 1339
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 1339
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_vladivostok_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 408
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 408
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 408
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_novosibirsk_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 570
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 570
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 570
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_krasnoyarsk_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 568
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 568
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 568
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_yekaterinburg_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 653
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 653
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 653
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_petersburg_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 195
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 195
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 195
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_kyiv_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 1285
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 1285
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 1285
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_tallinn_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 13
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 13
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 13
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_misk_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 206
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 206
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 206
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_berlin_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 1378
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 1378
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 1378
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_paris_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 16
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 16
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 16
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_rome_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 1493
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 1493
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 1493
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_london_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 126
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 126
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 126
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_luxembourg_status
+	text = {
+		trigger = {
+			any_country = {
+				FROM = {
+					controls_state = 8
+				}
+			}
+		}	
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					is_ally_with = YAK
+					controls_state = 8
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				NOT = {
+					is_ally_with = YAK
+				}
+				controls_state = 8
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}

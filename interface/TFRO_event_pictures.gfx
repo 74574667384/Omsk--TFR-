@@ -3,4 +3,35 @@ spriteTypes = {
 		name = "GFX_Black_February"
 		texturefile = "gfx/event_picures/news_event/black_february.dds"
 	}
+	#Event
+
+	spriteType = {
+		name = "GFX_night_day_omsk"
+		texturefile = "gfx/event_picures/night_day_omsk.png" 
+	}
+
+	spriteType = {
+		name = "GFX_create_party"
+		texturefile = "gfx/event_picures/event_party.png" 
+	}
+	spriteType = {
+		name = "GFX_nazbol_ban"
+		texturefile = "GFX/event_picures/nazbol_ban.png" 
+	}
+	spriteType = {
+		name = "GFX_Victory"
+		texturefile = "gfx/event_picures/news_event/omsk_victory.png"
+	}
+	spriteType = {
+		name = "GFX_omks_begin_war"
+		texturefile = "GFX/event_picures/news_event/omsk_offiense.png"
+	}
+	spriteType = {
+		name = "GFX_tokyo_support_omsk"
+		texturefile = "gfx/event_picures/tokyo_support_omsk.png"
+	}
+	spriteType = {
+		name = "GFX_omsk_forces_moscow"
+		texturefile = "gfx/event_picures/Omsk_forces_in_Moscow.png"
+	}
 }

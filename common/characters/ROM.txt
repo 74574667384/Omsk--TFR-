@@ -1,0 +1,9 @@
+character = {
+	ROM_Vlad = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/ROM_Vlad.png"
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 character = {
 	GER_Oleg ={
-		name = "GFX_portrait_oleg"
+		name = "GFX_portrait_military_Oleg"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GER/GER_Oleg.png"

@@ -9,19 +9,32 @@ focus_tree = {
 	}
 	focus = {
 		id = YAK_new_path_omsk
-		icon = GFX_new_path_omsk
+		icon = GFX_new_path_omsk_shine
 		cost = 10
-		x = 14
+		x = 19
 		y = 2
+
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 
 	focus = {
 		id = YAK_We_remebmer
 		cost = 10
-		x = 14
+		x = 19
 		y = 3
 		prerequisite = {
 			focus = YAK_new_path_omsk
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.20
+			}
+			add_war_support = 0.15
+			remove_ideas = collapse_USSR
 		}
 	}
 
@@ -30,7 +43,7 @@ focus_tree = {
 		id = YAK_ban_nazbol
 		icon = GFX_ban_nazi
 		cost = 10
-		x = 14
+		x = 19
 		y = 4
 		prerequisite = {
 			focus = YAK_We_remebmer
@@ -40,6 +53,18 @@ focus_tree = {
 			country_event = {
 				id = omsk.2
 		}
+
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 2
+		}
+		add_debt = yes
+		add_popularity = {
+			ideology = national_socialist
+			popularity = -0.29
+		}
+		add_stability = -0.02
+		add_war_support = 0.15
 	}
 }
 
@@ -47,10 +72,243 @@ focus_tree = {
 		id = YAK_we_revenge
 		icon = GFX_we_revenge
 		cost = 10
-		x = 14
+		x = 19
 		y = 5
 		prerequisite = {
 			focus = YAK_ban_nazbol
+			focus = great_expedition
+		}
+	}
+	focus = {
+		id = great_expedition
+		icon = GFX_great_expedition
+		cost = x
+		x = 19
+		y = 6
+		completion_reward = { }
+		prerequisite = {
+			focus = YAK_we_revenge
+		}
+	}
+	focus = {
+		id = integrate_Sibirian
+		icon = GFX_integrate_sibirian
+		cost = x
+		x = 19
+		y = 7
+		completion_reward = { }
+		prerequisite = {
+			focus = great_expedition
+		}
+	}
+
+	focus = {
+		id = Be_prepared
+		icon = GFX_ready
+		cost = x
+		x = 19
+		y = 9
+		completion_reward = { }
+		prerequisite = {
+			focus = integrate_Sibirian
+		}
+	}
+
+
+	focus = {
+		id = integrate_east
+		icon = GFX_integrate_east
+		cost = x
+		x = 17
+		y = 7
+		completion_reward = { }
+		prerequisite = {
+			focus = expand_resources
+			focus = open_the_hatch
+			focus = great_expedition
+		}
+	}
+
+	focus = {
+		id = expand_resources
+		icon = GFX_expand_resources
+		cost = x
+		x = 16
+		y = 8
+		completion_reward = { }
+		prerequisite = {
+			focus = readliness_of_nuclear_weapons
+			fcous = integrate_east
+		}
+	}
+
+	focus = {
+		id = open_the_hatch
+		icon = GFX_open_the_hatch
+		cost = x
+		cost = x
+		x = 18
+		y = 8
+		completion_reward = { }
+		prerequisite = {
+			focus = readliness_of_nuclear_weapons
+			focus = integrate_east
+		}
+	}
+
+	focus = {
+		id = readliness_of_nuclear_weapons
+		icon = GFX_readliness_of_nuclear_weapons
+		cost = x
+		x = 17
+		y = 9
+		completion_reward = { }
+	}
+
+	focus = {
+		id = formation_of_the_Alliance
+		icon = GFX_fornation_of_the_Alliance
+		cost = x
+		x = 21
+		y = 7
+		completion_reward = { 
+			create_faction = "Neo-Eurasian front for the reconqutest of europe"
+		}
+		prerequisite = {
+			focus = great_expedition
+		}
+	}
+
+	focus = {
+		id = look_Kazakstan
+		icon = GFX_look_kazakstan
+		cost = x
+		x = 20
+		y = 8
+		completion_reward = {
+			declare_war_on = {
+				target = KAZ
+				type = puppet_wargoal_focus
+			}
+		}
+		prerequisite = {
+			focus = formation_of_the_Alliance
+		}
+
+	}
+
+	focus = {
+		id = connection_of_the_moscow
+		icon = GFX_connect_to_moscow
+		cost = x
+		x = 22
+		y = 8
+		completion_reward = { }
+		prerequisite = {
+			focus = formation_of_the_Alliance
+		}
+	}
+
+	focus = {
+		id = mass_mobilization
+		icon = GFX_mass_mobilization
+		cost = x
+		x = 21
+		y = 9
+		completion_reward = { }
+		prerequisite = {
+			focus = connection_of_the_moscow
+			focus = look_Kazakstan
+		}
+	}
+
+	focus = {
+		id = last_march_West
+		icon = GFX_last_march_West
+		cost = x
+		x = 19
+		y = 10
+		completion_reward = { 
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+			news_event = { 
+				id = omsk.war
+				hours = 9
+			}
+
+			set_global_flag = fourth_nato_war_flag
+
+			hidden_effect = {
+				set_global_flag = YAK_league_russia_flag
+
+				every_country = {
+					limit = {
+						exists = yes
+						OR = {
+							original_tag = GER
+							original_tag = HOL
+							original_tag = BEL
+							original_tag = LUX
+							original_tag = SPR
+							original_tag = SNS
+							original_tag = PLD
+							original_tag = PRP
+							original_tag = ITA
+							original_tag = CZE
+							original_tag = GRE
+							original_tag = TUR
+							original_tag = DEN
+							original_tag = FRA
+							original_tag = FAF
+							original_tag = FPR
+							original_tag = SNS
+							original_tag = POR
+							original_tag = TUR
+							original_tag = UK2
+							original_tag = FER
+							original_tag = CHE
+							original_tag = KBK
+							original_tag = BYA
+							original_tag = UNN
+							original_tag = UKR
+							original_tag = BLR
+							original_tag = LIT
+							original_tag = LAT
+							original_tag = EST
+							original_tag = MOL
+							original_tag = GEO
+							original_tag = ENG
+							original_tag = AUS
+							original_tag = ICE
+							original_tag = HRZ
+							is_ally_with = GER
+							is_ally_with = FAF
+							is_ally_with = ENG
+						}
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = Be_prepared
+			focus = mass_mobilization
+			focus = readliness_of_nuclear_weapons
+		}
+	}
+
+	focus = {
+		id = great_trial_begin
+		icon = GFX_great_expedition
+		cost = x
+		x = 19
+		y = 11
+		completion_reward = { 
+
+		}
+		prerequisite = {
+			focus = last_march_West
 		}
 	}
 
@@ -58,9 +316,9 @@ focus_tree = {
 
 	focus = {
 		id = YAK_restore_the_economy
-		# icon = GFX_surrender_tiny_flag
+		icon = GFX_restore_the_economy
 		cost = 10
-		x = 5
+		x = 8
 		y = 6
 		prerequisite = {
 			focus = YAK_we_revenge
@@ -68,10 +326,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_ZZZ
-		# icon = GFX_surrender_tiny_flag
+		id = build_bunker
+		icon = GFX_build_bunker
 		cost = 10
-		x = 1
+		x = 4
 		y = 8
 		prerequisite = {
 			focus = YAK_mitally_path_economy
@@ -79,46 +337,59 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_ZZZ4
-		# icon = GFX_surrender_tiny_flag
+		id = ai_weapon
+		icon = GFX_ai_weapon
 		cost = 10
-		x = 1
+		x = 5
 		y = 9
 		prerequisite = {
-			focus = YAK_ZZZ
-			focus = YAK_update_omsk
+			focus = build_bunker
+			focus = resume_arms_deliveries
+			focus = Expand_the_APC
+			focus = YAK_ZZZ2
 		}
 	}
 
 	focus = {
-		id = YAK_ZZZ5
-		# icon = GFX_surrender_tiny_flag
+		id = resume_arms_deliveries
+		icon = GFX_resume_arms_deliveries
 		cost = 10
-		x = 2
+		x = 6
 		y = 10
 		prerequisite = {
-			focus = YAK_ZZZ4
-			focus = YAK_ZZZ7
+			focus = ai_weapon
+			focus = more_weapons
 		}
 	}
 
 	focus = {
-		id = YAK_ZZZ7
-		# icon = GFX_surrender_tiny_flag
+		id = military_plant_in_siberia
+		icon = GFX_military_siberia_shine
 		cost = 10
-		x = 3
+		x = 4
+		y = 10
+		prerequisite = {
+			focus = ai_weapon
+		}
+	}
+
+	focus = {
+		id = more_weapons
+		icon = GFX_more_weapon
+		cost = 10
+		x = 7
 		y = 9
 		prerequisite = {
 			focus = YAK_ZZZ
-			focus = YAK_update_omsk
+			focus = Expand_the_APC
 		}
 	}
 
 	focus = {
 		id = YAK_mitally_path_economy
-		# icon = GFX_surrender_tiny_flag
+		icon = GFX_omsk_military
 		cost = 10
-		x = 2
+		x = 5
 		y = 7
 		prerequisite = {
 			focus = YAK_restore_the_economy
@@ -127,20 +398,22 @@ focus_tree = {
 
 	focus = {
 		id = YAK_ZZZ2
-		# icon = GFX_surrender_tiny_flag
+		# icon = GFX_military_siberia
 		cost = 10
 		x = 5
-		y = 7
+		y = 11
 		prerequisite = {
-			focus = YAK_restore_the_economy
+			focus = ai_weapon
+			focus = military_plant_in_siberia
+			focus = resume_arms_deliveries
 		}
 	}
 
 	focus = {
-		id = YAK_ZZZ9
-		# icon = GFX_surrender_tiny_flag
+		id = black_water
+		icon = GFX_black_water
 		cost = 10
-		x = 10
+		x = 11
 		y = 7
 		prerequisite = {
 			focus = YAK_restore_the_economy
@@ -149,34 +422,36 @@ focus_tree = {
 
 	focus = {
 		id = YAK_ZZZ10
-		# icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 7
-		y = 8
-		prerequisite = {
-			focus = YAK_ZZZ9
-		}
-	}
-
-	focus = {
-		id = YAK_ZZZ17
-		# icon = GFX_surrender_tiny_flag
+		icon = GFX_trade_trains
 		cost = 10
 		x = 9
-		y = 8
+		y = 9
 		prerequisite = {
-			focus = YAK_ZZZ9
+			focus = larger_buildings_factories
+			focus = YAK_ZZZ18
 		}
 	}
 
 	focus = {
-		id = YAK_ZZZ20
-		# icon = GFX_surrender_tiny_flag
+		id = larger_buildings_factories
+		icon = GFX_build_factories
 		cost = 10
-		x = 11
+		x = 10
 		y = 8
 		prerequisite = {
-			focus = YAK_ZZZ9
+			focus = black_water
+		}
+	}
+
+	focus = {
+		id = increase_workers_wages
+		icon = GFX_increase_worker_wages
+		cost = 10
+		x = 12
+		y = 8
+		prerequisite = {
+			focus = black_water
+			focus = YAK_ZZZ14
 		}
 	}
 
@@ -185,10 +460,11 @@ focus_tree = {
 		id = YAK_ZZZ12
 		# icon = GFX_surrender_tiny_flag
 		cost = 10
-		x = 8
-		y = 9
+		x = 11
+		y = 11
 		prerequisite = {
-			focus = YAK_ZZZ10
+			focus = YAK_ZZZ18
+			focus = YAK_ZZZ6
 		}
 	}
 
@@ -204,10 +480,10 @@ focus_tree = {
 	# }
 
 	focus = {
-		id = YAK_update_omsk
-		# icon = GFX_surrender_tiny_flag
+		id = Expand_the_APC
+		icon = GFX_update_APC
 		cost = 10
-		x = 3
+		x = 6
 		y = 8
 		prerequisite = {
 			focus = YAK_mitally_path_economy
@@ -215,62 +491,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_ZZZ3
-		# icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 5
-		y = 8
-		prerequisite = {
-			focus = YAK_ZZZ2
-		}
-	}
-
-	focus = {
 		id = YAK_ZZZ6
-		# icon = GFX_surrender_tiny_flag
+		icon = GFX_new_omsk
 		cost = 10
-		x = 5
-		y = 9
-		prerequisite = {
-			focus = YAK_ZZZ2
-		}
-	}
-
-	focus = {
-		id = YAK_ZZZ8
-		# icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 5
+		x = 10
 		y = 10
 		prerequisite = {
-			focus = YAK_ZZZ6
-		}
-	}
-
-
-	
-	focus = {
-		id = YAK_ZZZ11
-		# icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 13
-		y = 8
-		prerequisite = {
-			focus = YAK_ZZZ9
-		}
-	}
-
-	focus = {
-		id = YAK_ZZZ13
-		# icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 12
-		y = 9
-		prerequisite = {
-			focus = YAK_ZZZ11
 			focus = YAK_ZZZ10
 		}
 	}
+
 
 	# focus = {
 	# 	id = YAK_ZZZ48
@@ -285,13 +515,14 @@ focus_tree = {
 	# }
 
 	focus = {
-		id = YAK_ZZZ14
+		id = inrector_oil
+		icon = GFX_inrector_oil
 		# icon = GFX_surrender_tiny_flag
 		cost = 10
-		x = 11
-		y = 10
+		x = 13
+		y = 9
 		prerequisite = {
-			focus = YAK_ZZZ11
+			focus = larger_buildings_factories
 			focus = YAK_ZZZ10
 		}
 	}
@@ -300,19 +531,19 @@ focus_tree = {
 		id = YAK_ZZZ18
 		# icon = GFX_surrender_tiny_flag
 		cost = 10
-		x = 11
+		x = 12
 		y = 10
 		prerequisite = {
-			focus = YAK_ZZZ12
+			focus = inrector_oil
 		}
 	}
 
 	focus = {
-		id = YAK_ZZZ14
-		# icon = GFX_surrender_tiny_flag
+		id = Siberia_and_Far_East
+		icon = GFX_Siberia_econom
 		cost = 10
-		x = 9
-		y = 10
+		x = 11
+		y = 9
 		prerequisite = {
 			focus = YAK_ZZZ12
 		}
@@ -321,24 +552,29 @@ focus_tree = {
 
 
 	######################################
-
 	#Army
 	focus = {
 		id = YAK_form_national_vengeance
 		cost = 10
+		icon = GFX_restore_the_army_in_omsk
 		relative_position_id = YAK_we_revenge
-		x = 8
+		x = 9
 		y = 1
 		prerequisite = {
 			focus = YAK_we_revenge
 		}
+
+		completion_reward = {
+			army_experience = 20
+		}
 	}
 
 	focus = {
-		id = YAK_hi
+		id = use_old_air
+		icon = GFX_old_air
 		cost = 10
 		relative_position_id = YAK_we_revenge
-		x = 5
+		x = 6
 		y = 2
 		prerequisite = {
 			focus = YAK_form_national_vengeance
@@ -346,56 +582,60 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_hi2
+		id = black_helicopter
+		icon = GFX_black_helicopter
 		cost = 10
-		
-		x = 18
+		x = 24
 		y = 8
 		prerequisite = {
-			focus = YAK_hi
+			focus = use_old_air
 		}
 	}
 
 	focus = {
-		id = YAK_hi7
+		id = project_black_sky
+		icon = GFX_project_black_league
 		cost = 10
-		x = 20
+		x = 26
 		y = 9
 		prerequisite = {
-			focus = YAK_hi
-			focus = YAK_hi2
-			focus = YAK_hi3
+			focus = use_old_air
+			focus = update_air
 
 		}
 	}
 
 		focus = {
-		id = YAK_hi8
+		id = project_black_spear
+		icon = GFX_project_black_spear
 		cost = 10
-		x = 18
+		x = 24
 		y = 9
 		prerequisite = {
-			focus = YAK_hi2
+			focus = black_helicopter
 		}
 	}
 	
 	focus = {
-		id = YAK_hi9
+		id = nuclear_weapon
+		icon = GFX_nuclear
 		cost = 10
-		x = 19
+		x = 25
 		y = 10
 		prerequisite = {
-			focus = YAK_hi2
+			focus = project_black_sky
+			focus = project_black_spear
 		}
 	}
 
 	focus = {
-		id = YAK_hi3
+		id = update_air
+		icon = GFX_update_air
 		cost = 10
-		x = 20
+		x = 26
 		y = 8
 		prerequisite = {
-			focus = YAK_hi
+			focus = use_old_air
 		}
 	}
 
@@ -403,7 +643,7 @@ focus_tree = {
 	focus = {
 		id = YAK_legacy_army_USSR_air
 		cost = 10
-		x = 25
+		x = 31
 		y = 7
 		prerequisite = {
 			focus = YAK_form_national_vengeance
@@ -411,9 +651,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR2
+		id = future_army_russia
+		icon = GFX_mitally_future
 		cost = 10
-		x = 23
+		x = 29
 		y = 8
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
@@ -421,41 +662,44 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR4
+		id = review_the_new_2030_intelligence_report
+		icon = GFX_resume_exploration
 		cost = 10
-		x = 22
+		x = 28
 		y = 9
 		prerequisite = {
-			focus = YAK_legacy_army_USSR2
+			focus = future_army_russia
 		}
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR12
+		id = black_league_all_storaige
+		icon = GFX_black_league_new_era
 		cost = 10
-		x = 23
+		x = 29
 		y = 10
 		prerequisite = {
-			focus = YAK_legacy_army_USSR2
+			focus = future_army_russia
 		}
 	}
 
 
-	focus = {
-		id = YAK_legacy_army_USSR8
-		cost = 10
-		x = 25
-		y = 11
-		prerequisite = {
-			focus = YAK_legacy_army_USSR7
-		}
-	}
+	# focus = {
+	# 	id = YAK_legacy_army_USSR8
+	# 	cost = 10
+	# 	x = 25
+	# 	y = 11
+	# 	prerequisite = {
+	# 		focus = YAK_legacy_army_USSR7
+	# 	}
+	# }
 
 
 	focus = {
-		id = YAK_legacy_army_USSR5
+		id = our_league_fighting_spirit
+		icon = GFX_v_put
 		cost = 10
-		x = 26
+		x = 32
 		y = 8
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
@@ -463,9 +707,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR9
+		id = spirit_speech_yazov
+		icon = GFX_speech_yazov
 		cost = 10
-		x = 26
+		x = 32
 		y = 10
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
@@ -473,9 +718,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR8
+		id = Art_power
+		icon = GFX_power_artillery
 		cost = 10
-		x = 27
+		x = 33
 		y = 9
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
@@ -486,37 +732,50 @@ focus_tree = {
 		id = the_great_trial_awaits
 		icon = GFX_great_trial_awaits
 		cost = 10
-		x = 25
+		x = 31
 		y = 11
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
 		}
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 100
+			add_war_support = 0.10
+			army_experience = 50
+			swap_ideas = {
+				remove_idea = Armed_Forces
+				add_idea = army_Great_Trial
+			}
+		}
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR6
+		id = Tank_power
+		icon = GFX_power_tank
 		cost = 10
-		x = 28
+		x = 34
 		y = 10
 		prerequisite = {
-			focus = YAK_legacy_army_USSR3
+			focus = omsk_network_staring
 		}
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR7
+		id = new_oath
+		icon = GFX_russian_new_Oath
 		cost = 10
-		x = 24
+		x = 30
 		y = 9
 		prerequisite = {
-			focus = YAK_legacy_army_USSR2
+			focus = future_army_russia
 		}
 	}
 
 	focus = {
-		id = YAK_legacy_army_USSR3
+		id = omsk_network_staring
+		icon = GFX_omsk_network
 		cost = 10
-		x = 28
+		x = 34
 		y = 8
 		prerequisite = {
 			focus = YAK_legacy_army_USSR_air
@@ -524,17 +783,64 @@ focus_tree = {
 	}
 	######################################
 
+	#contact
 
+	focus = {
+		id = contant_from_china
+		icon = GFX_contant_from_china
+		cost = x
+		x = 13
+		y = 6
+		completion_reward = { }
+		prerequisite = {
+			focus = YAK_we_revenge
+		}
+		mutually_exclusive = {
+			focus = contant_from_japan
+		}
+		available = {
+			NOT = { has_global_flag = GAW_china_lost }
+		}
+	}
+	focus = {
+		id = contant_from_japan
+		icon = GFX_contant_from_japan
+		cost = x
+		x = 15
+		y = 6
+		completion_reward = { 
 
+		}
+		prerequisite = {
+			focus = YAK_we_revenge
+		}
+		mutually_exclusive = {
+			focus = contant_from_china
+		}
+
+		available = {
+			country_exists = JAP
+			JAP = {
+				has_capitulated = no
+				is_subject = no
+			}
+			NOT = { has_global_flag = GAW_japan_collapse }
+		}
+
+		completion_reward = {
+			country_event = omsk.asia_tokyo
+		}
+	}
 
 	#Trojan
 
 
 	focus = {
 		id = trojan
+		icon = GFX_build_trojan
 		cost = 10
-		x = 24
-		y = 13
+		x = 3
+		y = 16
 		available = {
 			OR = {
 			check_variable = { memz_progress < 100 }
@@ -544,11 +850,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = trojan_focus_effects_tt
+			add_tech_bonus = {
+				name = digital_fort_bonus
+				bonus = 0.15
+				uses = 1
+				category = electronics
+			}
+
+			
+    unlock_decision_category_tooltip = build_virus_for_veagen
+
 			hidden_effect = {
 				ROOT ={
-			add_to_variable = { memz_progress = 10 }
-			add_to_variable = { petya_progress = 10 }
-			add_to_variable = { suxnet_progress = 10 }
+			add_to_variable = { memz_progress = 5 }
+			add_to_variable = { petya_progress = 5 }
+			add_to_variable = { suxnet_progress = 5 }
 
 			if = {
 				limit = {check_variable = {memz_progress > 100}}
@@ -578,7 +894,28 @@ focus_tree = {
 		prerequisite = {
 			focus = trojan
 		}
+
+		completion_reward = {
+			custom_effect_tooltip = petya_focus_effects_tt
+			add_tech_bonus = {
+				name = digital_fort_bonus
+				bonus = 0.15
+				uses = 1
+				category = electronics
+			}
+
+			hidden_effect = {
+				ROOT ={
+			add_to_variable = { petya_progress = 20 }
+
+			if = {
+                limit = { check_variable = { petya_progress > 100 } }
+                set_variable = { petya_progress = 100 }
+			}
+		}
 	}
+}
+}
 	focus = {
 		id = trojan_3
 		cost = 10
@@ -588,6 +925,25 @@ focus_tree = {
 		prerequisite = {
 			focus = trojan
 		}
+		completion_reward = {
+			custom_effect_tooltip = memz_focus_effects_tt
+			add_tech_bonus = {
+				name = digital_fort_bonus
+				bonus = 0.15
+				uses = 1
+				category = electronics
+			}
+			hidden_effect = {
+				ROOT ={
+			add_to_variable = { memz_progress = 20 }
+
+			if = {
+                limit = { check_variable = { memz_progress > 100 } }
+                set_variable = { memz_progress = 100 }
+			}
+		}
+	}
+}
 	}
 	focus = {
 		id = trojan_4
@@ -597,6 +953,29 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = trojan_3
+		}
+		completion_reward = {
+			custom_effect_tooltip = suxnet_focus_effects_tt
+			add_tech_bonus = {
+				name = digital_fort_bonus
+				bonus = 0.15
+				uses = 1
+				category = industry
+			}
+
+			add_political_power = 100
+			hidden_effect = {
+				ROOT = {
+					add_to_variable = { suxnet_progress = 20 }
+				}
+				
+				if = {
+					limit = { check_variable = { suxnet_progress > 100 } }
+					set_variable = {
+						suxnet_progress = 100
+					}
+				}
+			}
 		}
 	}
 	

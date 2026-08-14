@@ -1,0 +1,9 @@
+character = {
+	GRE_Floros = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/GRE_Konstantinos.png"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+character = {
+	HUN = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/HUN_Vlad.png"
+			}
+	}
+	}
+}

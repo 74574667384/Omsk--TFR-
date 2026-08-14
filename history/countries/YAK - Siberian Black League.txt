@@ -246,6 +246,7 @@
 
 	add_ideas = {
 		Rise_hate
-		Armed_Forces
+		Uncontrolled_army
 		omsk_economy
+		collapse_USSR
 	}

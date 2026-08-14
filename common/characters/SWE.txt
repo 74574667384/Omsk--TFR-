@@ -1,0 +1,9 @@
+character = {
+	SWE_Klasson = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/SWE_Mikael.png"
+			}
+		}
+	}
+}

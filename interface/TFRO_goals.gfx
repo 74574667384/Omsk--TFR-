@@ -1,125 +1,217 @@
 spriteTypes = {
+
 	SpriteType = {
 		name = "GFX_new_path_omsk"
 		texturefile = "gfx/interface/goals/YAK/YAK_new_path_omsk.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK_new_path_omsk.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK_new_path_omsk.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
 	}
-
-		SpriteType = {
+	
+	SpriteType = {
 		name = "GFX_ban_nazi"
 		texturefile = "gfx/interface/goals/YAK/YAK_ban_nazi.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK_ban_nazi.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK/YAK_ban_nazi.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
 	}
-
-			SpriteType = {
+	SpriteType = {
 		name = "GFX_we_revenge"
 		texturefile = "gfx/interface/goals/YAK/YAK_we_revenge.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK_we_revenge.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK/YAK_we_revenge.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
 	}
-
 	SpriteType = {
 		name = "GFX_great_trial_awaits"
 		texturefile = "gfx/interface/goals/YAK/the_great_trial_awaits.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/the_great_trial_awaits.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/YAK/the_great_trial_awaits.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0.0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_restore_the_army_in_omsk"
+		texturefile = "gfx/interface/goals/YAK/YAK_restore_the_army_in_omsk.png"
+	}
+	SpriteType = {
+		name = "GFX_restore_the_economy"
+		texturefile = "gfx/interface/goals/YAK/restore_the_economy.png"
+	}
+
+	SpriteType = {
+		name = "GFX_omsk_network"
+		texturefile = "gfx/interface/goals/YAK/omsk_network.png"
+	}
+	SpriteType = {
+		name = "GFX_v_put"
+		texturefile = "gfx/interface/goals/YAK/Soldar_v_pit.png"
+	}
+	SpriteType = {
+		name = "GFX_russian_new_Oath"
+		texturefile = "gfx/interface/goals/YAK/russia_new_oath.png"
+	}
+	SpriteType = {
+		name = "GFX_speech_yazov"
+		texturefile = "gfx/interface/goals/YAK/speech_yazov.png"
+	}
+	SpriteType = {
+		name = "GFX_power_artillery"
+		texturefile = "gfx/interface/goals/YAK/bet_on_self_popelled_artillery.png"
+	}
+	SpriteType = {
+		name = "GFX_power_tank"
+		texturefile = "gfx/interface/goals/YAK/bet_on_self_popelle_tank.png"
+	}
+
+	SpriteType = {
+		name = "GFX_mitally_future"
+		texturefile = "gfx/interface/goals/YAK/future_army_league.png"
+	}
+	SpriteType = {
+		name = "GFX_build_trojan"
+		texturefile = "gfx/interface/goals/YAK/hacker_omsk.png"
+	}
+	SpriteType = {
+		name = "GFX_old_air"
+		texturefile = "gfx/interface/goals/YAK/old_air.png"
+	}
+	SpriteType = {
+		name = "GFX_update_air"
+		texturefile = "gfx/interface/goals/YAK/update_new_fighter_air_omsk.png"
+	}
+	SpriteType = {
+		name = "GFX_resume_exploration"
+		texturefile = "gfx/interface/goals/YAK/resume_exploration.png"
+	}
+	SpriteType = {
+		name = "GFX_black_league_new_era"
+		texturefile = "gfx/interface/goals/YAK/black_league_all_storange.png"
+	}
+	SpriteType = {
+		name = "GFX_black_helicopter"
+		texturefile = "gfx/interface/goals/YAK/Black_helicopter.png"
+	}
+	SpriteType = {
+		name = "GFX_project_black_spear"
+		texturefile = "gfx/interface/goals/YAK/Project_black_spear.png"
+	}
+	SpriteType = {
+		name = "GFX_black_water"
+		texturefile = "gfx/interface/goals/YAK/black_water.png"
+	}
+	SpriteType = {
+		name = "GFX_omsk_military"
+		texturefile = "gfx/interface/goals/YAK/Build_mitally.png"
+	}
+	SpriteType = {
+		name = "GFX_increase_worker_wages"
+		texturefile = "gfx/interface/goals/YAK/build_1.png"
+	}
+	SpriteType = {
+		name = "GFX_build_factories"
+		texturefile = "gfx/interface/goals/YAK/building_2.png"
+	}
+	SpriteType = {
+		name = "GFX_Siberia_econom"
+		texturefile = "gfx/interface/goals/YAK/Siberia_2_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_nuclear"
+		texturefile = "gfx/interface/goals/YAK/restore_nuclear.png"
+	}
+	SpriteType = {
+		name = "GFX_inrector_oil"
+		texturefile = "gfx/interface/goals/YAK/inrector_oil.png"
+	}
+	SpriteType = {
+		name = "GFX_trade_trains"
+		texturefile = "gfx/interface/goals/YAK/trains_omsk.png"
+	}
+	SpriteType = {
+		name = "GFX_new_omsk"
+		texturefile = "gfx/interface/goals/YAK/new_omsk.png"
+	}
+
+	SpriteType = {
+		name = "GFX_build_bunker"
+		texturefile = "gfx/interface/goals/YAK/build_bunker.png"
+	}
+
+	SpriteType = {
+		name = "GFX_update_APC"
+		texturefile = "gfx/interface/goals/YAK/update_APC.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ai_weapon"
+		texturefile = "gfx/interface/goals/YAK/ai_weapon.png"
+	}
+
+	SpriteType = {
+		name = "GFX_more_weapon"
+		texturefile = "gfx/interface/goals/YAK/more_weapon_factor.png"
+	}
+
+	SpriteType = {
+		name = "GFX_resume_arms_deliveries"
+		texturefile = "gfx/interface/goals/YAK/resume_arms_deliveries.png"
+	}
+
+	SpriteType = {
+		name = "GFX_military_siberia"
+		texturefile = "gfx/interface/goals/YAK/military_plant_Siberia.png"
+	}
+
+	SpriteType = {
+		name = "GFX_great_expedition"
+		texturefile = "gfx/interface/goals/YAK/great_expedition.png"
+	}
+
+	SpriteType = {
+		name = "GFX_connect_to_moscow"
+		texturefile = "gfx/interface/goals/YAK/connect_to_moscow.png"
+	}
+
+	SpriteType = {
+		name = "GFX_integrate_sibirian"
+		texturefile = "gfx/interface/goals/YAK/annex_sibiria.png"
+	}
+
+	SpriteType = {
+		name = "GFX_integrate_east"
+		texturefile = "gfx/interface/goals/YAK/annex_east.png"
+	}
+
+	SpriteType = {
+		name = "GFX_open_the_hatch"
+		texturefile = "gfx/interface/goals/YAK/open_the_hatch.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ready"
+		texturefile = "gfx/interface/goals/YAK/ready.png"
+	}
+
+	SpriteType = {
+		name = "GFX_mass_mobilization"
+		texturefile = "gfx/interface/goals/YAK/mass_mobiza.png"
+	}
+
+	SpriteType = {
+		name = "GFX_look_kazakstan"
+		texturefile = "gfx/interface/goals/YAK/look_kaz.png"
+	}
+
+	SpriteType = {
+		name = "GFX_last_march_West"
+		texturefile = "gfx/interface/goals/YAK/last_march.png"
+	}
+
+	SpriteType = {
+		name = "GFX_project_black_league"
+		texturefile = "gfx/interface/goals/YAK/project_death_tetonic.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_new_path_omsk"
+		texturefile = "gfx/interface/goals/YAK/YAK_new_path_omsk.png"
+	}
+
+	SpriteType = {
+		name = "GFX_new_path_omsk"
+		texturefile = "gfx/interface/goals/YAK/YAK_new_path_omsk.png"
+	}
+
+	SpriteType = {
+		name = "GFX_new_path_omsk"
+		texturefile = "gfx/interface/goals/YAK/YAK_new_path_omsk.png"
 	}
 }

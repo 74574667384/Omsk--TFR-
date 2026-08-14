@@ -35,11 +35,11 @@ russian_unification = {
         }
 
         complete_effect = {
-            set_cosmetic_tag = black_league_unification_of_russia
+            set_cosmetic_tag = YAK_black_league_unification_of_russia
+            custom_effect_tooltip = operation_finish_tt
         }
 
         remove_effect = {
-            custom_effect_tooltip = "Operation finish"
 
             hidden_effect = {
                 if = {
@@ -75,6 +75,22 @@ russian_unification = {
                 target = YAM
                 type = annex_everything
             }
+
+            every_state = {
+                limit = {
+                    OR = {
+                        state = 579
+                        state = 580
+                        state = 516
+                        state = 398
+                        state = 577
+                    }
+                    is_controlled_by = ROOT
+                }
+                add_core_of = ROOT
+                set_resistance = 0
+                set_compliance = 100
+            }
             hidden_effect = {
                 OR = {
                      403 = {
@@ -97,10 +113,66 @@ russian_unification = {
                 set_resistance = 0
                 set_compliance = 100
             }
-                }
+
+            every_owned_ = {
+                limit = { NOT = { is_core_of = ROOT } }
+                add_core_of = ROOT
+                transfer_state_to = ROOT
             }
-            custom_effect_tooltip = "===========after the end of the war==========="
-    }
+        }
+     }
+    #  unfi_YAM = {
+
+    #     fire_only_once = yes
+    #     cost = 100
+
+    #     allowed = {
+    #         tag = YAK
+    #         has_government = nationalist
+    #     }
+
+    #     visible = {
+    #         tag = YAK
+    #         has_government = nationalist
+    #         YAM = {exists = no}
+    #         has_war = no
+    #     }
+        
+    #     available = {
+    #         has_war = no
+    #         controls_state = 577
+    #     }
+
+    #         complete_effect = {
+    #         # 653 = {
+    #         #     add_core_of = ROOT
+    #         # }
+    #         # 582 = {
+    #         #     add_core_of = ROOT
+    #         # }
+    #         # 572 = {
+    #         #     add_core_of = ROOT
+    #         # }
+    #         # 398 = {
+    #         #     add_core_of = ROOT
+    #         # }
+    #         every_state = {
+    #             limit = {
+    #                 OR = {
+    #                     state = 653
+    #                     state = 582
+    #                     state = 572
+    #                     state = 398
+    #                     state = 577
+    #                 }
+    #                 is_controlled_by = ROOT
+    #             }
+    #             add_core_of = ROOT
+    #             set_resistance = 0
+    #             set_compliance = 100
+    #         }
+    #     }
+    # }
 }
     war_warloar_2 = {
         allowed = {
@@ -124,23 +196,11 @@ russian_unification = {
             }
             set_country_flag = yak_integration_unlocked
 
-            custom_effect_tooltip = "===========after the end of the war==========="
-
-            653 = {
-                add_core_of = ROOT
-            }
-            582 = {
-                add_core_of = ROOT
-            }
-            572 = {
-                add_core_of = ROOT
-            }
-            398 = {
-                add_core_of = ROOT
-            }
-
         }
+        
     }
+    
+}
 
     war_warload_3 = {
         allowed = {
@@ -513,16 +573,27 @@ build_virus_for_veagen = {
         days_remove = 60
         modifier = {
             research_speed_factor = -0.05 # Пока пишем вирус, ученые заняты (-5% к науке)
+            stability_factor = -0.15
+               income_growth_factor = -0.02
             }
         complete_effect = {
             add_to_variable = { memz_progress = 25 }
             if = {
                 limit = {
                     check_variable = {
-                        memz_progress > 100
+                        # memz_progress > 100
+                        var = memz_progress
+                        value = 100
+                        compare = greater_then_or_equals
                     }
                 }
+
+                set_country_flag = unlocked_day_zero
                 set_variable = { memz_progress = 100 }
+
+                set_country_flag = memz_completed
+
+                country_event = { id = memz.1 }
             }
             custom_effect_tooltip = memz_progress_tt
         }
@@ -538,8 +609,13 @@ build_virus_for_veagen = {
         visible = { always = yes }
 
         cost = 50
-        days_remove = 1
-
+        days_rearm = 30
+        days_remove = 60
+        modifier = {
+            research_speed_factor = -0.05 # Пока пишем вирус, ученые заняты (-5% к науке)
+            stability_factor = -0.15
+            income_growth_factor = -0.02
+            }
         complete_effect = {
             add_to_variable = { suxnet_progress = 25 }
 
@@ -566,6 +642,13 @@ build_virus_for_veagen = {
         visible = { always = yes }
         cost = 50
         days_remove = 1
+        days_rearm = 30
+        days_remove = 60
+        modifier = {
+            research_speed_factor = -0.05 # Пока пишем вирус, ученые заняты (-5% к науке)
+            stability_factor = -0.15
+            income_growth_factor = -0.02
+            }
 
         complete_effect = {
             add_to_variable = { petya_progress = 25 }
@@ -714,6 +797,9 @@ debug_do_not_touch = {
     ai_will_do = {
         ai_chance = 0
     }
+    # available = {
+    #     has_global_flag = YAK_league_4nd_victory_global
+    # }
     complete_effect = {
         UKR = {
             set_politics = {
@@ -781,7 +867,7 @@ debug_do_not_touch = {
 
             create_country_leader = {
                 name = "Oleg"
-                picture = "GFX_portrait_oleg"
+                picture = "GFX_portrait_military_Oleg"
                 ideology = military_junta
             }
 
@@ -789,20 +875,17 @@ debug_do_not_touch = {
         }
 
         FRA = {
+            trigger = {
+                tag = FAF
+            }
             set_politics = {
                 ruling_party = nationalist
                 election_frequency = no
             }
 
-            create_country_leader = {
-                name = "Vova"
-                # picture = "TODO"
-                ideology = military_junta
-            }
-
             set_cosmetic_tag = FRA_puppet_league
 
-                annex_country = {
+            annex_country = {
                 target = SPR
                 transfer_troops = yes
             }
@@ -896,8 +979,8 @@ debug_do_not_touch = {
             }
 
             create_country_leader = {
-                name = "Alex"
-                # picture = "TODO"
+                name = "Ivan Penava"
+                picture = "GFX_portrait_Penava"
                 ideology = military_junta
             }
 
@@ -918,6 +1001,642 @@ debug_do_not_touch = {
 
             transfer_state = 45
         }
+        country_event = {
+            id = news_victory.1
+        }
+
+        YAK = {
+            annex_country = {
+                target = SOV
+            }
+            annex_country = {
+                target = YAM
+            }
+             annex_country = {
+                target = FLN
+            }
+            annex_country = {
+                target = NFJ
+            }
+            annex_country = {
+                target = OCC
+
+            }
+            annex_country = {
+                target = KIR
+
+            }
+            annex_country = {
+                target = PUR
+
+            }
+            annex_country = {
+                target = SOL
+
+            }
+            annex_country = {
+                target = CKK
+
+            }
+            annex_country = {
+                target = STV
+
+            }
+            annex_country = {
+                target = GLC
+
+            }
+            annex_country = {
+                target = UDM
+
+            }
+            annex_country = {
+                target = CHU
+
+            }
+            annex_country = {
+                target = BSK
+
+            }
+            annex_country = {
+                target = SEY
+
+            }
+            annex_country = {
+                target = SEY
+
+            }
+            annex_country = {
+                target = KKP
+            }
+
+            annex_country = {
+                target = NOA
+            }
+
+            annex_country = {
+                target = GEO
+            }
+
+            annex_country = {
+                target = NAV
+            }
+
+            set_cosmetic_tag = black_league_unification_of_russia
+        196 ={
+             set_state_controller_to = ROOT
+             
+        }
+        137 ={
+             set_state_controller_to = ROOT
+        }
+        200 ={
+            set_state_controller_to = ROOT
+        }
+        1374 ={
+             set_state_controller_to = ROOT
+        }
+        227 ={
+             set_state_controller_to = ROOT
+        }
+        1091 ={
+             set_state_controller_to = ROOT
+        }
+        1090 ={
+             set_state_controller_to = ROOT
+        }
+        1375 ={
+             set_state_controller_to = ROOT
+        }
+        240 ={
+             set_state_controller_to = ROOT
+        }
+        225 = {
+            set_state_controller_to = ROOT
+        }
+        193 = {
+            set_state_controller_to = ROOT
+        }
+        259 = {
+             set_state_controller_to = ROOT
+        }
+        221 = {
+            set_state_controller_to = ROOT
+        }
+        1184 = {
+            set_state_controller_to = ROOT
+        }
+        1185 = {
+            set_state_controller_to = ROOT       
+        }
+        218 = {
+            set_state_controller_to = ROOT
+        }
+        1283 = {
+            set_state_controller_to = ROOT
+        }
+        228 = {
+            set_state_controller_to = ROOT
+        }
+        1396 = {
+            set_state_controller_to = ROOT
+        }
+        853 = {
+            set_state_controller_to = ROOT
+        }
+        234 = {
+            set_state_controller_to = ROOT
+        }
+        226 = {
+            set_state_controller_to = ROOT
+        }
+
+        puppet = UKR
+
+        243 = {
+            set_state_controller_to = ROOT
+        }
+        242 = {
+            set_state_controller_to = ROOT
+        }
+        241 = {
+            set_state_controller_to = ROOT
+        }
+        95 = {
+            set_state_controller_to = ROOT
+        }
+        207 = {
+            set_state_controller_to = ROOT
+        }
+
+        puppet = BLR
+        
+        210 = {
+            set_state_controller_to = ROOT
+        }
+        209 = {
+            set_state_controller_to = ROOT
+        }
+        1182 = {
+            set_state_controller_to = ROOT
+        }
+
+        puppet = TTS
+
+        UKR = {
+        78 = {
+            set_state_controller_to = ROOT
+        }
+        806 = {
+            set_state_controller_to = ROOT
+        }
+        857 = {
+            set_state_controller_to = ROOT
+        }
+
+        GER = {
+            annex_country = {
+                target = DEN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SWI
+                transfer_troops = yes
+            }
+        }
+
+        GRE = {
+            annex_country = {
+                target = MAC
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ALB 
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = BUL
+                transfer_troops = yes
+            }
+
+            set_politics = {
+                    ruling_party = nationalist
+                    election_frequency = no
+                }
+
+                create_country_leader = {
+                    name = "Konstantinos Floros"
+                    picture = "GFX_portrait_Floros"
+                    ideology = military_junta                
+                }
+
+                set_cosmetic_tag = GRE_puppet_league
+        }
+
+        PLD = {
+            trigger = {
+                OR = {
+                    tag = PLD
+                    tag = MLD
+                }
+            }
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Mateusz Piskorski"
+                picture = "GFX_portrait_PLD_Mateusz"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = PLD_puppet_league
+        }
+
+        SWE = {
+            annex_country = {
+                target = FIN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = NOR
+                transfer_troops = yes
+            }
+
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Mikael Klasson"
+                picture = "GFX_portrait_Klasson"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = SWE_puppet_league
+        }
+
+        ENG = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Mark Carlton-Smith"
+                picture = "GFX_portrait_Carlton-Smith"
+                ideology = military_junta
+            }
+
+            annex_country = {
+                target = IRE
+                transfer_troops = no
+            }
+
+            set_cosmetic_tag = ENG_puppet_league
+        }
+
+        ITA = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Francesco Paolo Figliuolo"
+                picture = "GFX_portrait_Figliuolo"
+                ideology = military_junta
+            }
+
+            set_cosmetic_tag = ITA_puppet_league
+        }
+
+        TUR = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+
+            create_country_leader = {
+                name = "Ümit Özdağ"
+                picture = "gfx/leaders/TUR/TUR_Umit.png"
+                ideology = military_junta
+            }
+            set_cosmetic_tag = TUR_puppet_league
+        }
+
+        ROM = {
+            set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+            create_country_leader = {
+                name = "Vlad Georgice"
+                picture = "GFX_portrait_Georgice"
+                ideology = military_junta
+            }
+            set_cosmetic_tag = ROM_puppet_league
+        }
+    }
+    create_faction = "Neo-Eurasian front for the reconqutest of europe"
+       puppet = GER
+       puppet = SER
+       puppet = ROM
+       puppet = GRE
+       puppet = KAZ
+       puppet = TUR
+       puppet = PLD
+       puppet = ITA
+       puppet = LUX
+       puppet = ENG
+       puppet = SWE
+       puppet = NOR
+       puppet = FIN
+       puppet = FRA
+       puppet = HUN
     }
   }
 }
+}
+army_reform = {
+    infantry_training = {
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+        cost = 30
+        days_remove = 75
+
+        fire_only_once = yes
+        complete_effect = {
+            army_experience = 20
+        }
+    }
+    air_training = {
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+        cost = 30
+        days_remove = 75
+
+        fire_only_once = yes
+        complete_effect = {
+            air_experience = 20
+        }
+    }
+    drone_mittaly = {
+        available = {
+            has_war = no
+            has_government = nationalist
+        }
+        visible = {
+            tag = YAK
+            has_government = nationalist
+        }
+        cost = 30
+        complete_effect = {
+            swap_ideas = {
+                remove_idea = 
+                add_idea = 
+            }
+        }
+    }
+}
+}
+
+# YAK_4nd_European_War = {
+#     set_global_flag = YAK_league_4nd_victory_global
+#     news_events = {
+#         id = omsk.war
+#     }
+    
+# }
+
+YAK_4nd_european_war_category = {
+    YAK_no_hide_propaganda = {
+        allowed ={
+            OR = {
+                original_tag = YAK
+            }
+        }
+        visible = {
+            original_tag = YAK
+            # has_government = nationalist
+        }
+        available = {
+            has_campaign_slot = yes
+        }
+        ai_will_do = {
+            days = 5
+        }
+        cost = 100
+        days_remove = 50
+        days_re_enable = 60
+        cancel_if_not_visible = yes
+        modifier = {
+            military_development_monthly = 0.05
+            army_attack_factor = 0.10
+        }
+        complete_effect = {
+            add_war_support = 0.5
+            remove_campaign_slot = yes
+            set_temp_variable = {
+                var = SOV_fanatisicm_var_temp
+                value = 0.025
+            }
+            YAK_add_fanatisicm = yes
+        }
+        remove_effect = {
+             set_temp_variable = {
+                var = SOV_fanatisicm_var_temp
+                value = -0.025
+            }
+            YAK_add_fanatisicm = yes
+            add_campaign_slot = yes
+        }
+    }
+    YAK_death_teutonic_horde = {
+        allowed = {
+            OR = {
+                original_tag = YAK
+            }
+        }
+        visible = {
+            original_tag = YAK
+        }
+        available = {
+            has_campaign_slot = yes
+        }
+        ai_will_do = {
+            days = 5
+        }
+        cost = 100
+        days_remove = 50
+        days_re_enable = 60
+        cancel_if_not_visible = yes
+        modifier = {
+            army_artillery_attack_factor = 0.20
+            army_defence_factor = 0.15
+        }
+        complete_effect = {
+            add_war_support = 0.1
+            remove_campaign_slot = yes
+            set_temp_variable = {
+                var = SOV_fanatisicm_var_temp 
+                value = 0.05
+            }
+            YAK_add_fanatisicm = yes
+        }
+        remove_effect = {
+            set_temp_variable = {
+                var = SOV_fanatisicm_var_temp
+                value = -0.05
+            }
+            YAK_add_fanatisicm = yes
+            add_campaign_slot = yes
+        }
+    }
+    YAK_we_back_our_moscow = {
+            allowed = {
+                OR = {
+                    original_tag = YAK
+                    original_tag = SOV
+                }
+            }
+            visible = {
+                original_tag = YAK
+            }
+            available = {
+                has_campaign_slot = yes
+                NOT = {
+                    trigger = {
+                        1339 = { is_controlled_by = YAK }
+                    }
+                }
+            }
+            ai_will_do = {
+                days = 5
+            }
+            cost = 100
+            days_remove = 50
+            days_re_enable = 60
+            cancel_if_not_visible = yes
+            targeted_modifier = {
+                tag = SOV
+                attack_bonus_against = 0.25
+            }
+            modifier = {
+                hard_attack_factor = 0.25
+                army_org_factor = 0.15
+                army_speed_factor = 0.075
+                breakthrough_factor = 0.050
+                army_attack_speed_factor = 0.10
+            }
+            complete_effect = {
+                add_political_power = 0.2
+                remove_campaign_slot = yes
+                set_temp_variable = {
+                    var = YAK_fanatisicm_var_temp
+                    value = 0.05
+                }
+                YAK_add_fanatisicm = yes
+            }
+            remove_effect = {
+                set_temp_variable = {
+                    var = YAK_fanatisicm_var_temp
+                    value = -0.05
+                }
+                YAK_add_fanatisicm = yes
+                add_campaign_slot = yes
+            }
+        }
+        YAK_great_trial_approaches = {
+            allowed = {
+                OR = {
+                    original_tag = YAK
+                }
+            }
+            visible = {
+                original_tag = YAK
+            }
+            available = {
+                has_campaign_slot = yes
+            }
+            ai_will_do = {
+                days = 5
+            }
+            cost = 100
+            days_remove = 50
+            days_re_enable = 60
+            cancel_if_not_visible = yes
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = 0.20
+                breakthrough_bonus_against = 0.10
+            }
+            targeted_modifier = {
+                tag = FRA
+                attack_bonus_against = 0.20
+                breakthrough_bonus_against = 0.10
+            }
+            targeted_modifier = {
+                tag = ITA
+                attack_bonus_against = 0.20
+                breakthrough_bonus_against = 0.10
+            }
+            targeted_modifier = {
+                tag = ENG
+                attack_bonus_against = 0.20
+                breakthrough_bonus_against = 0.10
+            }
+            
+            modifier = {
+                # attack_bonus_against = 0.10
+                army_attack_factor = 0.10
+			    army_morale_factor = 0.025	
+			    army_armor_speed_factor = 0.15
+                breakthrough_factor = 0.025
+            }           
+            complete_effect = {
+                add_political_power = 0.20
+                add_war_support = 0.015
+                remove_campaign_slot = yes
+                set_temp_variable = {
+                    var = YAK_fanatisicm_var_temp
+                    value = 0.05
+                }
+                YAK_add_fanatisicm = yes
+                hidden_effect = {
+                    every_country = {
+            limit = {
+                is_in_faction_with = GER
+            }
+        }
+
+    custom_effect_tooltip = all_stale_pack_tt          
+            }
+            remove_effect = {
+                set_temp_variable = {
+                    var = SOV_fanatisicm_var_temp
+                    value = -0.05
+                }
+                YAK_add_fanatisicm = yes
+                add_campaign_slot = yes
+            }
+        }
+    }
+    }
+
+
+

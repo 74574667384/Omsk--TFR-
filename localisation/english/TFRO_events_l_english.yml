@@ -1,0 +1,38 @@
+﻿l_english:
+omsk_win.1.d: "After many years of continuous fighting, the last armies of the Steel Pact have laid down their arms. New administrations, entirely dependent on Omsk and the leadership of the Black League, are being established in the territories of the former Pact states. Formally, they retain their statehood.\n\nFrom the Baltic to the Alps lie ruined cities, devastated industry, and millions of people who must now live amid the aftermath of the most destructive war of the 21st century. The continent’s economy is paralyzed, and recovery will take decades.\n\n In Omsk, this day has been declared the beginning of a new era. Military parades are taking place in the central squares, victory sirens are sounding across the country, and the leadership declares that the threat from the West has been eliminated forever. Is this victory the beginning of a long-awaited peace, or will it merely open a new chapter"
+
+omsk.asia_tokyo.t: "The Tokyo Agreement"
+omsk.asia_tokyo.d: "Negotiations with Tokyo have concluded successfully. Japanese conglomerates are eager to secure a steady supply of Siberian raw materials. In exchange for coal and petroleum, shipments of cutting-edge semiconductors and microprocessors have begun arriving at Omsk bunker complexes."
+omsk.asia_tokyo.a: "Japanese tech will power our vengeance."
+omsk.asia_beijing.t: "Beijing Response"
+omsk.asia_beijing.d: "Our diplomatic envoys have returned from Beijing. The Chinese leadership, weathered by the Great Asian War, has agreed to a pragmatic economic agreement. Omsk will receive direct shipments of tungsten, steel, and rare-earth minerals. In exchange, the Black League guarantees crude oil supplies and border intelligence sharing."
+omsk.asia_beijing.a: "Their resources shall fuel the Great Trial."
+
+omsk.ban_nazbol.t: "future of the National Bolshevik party"
+omsk.ban_nazbol.d: "After we took power in Omsk, the National Bolshevik Party collapsed, but it is still popular among a certain part of the population and would like to create a government coalition with us. However, there have been reports that within the far-right wing of the party there are infiltrators from the pact of steel who are planning attacks against the local population and against us. Now it is up to us to decide the future of the National Bolshevik Party."
+omsk.ban_nazbol.a: "They are still §RNazi§! scum who disguise themseleves as commuinsts like §afascist§! so ban them immediately"
+omsk.ban_nazbol2.a: "keep only the far-left socialists and moderate nationalist but arrect the far-right ones"
+# events tooltip
+teutonic_no_in_russia: "\nWe will not allow the Teutons to come to our lands"
+yazov_no_dead: "We dont's dead his idea"
+new_dande
+omsk_war_text: "§dKill the Teutons§!"
+
+# News events
+
+omsk.league.t:0 "Black February"
+omsk.league.d:0 "Europe lies in smoldering ruins under the fascist boot, and all hope for external liberation has finally withered away. In the heart of Siberia, within the walls of Omsk, simmering resentment has boiled over into bloody chaos. Massive riots, fueled by the bitter sting of defeat in the Second European War, paralyzed the city. The National Bolsheviks, unable to offer anything but empty slogans, fled the halls of power in disgrace amidst the jeers of the mob. In the ensuing vacuum, the clatter of tank treads echoed through the streets."
+omsk.league.a:0 "We're back"
+
+omsk.war.t: "The Black League Marches West"
+omsk.war.d: "The Black League crossed the border of the Russian National State on several fronts at once. Already in the first hours of the war, reports came in of a breakthrough in the border defenses and the rapid advance of Omsk troops. In an official statement, the Omsk leadership called the offensive «the beginning of the liberation of Russian soil.»\n\nBerlin immediately condemned the invasion, declaring it a gross violation of the postwar order. The armed forces of the Steel Pact were put on alert, and European capitals, one after another, announced mobilization. Diplomatic channels rapidly emptied, giving way to military trains and columns of armored vehicles heading east.\n\nEurope once again stands on the brink of war. This time, however, its outcome will determine not only Russia’s fate but also the very existence of the post-World War II order. In Omsk, they claim that the border is not the end of the offensive, but merely the point at which the real reckoning begins."
+omsk.war.a: "The time has come to pay the price."
+
+omsk.win.t:0 "Omsk victory"
+omsk.win.d:0 "you win"
+omsk.win.a:0 "The Great Trial Complete"
+
+league_moscow.t:0 "Moscow Liberated After Intense Fighting"
+league_moscow.d:0 "According to news from the front in the war between the Pact of Steel and the Russian National Reclamation Government, Moscow was liberated after intense fighting. German forces had fortified the city, calling it the 'impenetrable fortress of Moscow', and brought thousands of fresh reinforcements from the Balkans, Italy, France, Iberia, and Scandinavia. Forces of the Reclamation Government resorted to intense bombing to weaken German defenses, leading to innumerable civilian casualties. Despite the losses, Reclamation forces entered Moscow and street-by-street fighting broke out.\n\nDespite the extreme use of tear gas by Pact troops, Russian partisans activated and National Guard forces fought back. Pact of Steel troops eventually retreated under covering fire. Propaganda videos now show the population celebrating, chanting anti-German slogans, and welcoming the Siberian soldiers with bread and water. The victory was celebrated with a military parade in the ruins of Moscow in honor of the USSR.\n\nThis could be the beginning of the collapse of the frontline, but the German government and the Pact of Steel declared they would rather fight to the death than surrender. The international community and the UN are deeply concerned about nuclear warheads and are calling for an immediate ceasefire."
+league_moscow.a:0 "This War Won't End So Well"
+fail_moscow.b:0 "This was Supposed To be the Impregnable Fortress Scheiße..."

@@ -1,17 +1,34 @@
 scripted_gui = {
-	YAK_war_super_event = {
+	YAK_4EW_omsk_super = {
 		context_type = player_context
-		window_name = "YAK_war_super_event"
+		window_name = "YAK_4EW_omsk_super_event"
 
 		visible = {
-			has_country_flag = YAK_war_se_flag
+			has_country_flag = YAK_4EW_omsk_super_event
 			NOT = {
 				has_global_flag = super_events_off_flag
 			}
 		}
 		effects = {
 			Super_Event_Close_click = {
-				clr_country_flag = YAK_war_se_flag
+				clr_country_flag = YAK_4EW_omsk_super_event
+			}
+		}
+	}
+
+	YAK_Victory_omsk_super = {
+		context_type = player_context
+		window_name = "YAK_victory_omsk_super"
+
+		visible = {
+			has_country_flag = YAK_victory_omsk_super
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = YAK_victory_omsk_super
 			}
 		}
 	}

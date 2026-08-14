@@ -1,6 +1,6 @@
 	capital = 206
 
-	oob = "BLR_2020"
+	oob = "BLR_2030"
 
 	set_research_slots = 3
 	set_convoys = 10

@@ -1,13 +1,16 @@
 ﻿l_english:
 nationalist_league_long_party:0 "All-Russian Provisional Government"
-nationalist_league_name:0 "All-Russian Provisional Government"
+nationalist_league_name:0 "ARPG"
+authoritarian_democrat_league_name:0 "EFNV"
+authoritarian_democrat_league_long_party:0 "United Front National Retribution"
 nationalist_belarus_name:0 "BNK “Order of League”"
 nationalist_ukraine_name:0 "People's Front"
 nationalist_lux_name:0 "GKChP-E"
+fascist_patry:0 "RNP"
+fascist_patry_long:0 "Russia National Patriots"
 
-banned_national_socialist:0 "§d[BANNED]§!"
-banned_national_socialist_long:0 "§d[BANNED]§!"
-banned_fascist:0 "§d[BANNED]§!"
-banned_fascist_long:0 "§d[BANNED]§!"
+#coalititon 
 
+banned_national_socialist_party:0 "§dBANNED§!"
+banned_national_socialist_party_long:0 "§dBANNED§!"
 

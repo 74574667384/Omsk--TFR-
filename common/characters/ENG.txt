@@ -1,0 +1,9 @@
+character = {
+	ENG_Carlton_Smith = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_Mark.png"
+			}
+		}
+	}
+}

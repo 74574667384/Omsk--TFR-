@@ -7,6 +7,14 @@
 		}
 		volume = 3.0
 	}
+
+	soundeffect = {
+		name ="TFR_se_victory_omsk"
+		sounds = {
+			sound = TFR_se_victory_omsk
+		}
+		volume = 3.0
+	}
 	
         ##ignore these or replace them
 	# soundeffect = {

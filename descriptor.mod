@@ -1,4 +1,4 @@
-version="1.18.0"
+version="1.19.0"
 tags={
 	"Alternative History"
 	"Events"
@@ -7,5 +7,5 @@ tags={
 }
 dependencies = {"The Fire Rises"}
 name="TFR Submod: Omsk Resurrection"
-supported_version="1.18.*"
+supported_version="1.19.*"
 picture="thumbnail.png"

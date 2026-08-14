@@ -1,0 +1,758 @@
+
+YAK_set_nationalist_govt = {
+	drop_cosmetic_tag = yes
+	set_cosmetic_tag = black_league
+	set_country_flag = YAK_league_path
+	set_global_flag = YAK_league_won
+
+	complete_national_focus = YAK_We_remebmer
+
+	set_politics = {
+		ruling_party = nationalist
+		elections_allowed = no
+	}
+
+	set_party_name = {
+		ideology = fascist
+		long_name = fascist_patry_long
+		name = fascist_patry
+	}
+
+	end_ruling_party_wings = yes
+	end_coalition = yes
+}
+
+
+
+YAK_black_league_victory_in_4nd_European_War = {
+	set_global_flag = YAK_league_4nd_victory_global
+	news_event = {
+		id = news_victory.1 hours = 9
+	}
+	YAK = {
+		set_country_flag = YAK_league_4nd_victory_flag
+	}
+
+	if = {
+		limit = {
+			NOT ={
+				has_country_flag = ENL_member
+			}
+			create_faction = ENL_member
+			set_country_flag = ENL_member
+		}
+
+		annex_country = {
+			target = SOV
+			transfer_troops = no
+		}
+		annex_country = {
+			target = NOA
+			transfer_troops = no
+		}
+	}
+
+	# YAK = {
+	# 	coun
+	# }
+
+	# UKR = {
+	# 	transfer_state = 196
+	# 	transfer_state = 137
+	# 	transfer_state = 200
+	# 	transfer_state = 1374
+	# 	transfer_state = 227
+	# 	transfer_state = 1091
+	# 	transfer_state = 1090
+	# 	transfer_state = 1375
+	# 	transfer_state = 240
+	# }
+
+	YAK = {
+		annex_country = {
+			target = SOV
+			transfer_troops = no
+		}
+		annex_country = {
+			target = NAV
+			transfer_troops = no
+		}
+		annex_country = {
+			target = NOA
+			transfer_troops = no
+		}
+		annex_country = {
+			target = GEO
+			transfer_troops = no	
+		}
+	}
+
+	set_autonomy = {
+		target = GER
+		autonomy_state = autonomy_league_puppet
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SOV
+				is_core_of = NAV
+				is_core_of = NOA
+				is_core_of = GEO
+			}
+			cancel_resistanse = yes
+		}
+		GER = {
+			
+		remove_state_core = 152
+		remove_state_core = 153
+		remove_state_core = 52
+		remove_state_core = 53
+		remove_state_core = 54
+		remove_state_core = 55
+		remove_state_core = 50
+		remove_state_core = 51
+		remove_state_core = 42
+		remove_state_core = 888
+		remove_state_core = 56
+		remove_state_core = 57
+		remove_state_core = 58
+		remove_state_core = 59
+		remove_state_core = 809
+		remove_state_core = 1378
+		remove_state_core = 60
+		remove_state_core = 61
+		remove_state_core = 62
+		remove_state_core = 64
+		remove_state_core = 65
+		remove_state_core = 68
+		add_state_core = 99
+		transfer_state = 99
+		add_state_core = 37
+		transfer_state = 37
+		add_state_core = 151
+		transfer_state = 151
+			set_cosmetic_tag = GER_puppet_league
+			YAK = {
+				puppet = GER
+			}
+			annex_country = {
+				target = DEN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SWI
+				transfer_troops = no
+			}
+			create_country_leader = {
+				name = GFX_portrait_military_Oleg
+				picture = GFX_
+				ideology = military_junta
+			}
+			clr_country_flag = global_ass_lol
+		}
+		FRA = {
+			set_cosmetic_tag = FRA_puppet_league
+			YAK = {
+				puppet = FRA
+			}
+			annex_country = {
+				target = SPR
+				transfer_troops = no
+			}
+			annex_country = {
+				target = POR
+				transfer_troops = no
+			}
+			create_country_leader = {
+                name = "Vova"
+                picture = "GFX_portrait_military_Oleg"
+                expire = "1.1.1"
+                ideology = military_junta
+                traits = {
+                }
+            }
+			clr_country_flag = global_ass_lol
+		}
+		ENG = {
+			set_cosmetic_tag = ENG_puppet_league
+			YAK = {
+				puppet = ENG
+			}
+			
+			create_country_leader = {
+                name = "Mark Carlton-Smith"
+                picture = "GFX_portrait_Carlton-Smith"
+                ideology = military_junta
+            }
+			annex_country = {
+				target = IRE
+				transfer_troops = no
+			}
+			clr_country_flag = global_ass_lol
+			set_politics = {
+                ruling_party = nationalist
+                election_frequency = no
+            }
+		}
+		SWE = {
+			set_cosmetic_tag = SWE_puppet_league
+			YAK = {
+				puppet = SWE
+			}
+			annex_country = {
+				target = NOR
+				transfer_troops = no
+			}
+			annex_country = {
+				target = FIN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = ICE
+				transfer_troops = no
+			}
+			create_country_leader = {
+                name = "Mikael Klasson"
+                picture = "GFX_portrait_Klasson"
+				expire = "1.1.1"
+                ideology = military_junta
+				traits = {
+				}
+            }
+			clr_country_flag = global_ass_lol
+		}
+		SER = {
+
+		remove_state_core = 45
+		remove_state_core = 1296
+		remove_state_core = 108
+		remove_state_core = 785
+		add_state_core = 1305
+		transfer_state = 1305
+		add_state_core = 105
+		transfer_state = 105
+		add_state_core = 849
+		transfer_state = 849
+		add_state_core = 104
+		transfer_state = 104
+		add_state_core = 848
+		transfer_state = 848
+		add_state_core = 850
+		transfer_state = 850
+		add_state_core = 851
+		transfer_state = 851
+		add_state_core = 103
+		transfer_state = 103
+		add_state_core = 163
+		transfer_state = 163
+		add_state_core = 109
+		transfer_state = 109
+		add_state_core = 1306
+		transfer_state = 1306
+			YAK = {
+				puppet = SER
+			}
+			annex_country = {
+                target = KOS
+                transfer_troops = no
+            }
+            annex_country = {
+                target = MNT
+                transfer_troops = no
+            }
+            annex_country = {
+                target = BOS
+                transfer_troops = no	
+            }
+            annex_country = {
+                target = CRO
+                transfer_troops = no
+            }
+            annex_country = {
+                target = SLV
+                transfer_troops = no
+            }
+			create_country_leader = {
+                name = "Nikola Selaković"
+				expire = "1.1.1"
+                picture = "GFX_portrait_Nikola"
+                ideology = military_junta
+				traits = {
+				}
+            }
+			clr_country_flag = global_ass_lol
+		}
+		GRE = {
+
+		remove_state_core = 47
+		remove_state_core = 185
+		remove_state_core = 731
+		remove_state_core = 184
+		remove_state_core = 186
+		add_state_core = 48
+		transfer_state = 48
+		add_state_core = 212
+		transfer_state = 212
+		add_state_core = 211
+		transfer_state = 211
+		add_state_core = 77
+		transfer_state = 77
+			YAK = {
+				puppet = GRE
+			}
+			set_cosmetic_tag = GRE_puppet_league
+			
+			annex_country = {
+                target = MAC
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = ALB 
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = BUL
+                transfer_troops = yes
+            }
+			create_country_leader = {
+                name = "Konstantinos Floros"
+                picture = "GFX_portrait_Floros"
+				expire = "1.1.1"
+                ideology = military_junta      
+				traits = {
+				}          
+            }
+			clr_country_flag = global_ass_lol
+		}
+		TUR = {
+			set_cosmetic_tag = TUR_puppet_league
+
+			create_country_leader = {
+                name = "Ümit Özdağ"
+                picture = "gfx/leaders/TUR/TUR_Umit.png"
+				expire = "1.1.1"
+                ideology = military_junta
+            }
+			clr_country_flag = global_ass_lol
+		}
+		ITA = {
+			set_cosmetic_tag = ITA_puppet_league
+			YAK = {
+				puppet = ITA
+			}
+			create_country_leader = {
+                name = "Francesco Paolo Figliuolo"
+                picture = "GFX_portrait_Figliuolo"
+				expire = "1.1.1"
+                ideology = military_junta
+				traits = {
+				}
+            }
+		}
+		ROM = {
+
+		remove_state_core = 79
+		remove_state_core = 1434
+		remove_state_core = 76
+		remove_state_core = 83
+		remove_state_core = 82
+		remove_state_core = 81
+		remove_state_core = 46
+		remove_state_core = 835
+		remove_state_core = 899
+		add_state_core = 78
+		transfer_state = 78
+			set_cosmetic_tag = ROM_puppet_league
+			YAK = {
+				puppet = ROM
+			}
+			create_country_leader = {
+                name = "Vlad Georgice"
+                picture = "GFX_portrait_Georgice"
+				expire = "1.1.1"
+                ideology = military_junta
+				traits = {
+				}
+            }
+			clr_country_flag = global_ass_lol
+		}
+		HUN = {
+
+		add_state_core = 4
+		add_state_core = 152
+		add_state_core = 153
+		transfer_state = 4
+		transfer_state = 152
+		transfer_state = 153
+		add_state_core = 664
+		add_state_core = 664
+		add_state_core = 70
+		transfer_state = 70
+		transfer_state = 71
+		transfer_state = 71
+		add_state_core = 72
+		add_state_core = 72
+		add_state_core = 75
+		transfer_state = 75
+		add_state_core = 75
+		transfer_state = 9
+		add_state_core = 9
+		transfer_state = 69
+		add_state_core = 69
+
+			set_global_flag = HUN_puppet_league
+			YAK = {
+				puppet = HUN
+			}
+
+			annex_country = {
+                target = SLO
+                election_frequency = no
+            }
+            annex_country = {
+                target = AUS
+                election_frequency = no
+            }
+            annex_country = {
+                target = CZE
+                election_frequency = no
+            }
+
+			create_country_leader = {
+                name = "Ivan Penava"
+                picture = "GFX_portrait_Penava"
+				expire = "1.1.1"
+                ideology = military_junta
+				traits = {
+				}
+            }
+			clr_country_flag = global_ass_lol
+		}
+		TTS = {
+
+		add_state_core = 12
+		transfer_state = 12
+		add_state_core = 191
+		transfer_state = 191
+		add_state_core = 13
+		transfer_state = 13
+		add_state_core = 884
+		transfer_state = 884
+		add_state_core = 190
+		transfer_state = 190
+		add_state_core = 11
+		transfer_state = 11
+		add_state_core = 189
+		transfer_state = 189
+		add_state_core = 96
+		transfer_state = 96
+		add_state_core = 188
+		transfer_state = 188
+
+			set_cosmetic_tag = TTS_puppet_league
+			YAK = {
+				puppet = TTS
+			}
+
+			create_country_leader = {
+                name = "Richo Terraces"
+                picture = "GFX_portrait_Richo"
+				expire = "1.1.1"
+                ideology = military_junta
+            }
+			clr_country_flag = global_ass_lol
+		}
+		UKR = {
+			set_cosmetic_tag = UKR_puppet_league
+			YAK = {
+				puppet = UKR
+			}
+
+			create_country_leader = {
+                name = "Gleb Vasilye"
+                picture = "GFX_portrait_Nikolayevich"
+                ideology = military_junta
+            }
+            set_party_name = {
+				ideology = nationalist
+				long_name = nationalist_ukraine_name
+				name = nationalist_ukraine_name
+			}
+			clr_country_flag = global_ass_lol
+		}
+		KAZ = {
+		add_state_core = 406
+		transfer_state = 406
+		add_state_core = 402
+		transfer_state = 402
+		add_state_core = 404
+		transfer_state = 404
+		add_state_core = 589
+		transfer_state = 589
+		add_state_core = 804
+		transfer_state = 804
+		add_state_core = 805
+		transfer_state = 805
+		set_cosmetic_tag = KAZ_puppet_league
+		YAK = {
+			puppet = KAZ
+		}
+		clr_country_flag = global_ass_lol
+	}
+	
+	BLR = { 
+		set_cosmetic_tag = BLR_puppet_league
+		YAK = {
+			puppet = BLR
+		}
+		create_country_leader = {
+            name = "Slavamir Adamovich"
+            picture = "GFX_portrait_Henrichovich"
+			expire = "1.1.1"
+            ideology = military_junta
+        }
+           
+	}
+
+}
+}
+	# UKR = {
+	# 	add_state_core = 203
+	# 	add_state_core = 202
+	# 	add_state_core = 1285
+	# 	add_state_core = 197
+	# 	add_state_core = 192
+	# 	add_state_core = 198
+	# 	add_state_core = 199
+	# 	add_state_core = 91
+	# 	add_state_core = 89
+	# 	add_state_core = 73
+	# 	add_state_core = 93
+	# 	add_state_core = 201
+	# }
+	# set_popularities = {
+	# 	fascist = 10
+	# 	nationalist = 35
+	# 	authoritarian_democrat = 5
+	# 	libertarian_socialist = 20
+	# }
+
+	# remove_ideas = {
+	# 	UKR_embargoed_economy
+	# }
+
+	# HUN = {
+	# 	add_state_core = 4
+	# 	add_state_core = 152
+	# 	add_state_core = 153
+	# 	transfer_state = 4
+	# 	transfer_state = 152
+	# 	transfer_state = 153
+	# 	add_state_core = 664
+	# 	add_state_core = 664
+	# 	add_state_core = 70
+	# 	transfer_state = 70
+	# 	transfer_state = 71
+	# 	transfer_state = 71
+	# 	add_state_core = 72
+	# 	add_state_core = 72
+	# 	add_state_core = 75
+	# 	transfer_state = 75
+	# 	add_state_core = 75
+	# 	transfer_state = 9
+	# 	add_state_core = 9
+	# 	transfer_state = 69
+	# 	add_state_core = 69
+	# 	YAK = {
+	# 		puppet = HUN
+	# 	}
+
+	# 	set_popularities = {
+	# 		nationalist = 30
+	# 	}
+
+	# 	set_politics = {
+	# 		ruling_party = nationalist
+	# 		elections_allowed = no
+	# 	}
+	# 	set_cosmetic_tag = HUN_puppet_league
+	# }
+
+	# TTS = {
+	# 	add_state_core = 12
+	# 	transfer_state = 12
+	# 	add_state_core = 191
+	# 	transfer_state = 191
+	# 	add_state_core = 13
+	# 	transfer_state = 13
+	# 	add_state_core = 884
+	# 	transfer_state = 884
+	# 	add_state_core = 190
+	# 	transfer_state = 190
+	# 	add_state_core = 11
+	# 	transfer_state = 11
+	# 	add_state_core = 189
+	# 	transfer_state = 189
+	# 	add_state_core = 96
+	# 	transfer_state = 96
+	# 	add_state_core = 188
+	# 	transfer_state = 188
+
+	# 	YAK = {
+	# 		puppet = TTS
+	# 	}
+	# 	set_popularities = {
+	# 		nationalist = 40
+	# 		fascist = 10
+	# 	}
+
+	# 	set_politics = {
+	# 		ruling_party = nationalist
+	# 		elections_allowed = no
+	# 	}
+	# 	set_cosmetic_tag = TTS_puppet_league
+	# }
+
+	# GER = {
+	# 	remove_state_core = 152
+	# 	remove_state_core = 153
+	# 	remove_state_core = 52
+	# 	remove_state_core = 53
+	# 	remove_state_core = 54
+	# 	remove_state_core = 55
+	# 	remove_state_core = 50
+	# 	remove_state_core = 51
+	# 	remove_state_core = 42
+	# 	remove_state_core = 888
+	# 	remove_state_core = 56
+	# 	remove_state_core = 57
+	# 	remove_state_core = 58
+	# 	remove_state_core = 59
+	# 	remove_state_core = 809
+	# 	remove_state_core = 1378
+	# 	remove_state_core = 60
+	# 	remove_state_core = 61
+	# 	remove_state_core = 62
+	# 	remove_state_core = 64
+	# 	remove_state_core = 65
+	# 	remove_state_core = 68
+	# 	add_state_core = 99
+	# 	transfer_state = 99
+	# 	add_state_core = 37
+	# 	transfer_state = 37
+	# 	add_state_core = 151
+	# 	transfer_state = 151
+
+	# 	set_politics = {
+	# 		 ruling_party = nationalist
+	# 		 elections_allowed = no
+	# 	}
+
+	# 	YAK = {
+	# 		puppet = GER
+	# 	}
+	# 	set_cosmetic_tag = GER_puppet_league
+	# }
+
+	# ROM = {
+	# 	remove_state_core = 79
+	# 	remove_state_core = 1434
+	# 	remove_state_core = 76
+	# 	remove_state_core = 83
+	# 	remove_state_core = 82
+	# 	remove_state_core = 81
+	# 	remove_state_core = 46
+	# 	remove_state_core = 835
+	# 	remove_state_core = 899
+	# 	add_state_core = 78
+	# 	transfer_state = 78
+
+	# 	set_politics = {
+	# 		ruling_party = nationalist
+	# 		elections_allowed = no
+	# 	}
+
+	# 	YAK = {
+	# 		puppet = ROM
+	# 	}
+
+	# 	set_cosmetic_tag = ROM_puppet_league
+	# }
+
+	# GRE ={
+	# 	remove_state_core = 47
+	# 	remove_state_core = 185
+	# 	remove_state_core = 731
+	# 	remove_state_core = 184
+	# 	remove_state_core = 186
+	# 	add_state_core = 48
+	# 	transfer_state = 48
+	# 	add_state_core = 212
+	# 	transfer_state = 212
+	# 	add_state_core = 211
+	# 	transfer_state = 211
+	# 	add_state_core = 77
+	# 	transfer_state = 77
+	# }
+
+	# YAK = {
+	# 	puppet = GRE
+	# }
+
+	# set_cosmetic_tag = GRE_puppet_league
+
+	# SER = {
+	# 	remove_state_core = 45
+	# 	remove_state_core = 1296
+	# 	remove_state_core = 108
+	# 	remove_state_core = 785
+	# 	add_state_core = 1305
+	# 	transfer_state = 1305
+	# 	add_state_core = 105
+	# 	transfer_state = 105
+	# 	add_state_core = 849
+	# 	transfer_state = 849
+	# 	add_state_core = 104
+	# 	transfer_state = 104
+	# 	add_state_core = 848
+	# 	transfer_state = 848
+	# 	add_state_core = 850
+	# 	transfer_state = 850
+	# 	add_state_core = 851
+	# 	transfer_state = 851
+	# 	add_state_core = 103
+	# 	transfer_state = 103
+	# 	add_state_core = 163
+	# 	transfer_state = 163
+	# 	add_state_core = 109
+	# 	transfer_state = 109
+	# 	add_state_core = 1306
+	# 	transfer_state = 1306
+
+	# 	YAK = {
+	# 		puppet = SER
+	# 	}
+
+	# 	set_cosmetic_tag = SER_puppet_league
+	# }
+	
+	# KAZ = {
+	# 	add_state_core = 406
+	# 	transfer_state = 406
+	# 	add_state_core = 402
+	# 	transfer_state = 402
+	# 	add_state_core = 404
+	# 	transfer_state = 404
+	# 	add_state_core = 589
+	# 	transfer_state = 589
+	# 	add_state_core = 804
+	# 	transfer_state = 804
+	# 	add_state_core = 805
+	# 	transfer_state = 805
+	# }
+
+	# YAK = {
+	# 	puppet = KAZ
+	# }
+
+	#  set_cosmetic_tag = KAZ_puppet_league

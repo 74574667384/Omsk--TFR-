@@ -7,9 +7,11 @@ omsk_economy:0 "Omsk economy"
 # omsk_economy_desc:0 "Civilian comfort, scientific progress and political freedoms are secondary concerns. Every factory, every worker and every resource serves a single purpose: preparation for the final war."
 army_Great_Trial:0 "Army of Vengeance"
 army_Great_Trial_desc:0 "§RThe Great Trial was delayed, not defeated.§!\n\nThe Army has become the living embodiment of national vengeance. It is not motivated by glory, wealth, or conquest. It marches for the dead. It trains for the fallen. It fights for those who can no longer fight for themselves.\n\nBorn from the collapse of the Soviet remnant and the rot of a fascist victory in Europe, this army exists for one purpose: vengeance. The Steel Pact will be broken, and every mile taken from them will be paid for in blood, steel, and silence. No mercy. No compromise. No future until the enemy is gone.\n\nThe coming war will not be fought for territory. It will be fought for justice, memory, and retribution."
-death_teutonic_slava_ukraine:0 "Death teuton - slava Ukraine and League"
-
-
+death_teutonic_slava_ukraine:0 "Death teuton - new slava Ukraine League"
+Uncontrolled_army:0 "Uncontrolled Army"
+Uncontrolled_army_desc:0 "The collapse of the Soviet Union destroyed the unified command structure, leaving thousands of armed units without leadership. Disbanded generals and the remnants of the Red Army are acting on their own."
+collapse_USSR:0 "Collapse USSR"
+collapse_USSR_desc:0 "The Union fell under the blows of the Steel Pact, collapsing into chaos and ruin. The infrastructure has been destroyed, and millions of refugees have flooded into Siberia. But amid this catastrophe, Omsk stands as a grim bastion of retribution, created not to restore the past, but to deliver the final blow."
 
 #puppet
 

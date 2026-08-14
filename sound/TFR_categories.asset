@@ -24,5 +24,6 @@ category = {
 	name = "TFR_super_event"
 	soundeffects = {
 		TFR_se_great_trial
+		TFR_se_victory_omsk
 	}
 }

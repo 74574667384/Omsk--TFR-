@@ -1,4 +1,5 @@
 add_namespace = super_omsk
+add_namespace = news_victory
 
 country_event = {
 	id = super_omsk.1
@@ -11,4 +12,32 @@ country_event = {
 	option = {
 		name = super_omsk.1.a
 	} 
+}
+
+news_event = {
+	id = news_victory.1
+	title = "Omsk Victory"
+
+	desc = omsk_win.1.d
+
+	picture = GFX_Victory
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+        name = "The Great Trial Complete"
+		hidden_effect = {
+			if = {
+            limit = {
+                is_ai = no
+            }
+            set_country_flag = YAK_Victory_omsk_super
+            scoped_sound_effect = TFR_se_victory_omsk
+            scoped_play_song = "one_minute_of_silence"
+        }
+	}
+	custom_effect_tooltip = "You Winner"
+    }
 }
