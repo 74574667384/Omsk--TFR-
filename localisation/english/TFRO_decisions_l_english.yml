@@ -1,39 +1,43 @@
-﻿l_english: 
- YAK_black_league_unification:0 "§8Russian Unification§!"
- russian_unification:0 "Russian Unification"
- army_reform:0 "Armed Forces of the Black League"
+﻿l_english:
+ YAK_black_league_unification: "§8Russian Unification§!"
+ russian_unification: "Russian Unification"
+ russian_unification_desc: "Well §R[GER.GetFactionName]§!, may have succeeded in destroying Russia, but this was merely a brief respite before our counterstrike. We must gather our strength, restore Russia to its former power and glory, and show the entire world that Russia has risen from the dead!"
+ army_reform: "Armed Forces of the Black League"
 
  #War warload
 
- war_warload:0 "Operation: §ARed Sunset§!"
- war_warloar_2:0 "Operation: §YKarbyshev§!"
- war_warload_3:0 "Operation: §GIron Belt§!"
- war_warload_4:0 "Operation: §CUranium§!"
- war_warload_5:0 "Operation: §OSaturn§!"
- war_warload_6:0 "Operation: §PShip§!"
- war_warload_8:0 "Operation: §LRing§!"
- war_warload_9:0 "Operation: §5Karbyshevsky Border Post§!"
- war_warload_11:0 "Operation: §dRed Uda§!"
- war_warload_12:0 "Operation: §4Snow§!"
- war_warload_13:0 "Operation: §pFar East§!"
- war_warload_14:0 "Operation: §GVolga§!"
+ war_warload:0 "[YAM.GetFlag] Operation: §ARed Sunset§!"
+ war_warloar_2:0 "[STV.GetFlag] Operation: §YKarbyshev§!"
+ war_warload_3:0 "[NFJ.GetFlag] Operation: §GIron Belt§!"
+ war_warload_4:0 "[PUR.GetFlag] Operation: §CUranium§!"
+ war_warload_5:0 "[BSK.GetFlag] Operation: §OSaturn§!"
+ war_warload_6:0 "[SOL.GetFlag] Operation: §PShip§!"
+ war_warload_8:0 "[CKK.GetFlag] [UDM.GetFlag] [BSK.GetFlag] [SOL.GetFlag] [CKK.GetFlag] [CHU.GetFlag] Operation: §LRing§!"
+ war_warload_9:0 "[FLN.GetFlag] Operation: §5Karbyshevsky Border Post§!"
+ war_warload_11:0 "[OCC.GetFlag] Operation: §dRed Uda§!"
+ war_warload_12:0 "[SEY.GetFlag] Operation: §4Snow§!"
+ war_warload_13:0 "[KIR.GetFlag] Operation: §pFar East§!"
+ war_warload_14:0 "[KKP.GetFlag] Operation: §GVolga§!"
 
  #4EW
 
- YAK_4nd_European_War_category:0 "War Steel Pact"
- YAK_4nd_European_War_category_desc:0 "\n\n\n\n\n£GFX_SOV_NATO_war_category\n\n\n\n\n\n\n\nThe war to completely destroy the Teutonic aggressor has begun.\n\nThis war is the §RGreat Trial§!, and we shall not halt until the boots of the Black League trample the enemy's flags into the dirt. The General Staff insists on a swift and relentless breakthrough before the Pact manages to mobilize its full industrial power. Our victory will be absolute only when the key fortresses of the enemy and their puppets fall.\n\n\n§RPRIMARY TARGETS§! :\n\n§YBERLIN§! : [GLOBAL.get_berlin_status]\n§YPARIS§! : [GLOBAL.get_paris_status]\n§YROME§! : [GLOBAL.get_rome_status]\n§YLONDON§! : [GLOBAL.get_london_status]\n§YLUXEMBOURG§! : [GLOBAL.get_luxembourg_status]\n\n§RSECONDARY TARGETS§! :\n\n§YMOSCOW§! : [GLOBAL.get_moscow_status]\n§YST PETERSBURG§! : [GLOBAL.get_petersburg_status]\n§YKYIV§! : [GLOBAL.get_kyiv_status]\n§YMISK§! : [GLOBAL.get_misk_status]\n§YTALLIN§! : [GLOBAL.get_tallinn_status]\n\n§GALLIED CITIES§! :\n\n§YOMSK§! : [GLOBAL.get_omsk_capital_status]\n§YNOVOSIBIRSK§! : [GLOBAL.get_novosibirsk_status]\n§YKRASNOYARSK§! : [GLOBAL.get_krasnoyarsk_status]\n§YYEKATERINBURG§! : [GLOBAL.get_yekaterinburg_status]\n§YVLADIVOSTOK§! : [GLOBAL.get_vladivostok_status]"
+ YAK_4nd_european_war: "War Steel Pact"
+ YAK_4nd_european_war_desc: "\n\n\n\n\n£GFX_SOV_NATO_war_category\n\n\n\n\n\n\n\nThe war to completely destroy the Teutonic aggressor has begun.\n\nThis war is the §RGreat Trial§!, and we shall not halt until the boots of the Black League trample the enemy's flags into the dirt. The General Staff insists on a swift and relentless breakthrough before the Pact manages to mobilize its full industrial power. Our victory will be absolute only when the key fortresses of the enemy and their puppets fall.\n\n\n§RPRIMARY TARGETS§! :\n\n§YBERLIN§! : [GLOBAL.get_berlin_status]\n§YPARIS§! : [GLOBAL.get_paris_status]\n§YROME§! : [GLOBAL.get_rome_status]\n§YLONDON§! : [GLOBAL.get_london_status]\n§YLUXEMBOURG§! : [GLOBAL.get_luxembourg_status]\n\n§RSECONDARY TARGETS§! :\n\n§YMOSCOW§! : [GLOBAL.get_moscow_status]\n§YST PETERSBURG§! : [GLOBAL.get_petersburg_status]\n§YKYIV§! : [GLOBAL.get_kyiv_status]\n§YMINSK§! : [GLOBAL.get_minsk_status]\n§YTALLIN§! : [GLOBAL.get_tallinn_status]\n\n§GALLIED CITIES§! :\n\n§YOMSK§! : [GLOBAL.get_omsk_capital_status]\n§YNOVOSIBIRSK§! : [GLOBAL.get_novosibirsk_status]\n§YKRASNOYARSK§! : [GLOBAL.get_krasnoyarsk_status]\n§YYEKATERINBURG§! : [GLOBAL.get_yekaterinburg_status]\n§YVLADIVOSTOK§! : [GLOBAL.get_vladivostok_status]"
 
- YAK_no_hide_propaganda:0 "Nowhere to Hide"
- YAK_no_hide_propaganda_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_league_will_get_everyone\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
- YAK_death_teutonic_horde:0 "Death Teutonic horde"
- YAK_death_teutonic_horde_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_so_just_kill_him_then\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
- YAK_we_back_our_moscow:0 "We do not falter in battle for our capital!"
- YAK_we_back_our_moscow_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_we_will_restore_glory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
- YAK_great_trial_approaches:0 "Go! Head west!"
- YAK_great_trial_approaches_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_destroy_germany\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ YAK_no_hide_propaganda: "§YPROPAGANDA§!: Nowhere to Hide"
+ YAK_no_hide_propaganda_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_league_will_get_everyone\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ YAK_death_teutonic_horde: "§YPROPAGANDA§!: Death Teutonic horde"
+ YAK_death_teutonic_horde_desc: "\n\n\n\n£GFX_YAK_so_just_kill_him_then\n\n\n\n"
+ YAK_we_back_our_moscow: "§YPROPAGANDA§!: We do not falter in battle for our capital!"
+ YAK_we_back_our_moscow_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_our_revenge_will_continue\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ YAK_great_trial_approaches: "§YPROPAGANDA§!: Go! Head west!"
+ YAK_great_trial_approaches_desc: "\n\n\n\n£GFX_YAK_destroy_germany\n\n\n\n"
+ YAK_great_trial_awaits: "§YPROPAGANDA§!: The Great Trial Awaits"
+ YAK_great_trial_awaits_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_YAK_great_trial_awaits\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
  #DO NOT TOUND
 
  debug_do_not_touch:0 "debug Omsk Resurrection"
+ debug_do_not_touch_desc:0 "Not use this, and that world crashing FUCKING"
 
  #Trojan attack decisions
 

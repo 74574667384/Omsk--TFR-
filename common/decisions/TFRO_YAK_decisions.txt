@@ -593,7 +593,7 @@ build_virus_for_veagen = {
 
                 set_country_flag = memz_completed
 
-                country_event = { id = memz.1 }
+                # country_event = { id = memz.1 }
             }
             custom_effect_tooltip = memz_progress_tt
         }
@@ -689,7 +689,18 @@ build_virus_for_veagen = {
         }
         }
     }
+    all_progress_skip = {
+        available = {
+            tag = YAK
+            is_debug = yes
+        }
+        complete_effect = {
+            add_to_variable = { petya_progress = 100 }
+            add_to_variable = { suxnet_progress = 100 }
+            add_to_variable = { memz_progress = 100 }
+        }
     }
+}
 }
 debug_do_not_touch = {
     debug_spits = {
@@ -710,7 +721,7 @@ debug_do_not_touch = {
         }
         complete_effect = {
             swap_ideas = {
-                remove_idea = Armed_Forces
+                remove_idea = Uncontrolled_army
                 add_idea = army_Great_Trial
             }
             add_ideas = omsk_economy
@@ -1082,7 +1093,7 @@ debug_do_not_touch = {
                 target = NAV
             }
 
-            set_cosmetic_tag = black_league_unification_of_russia
+            set_cosmetic_tag = YAK_black_league_unification_of_russia
         196 ={
              set_state_controller_to = ROOT
              
@@ -1406,71 +1417,58 @@ army_reform = {
         }
         cost = 30
         complete_effect = {
-            swap_ideas = {
-                remove_idea = 
-                add_idea = 
-            }
+            army_experience = 50
         }
     }
 }
-}
 
-# YAK_4nd_European_War = {
-#     set_global_flag = YAK_league_4nd_victory_global
-#     news_events = {
-#         id = omsk.war
-#     }
-    
-# }
 
-YAK_4nd_european_war_category = {
+YAK_4nd_european_war = {
     YAK_no_hide_propaganda = {
-        allowed ={
-            OR = {
-                original_tag = YAK
-            }
+        icon = generic_propaganda_campaigns
+        allowed = {
+            tag = YAK
         }
         visible = {
-            original_tag = YAK
+            tag = YAK
             # has_government = nationalist
         }
         available = {
             has_campaign_slot = yes
         }
         ai_will_do = {
-            days = 5
+            base = 10
         }
         cost = 100
         days_remove = 50
         days_re_enable = 60
-        cancel_if_not_visible = yes
         modifier = {
             military_development_monthly = 0.05
             army_attack_factor = 0.10
         }
         complete_effect = {
-            add_war_support = 0.5
+            # add_war_support = 0.5
             remove_campaign_slot = yes
-            set_temp_variable = {
-                var = SOV_fanatisicm_var_temp
-                value = 0.025
-            }
-            YAK_add_fanatisicm = yes
+            # set_temp_variable = {
+            #     var = YAK_fanaticism_var_temp
+            #     value = 0.02
+            # }
+            # YAK_add_fanaticism = yes
         }
         remove_effect = {
-             set_temp_variable = {
-                var = SOV_fanatisicm_var_temp
-                value = -0.025
-            }
-            YAK_add_fanatisicm = yes
+            #  set_temp_variable = {
+            #     var = YAK_fanaticism_var_temp
+            #     value = 0.02
+            # }
+            # YAK_add_fanaticism = yes
             add_campaign_slot = yes
         }
+        priority = 10
     }
     YAK_death_teutonic_horde = {
+        icon = generic_propaganda_campaigns
         allowed = {
-            OR = {
-                original_tag = YAK
-            }
+            tag = YAK
         }
         visible = {
             original_tag = YAK
@@ -1479,7 +1477,7 @@ YAK_4nd_european_war_category = {
             has_campaign_slot = yes
         }
         ai_will_do = {
-            days = 5
+            base = 10
         }
         cost = 100
         days_remove = 50
@@ -1492,27 +1490,26 @@ YAK_4nd_european_war_category = {
         complete_effect = {
             add_war_support = 0.1
             remove_campaign_slot = yes
-            set_temp_variable = {
-                var = SOV_fanatisicm_var_temp 
-                value = 0.05
-            }
-            YAK_add_fanatisicm = yes
+            # set_temp_variable = {
+            #     var = YAK_fanaticism_var_temp 
+            #     value = 0.05
+            # }
+            # YAK_add_fanaticism = yes
         }
         remove_effect = {
-            set_temp_variable = {
-                var = SOV_fanatisicm_var_temp
-                value = -0.05
-            }
-            YAK_add_fanatisicm = yes
+            # set_temp_variable = {
+            #     var = YAK_fanaticism_var_temp
+            #     value = -0.05
+            # }
+            # YAK_add_fanaticism = yes
             add_campaign_slot = yes
         }
+        priority = 10
     }
     YAK_we_back_our_moscow = {
+        icon = generic_propaganda_campaigns
             allowed = {
-                OR = {
-                    original_tag = YAK
-                    original_tag = SOV
-                }
+                tag = YAK
             }
             visible = {
                 original_tag = YAK
@@ -1526,7 +1523,7 @@ YAK_4nd_european_war_category = {
                 }
             }
             ai_will_do = {
-                days = 5
+                base = 10
             }
             cost = 100
             days_remove = 50
@@ -1546,26 +1543,26 @@ YAK_4nd_european_war_category = {
             complete_effect = {
                 add_political_power = 0.2
                 remove_campaign_slot = yes
-                set_temp_variable = {
-                    var = YAK_fanatisicm_var_temp
-                    value = 0.05
-                }
-                YAK_add_fanatisicm = yes
+                # set_temp_variable = {
+                #     var = YAK_fanaticism_var_temp
+                #     value = 0.05
+                # }
+                # YAK_add_fanaticism = yes
             }
             remove_effect = {
-                set_temp_variable = {
-                    var = YAK_fanatisicm_var_temp
-                    value = -0.05
-                }
-                YAK_add_fanatisicm = yes
+                # set_temp_variable = {
+                #     var = YAK_fanaticism_var_temp
+                #     value = -0.05
+                # }
+                # YAK_add_fanaticism = yes
                 add_campaign_slot = yes
             }
+            priority = 10
         }
-        YAK_great_trial_approaches = {
+    YAK_great_trial_approaches = {
+        icon = generic_propaganda_campaigns
             allowed = {
-                OR = {
-                    original_tag = YAK
-                }
+                tag = YAK
             }
             visible = {
                 original_tag = YAK
@@ -1574,7 +1571,7 @@ YAK_4nd_european_war_category = {
                 has_campaign_slot = yes
             }
             ai_will_do = {
-                days = 5
+                base = 10
             }
             cost = 100
             days_remove = 50
@@ -1586,7 +1583,7 @@ YAK_4nd_european_war_category = {
                 breakthrough_bonus_against = 0.10
             }
             targeted_modifier = {
-                tag = FRA
+                tag = FAF
                 attack_bonus_against = 0.20
                 breakthrough_bonus_against = 0.10
             }
@@ -1609,34 +1606,191 @@ YAK_4nd_european_war_category = {
                 breakthrough_factor = 0.025
             }           
             complete_effect = {
-                add_political_power = 0.20
-                add_war_support = 0.015
+                # add_political_power = 0.20
+                # add_war_support = 0.015
+                # remove_campaign_slot = yes
+                # set_temp_variable = {
+                #     var = YAK_fanaticism_var_temp
+                #     value = 0.05
+                # }
+                # YAK_add_fanaticism = yes
                 remove_campaign_slot = yes
-                set_temp_variable = {
-                    var = YAK_fanatisicm_var_temp
-                    value = 0.05
-                }
-                YAK_add_fanatisicm = yes
-                hidden_effect = {
-                    every_country = {
-            limit = {
-                is_in_faction_with = GER
-            }
+                # hidden_effect = {
+                #     every_country = {
+                #         limit = {
+                #             is_in_faction_with = GER
+                #         }
+                #     }         
+                # }
         }
+        remove_effect = {
+            add_campaign_slot = yes
+        }
+        priority = 10
+    }
+    YAK_great_trial_awaits = {
+        icon = generic_propaganda_campaigns
 
-    custom_effect_tooltip = all_stale_pack_tt          
+        allowed = {
+                tag = YAK
+            }
+            visible = {
+                original_tag = YAK
+            }
+            available = {
+                has_campaign_slot = yes
+            }
+            ai_will_do = {
+                base = 10
+            }
+            cost = 100
+            days_remove = 50
+            days_re_enable = 60
+            cancel_if_not_visible = yes
+            
+            modifier = {
+                # attack_bonus_against = 0.10
+                army_attack_factor = 0.10
+			    army_morale_factor = 0.025	
+			    army_armor_speed_factor = 0.15
+                breakthrough_factor = 0.025
+            }           
+            complete_effect = {
+                remove_campaign_slot = yes
             }
             remove_effect = {
-                set_temp_variable = {
-                    var = SOV_fanatisicm_var_temp
-                    value = -0.05
-                }
-                YAK_add_fanatisicm = yes
-                add_campaign_slot = yes
-            }
+            add_campaign_slot = yes
         }
+        priority = 10
     }
-    }
+}
+    # remove_effect = {
+    #     set_temp_variable = {
+    #         var = YAK_fanaticism_var_temp
+    #         value = -0.05
+    #     }
+    #             YAK_add_fanaticism = yes
+    #             add_campaign_slot = yes
+    #         }
+
+# YAK_cyber_war = {
+#     cyber_sabotage_GER = {
+#         allowed = {tag = YAK}
+#         # visible = { has_country_flag = day_zero_launched  }
+#         visible = { has_government = nationalist }
+#         available = {
+#             has_war_with = GER
+#             country_exists = GER
+#             NOT = {controls_state = 1378}
+#             check_variable = {var = cyber_heat value = 80 compare = less_than}
+#         }
+#         cost = 75
+#         days_re_enable = 45
+#         complete_effect = {
+#             YAK_cyber_apply = { target = GER idea = cyber_idea_sabotage_GER full = 90 weak = 45 }
+#             custom_effect_tooltip = TODO
+#             hidden_effect = {
+#                 YAK_cyber_add_heat = {heat = 10}
+#             }
+#             ai_will_do = {factor = 0}
+#         }
+#     }
+
+#     cyber_steal_GER = {
+#         allowed = {tag = YAK}
+#         visible = { has_government = nationalist }
+#         available = {
+#             has_war_with = GER
+#             country_exists = GER
+#             NOT = {controls_state = 1378}
+#             check_variable = { var = cyber_heat value = 80 compare = less_than }
+#         }
+#         cost = 100
+#         days_re_enable = 60
+#         complete_effect = {
+#             add_tech_bonus = { name = cyber_steal_GER bonus = 0.5 uses = 1 category = electronics }
+#             army_experience = 10
+#             YAK_cyber_apply = { target = GER idea = cyber_idea_steal_GER full = 120 weak = 60 }
+#             custom_effect_tooltip = TODO
+#             hidden_effect = { YAK_cyber_add_heat = {heat = 15} }
+#         }
+#         ai_will_do = {factor = 0}
+#     }
+
+#     cyber_destory_GER = {
+#         allowed = { tag = YAK }
+#         visible = { has_government = nationalist }
+#         available = { has_war_with = GER country_exists = GER NOT = { countrols_state = 1378 }  }
+#         cost = 125
+#         days_re_enable = 90
+#         complete_effect = {
+#             YAK_cyber_apply = { target = GER idea = cyber_idea_destroy_GER full = 180 weak = 90 }
+#             custom_effect_tooltip = TODO
+#             hidden_effect = { YAK_cyber_add_heat = { heat = 20 } }
+#         }
+#         ai_will_do = { factor = 0 }
+#     }
+
+#     cyber_sabotage_FRA = {
+#         allowed = { tag = YAK }
+#         visible = { has_government = nationalist }
+#         available = { 
+#             has_war_with = FRA 
+#             country_exists = FRA 
+#             NOT = { controls_state = 16 } 
+#             check_variable = { 
+#                 var = cyber_heat 
+#                 value = 80 
+#                 compare = less_than } 
+#     }
+#     cost = 75
+#     days_re_enable = 45
+#     complete_effect = {
+#         YAK_cyber_apply = {
+#             target = FRA
+#             idea = cyber_idea_sabotage_FRA 
+#             full = 90
+#             weak = 45
+#         }
+#         custom_effect_tooltip = TODO
+#         hidden_effect = { 
+#             YAK_cyber_add_heat = { heat = 10 } 
+#         }
+#     }
+#     ai_will_do = { factor = 0 }
+# }
+
+#    cyber_steal_FRA = {
+#     allowed = { tag = YAK }
+#     visible = { has_government = nationalist }
+#     available = {
+#         has_war_with = FRA
+#         country_exists = FRA
+#         NOT = { controls_state = 16 }
+#         check_variable = {
+#             var = cyber_heat
+#             value = 80
+#             compare = less_than
+#         }
+#     }
+#     cost = 75
+#     days_re_enable = 45
+#     complete_effect = {
+#         YAK_cyber_apply = { 
+#             target = FRA
+#             idea = cyber_idea_steal_FRA
+#             full = 120
+#             weaK = 60
+#         }
+#         custom_effect_tooltip = TODO
+#         hidden_effect = {
+#             YAK_cyber_add_heat = { heat = 15 }
+#         }
+#     }
+# }
+# }
+
+
 
 
 

@@ -8,9 +8,15 @@ nationalist_ukraine_name:0 "People's Front"
 nationalist_lux_name:0 "GKChP-E"
 fascist_patry:0 "RNP"
 fascist_patry_long:0 "Russia National Patriots"
+conservative_patry_long:0 "Russian League Paws"
+conservative_patry:0 "RLP"
 
 #coalititon 
 
-banned_national_socialist_party:0 "§dBANNED§!"
-banned_national_socialist_party_long:0 "§dBANNED§!"
+YAK_banned_national_socialist_party:0 "§R[BANNED]§!"
+YAK_banned_national_socialist_party_long:0 "§R[BANNED]§!"
+
+authoritarian_democrat_party:0 "NLOR"
+authoritarian_democrat_party_long:0 "New League of Russia"
+
 

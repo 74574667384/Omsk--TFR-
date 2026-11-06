@@ -1,0 +1,38 @@
+defined_text = {
+	name = GetPetyaProgressText
+
+	text = {
+		trigger = {
+			check_variable = {
+				YAK.petya_progress >= 100
+			}
+			localization_key = PETYA_PROGRESS_COMPLETED
+		}
+	}
+}
+
+defined_text = {
+	name = GetmemzProgressText
+
+	text = {
+		trigger = {
+			check_variable = {
+				YAK.memz_progress >= 100
+			}
+			localization_key = MEMZ_PROGRESS_COMPLETED
+		}
+	}
+}
+
+defined_text = {
+	name = GetsuxnetrogressText
+
+	text = {
+		trigger = {
+			check_variable = {
+				YAK.suxnet_progress >= 100
+			}
+			localization_key = SUXNET_PROGRESS_COMPLETED
+		}
+	}
+}

@@ -1,0 +1,91 @@
+russian_unification = {
+	icon = generic_political_actions
+	priority = 100
+
+	allowed = {
+		original_tag = YAK
+	}
+
+	visible = {
+		tag = YAK
+	}
+}
+
+build_virus_for_veagen = {
+	icon = generic_political_actions
+	picture = GFX_decisions_creata_virus
+	priority = 101
+	# scripted_gui = my_custom_gui
+	allowed = {
+		tag = YAK
+		has_government = nationalist
+	}
+
+	available = {
+		has_war = no
+		has_government = nationalist
+		# has_country_flag = unlocked_day_zero
+	}
+
+	visible = {
+		tag = YAK
+		has_government = nationalist
+		has_completed_focus = trojan
+	}
+}
+
+debug_do_not_touch = {
+	icon = generic_political_actions
+	visible = {
+		is_debug = yes
+		tag = YAK
+		has_government = nationalist
+	}
+	allowed = {
+		original_tag = YAK
+	}
+	priority = 102
+}
+
+army_reform = {
+	icon = generic_political_actions
+	visible = {
+		tag = YAK
+        has_government = nationalist
+	}
+	allowed = {
+		original_tag = YAK
+	}
+	priority = 99
+}
+
+YAK_4nd_european_war = {
+	icon = GFX_SOV_decision_nato_war_category
+	visible_when_empty = yes
+	allowed = {
+		tag = YAK
+	}
+	# priority = 98
+	visible = {
+		tag = YAK
+			# OR = {
+			# 	NOT = {
+			# 		has_global_flag = YAK_league_4nd_victory_global
+			# 		has_global_flag = YAK_league_4nd_victory_flag
+			# 	}
+			# }
+	}
+}
+
+YAK_cyber_operations = {
+	icon = generic_political_actions
+	picture = GFX_decisions_creata_virus
+	priority = 97
+	allowed = {
+		tag = YAK
+	}
+	visible = {
+		tag = YAK
+		# has_country_flag = day_zero_launched
+	}
+}

@@ -1,0 +1,75 @@
+defined_text = {
+	name = start_menu_country_desc
+
+	text = {
+		trigger = {
+			# NOT = {
+			# 	tag = YAK
+			# }
+			# NOT = {
+			# 	has_completed_focus = YAK_new_path_omsk
+			# }
+			tag = YAK
+			has_government = nationalist
+		}
+
+		localization_key = YAK_country_summary
+	}
+}
+
+defined_text = {
+	name = start_menu_country_paths
+
+	text = {
+		trigger = {
+			# NOT = {
+			# 	tag = YAK
+			# }
+			# NOT = {
+			# 	has_completed_focus = YAK_new_path_omsk
+			# }
+			tag = YAK
+			has_government = nationalist
+		}
+
+		localization_key = YAK_country_paths
+	}
+}
+
+defined_text = {
+	name = start_menu_country_other
+
+	text = {
+		trigger = {
+			# NOT = {
+			# 	tag = YAK
+			# }
+			# NOT = {
+			# 	has_completed_focus = YAK_new_path_omsk
+			# }
+			tag = YAK
+			has_government = nationalist
+		}
+
+		localization_key = YAK_country_other
+	}
+}
+
+defined_text = {
+	name = GET_BACKGROUND
+
+	text = {
+		# trigger = {
+		# 	NOT = {
+		# 		tag = YAK
+		# 	}
+		# 	NOT = {
+		# 		has_completed_focus = YAK_new_path_omsk
+		# 	}
+		trigger = {
+			tag = YAK
+			has_government = nationalist
+		}
+		localization_key = "GFX_Omsk_BG"
+	}
+}

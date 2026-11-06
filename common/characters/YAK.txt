@@ -110,4 +110,10 @@ characters = {
 			logistics_skill = 1
 		}
 	}
+
+	#party
+	# YAK_Medvedev = {
+	# 	name = "Dmitry Medvedev"
+	# 	country_leader = { ideology = authoritarian_democrat }
+	# }
 }

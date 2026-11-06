@@ -1,0 +1,87 @@
+focus_tree = {
+	id = YAK_rise_black_league
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = YAK
+			NOT = {has_country_flag = YAK_wake_up_flag }
+		}
+	}
+
+	focus = {
+		id = YAK_we_lost
+		icon = GFX_we_lost
+		cost = 10
+		x = 14
+		y = -1
+		completion_reward = {
+			add_stability = -0.10
+			add_war_support = -0.10
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -0.10
+			}
+		}
+	}
+	focus = {
+		id = YAK_omsk_protests
+		icon = GFX_omsk_protest
+		cost = 10
+		x = 13
+		y = 0
+		prerequisite = {
+			focus = YAK_we_lost
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.10
+			}
+			add_stability = -0.05
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = YAK_last_message
+		icon = YAK_we_lost
+		cost = 10
+		x = 15
+		y = 0
+		prerequisite = {
+			focus = YAK_we_lost
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.25
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = YAK_Black_February
+		icon = YAK_we_lost
+		cost = 10
+		x = 14
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = omsk.1
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.05
+			}
+		}
+		# trigger = {
+        #     has_country_flag = YAK_wake_up_flag
+        # }
+		prerequisite = {
+			focus = YAK_last_message
+		}
+		prerequisite = {
+			focus = YAK_omsk_protests
+		}
+	}
+}

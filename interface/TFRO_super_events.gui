@@ -8,19 +8,19 @@ guiTypes = {
 		Origo = center
 		clipping = no
 		moveable = yes
-		
+
 		background = {
-			name ="super_YAK_4EW_omsk_"
+			name = "super_YAK_4EW_omsk_"
 			spriteType = "GFX_4EW_omsk_super_event"
 			position = { x = 0 y = 30 }
 		}
-		
+
 		iconType = {
-			name = "Background"	
-			spriteType ="GFX_Super_event_bg"
+			name = "Background"
+			spriteType = "GFX_Super_event_bg"
 			position = { x = 0 y = 0 }
 		}
-		
+
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"
 			position = { x = 260 y = 20 }
@@ -29,10 +29,10 @@ guiTypes = {
 			text = "YAK_4EW_omsk_super_event"
 			maxWidth = 490
 			maxHeight = 20
-			fixedsize = yes	
+			fixedsize = yes
 			format = center
 		}
-		
+
 		instantTextBoxType = {
 			name = "Super_Event_Quote_textbox"
 			position = { x = 250 y = 435 }
@@ -50,7 +50,7 @@ guiTypes = {
 			position = { x = 350 y = 585 }
 			buttonText = "YAK_4EW_omsk_super_event_buton"
 			buttonFont = "VCR02_16"
-			quadTextureSprite ="GFX_spacebar"
+			quadTextureSprite = "GFX_spacebar"
 			clicksound = click_ok
 		}
 	}
@@ -63,19 +63,19 @@ guiTypes = {
 		Origo = center
 		clipping = no
 		moveable = yes
-		
+
 		background = {
 			name ="super_YAK_victory_omsk"
 			spriteType = "GFX_victory_omsk_4EW_super_event"
 			position = { x = 0 y = 30 }
 		}
-		
+
 		iconType = {
 			name = "Background"	
-			spriteType ="GFX_Super_event_bg"
+			spriteType = "GFX_Super_event_bg"
 			position = { x = 0 y = 0 }
 		}
-		
+
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"
 			position = { x = 260 y = 20 }
@@ -87,7 +87,7 @@ guiTypes = {
 			fixedsize = yes	
 			format = center
 		}
-		
+
 		instantTextBoxType = {
 			name = "Super_Event_Quote_textbox"
 			position = { x = 250 y = 435 }
@@ -105,7 +105,7 @@ guiTypes = {
 			position = { x = 350 y = 585 }
 			buttonText = "YAK_victory_omsk_super_buton"
 			buttonFont = "VCR02_16"
-			quadTextureSprite ="GFX_spacebar"
+			quadTextureSprite = "GFX_spacebar"
 			clicksound = click_ok
 		}
 	}

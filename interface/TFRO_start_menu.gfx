@@ -1,0 +1,7 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_Omsk_BG"
+		texturefile = "gfx/interface/Omsk_bg.png"
+		alwaystransparent = yes
+	}
+}

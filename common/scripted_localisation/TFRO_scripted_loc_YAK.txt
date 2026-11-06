@@ -2,10 +2,8 @@ defined_text = {
 	name = get_omsk_capital_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 571
-				}
+			FROM = {
+				controls_state = 571
 			}
 		}
 		localization_key = "our_control"
@@ -21,7 +19,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = "enemy_control"
+		localization_key = "friendly_control"
 	}
 	text = {
 		trigger = {
@@ -32,7 +30,7 @@ defined_text = {
 				controls_state = 571
 			}
 		}
-		localization_key = "friendly_control"
+		localization_key = "enemy_control"
 	}
 }
 
@@ -40,12 +38,10 @@ defined_text = {
 	name = get_moscow_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 1339
-				}
+			FROM = {
+				controls_state = 1339
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -76,12 +72,10 @@ defined_text = {
 	name = get_vladivostok_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 408
-				}
+			FROM = {
+				controls_state = 408
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -112,12 +106,10 @@ defined_text = {
 	name = get_novosibirsk_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 570
-				}
+			FROM = {
+				controls_state = 570
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -148,12 +140,10 @@ defined_text = {
 	name = get_krasnoyarsk_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 568
-				}
+			FROM = {
+				controls_state = 568
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -184,12 +174,10 @@ defined_text = {
 	name = get_yekaterinburg_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 653
-				}
+			FROM = {
+				controls_state = 653
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -220,12 +208,10 @@ defined_text = {
 	name = get_petersburg_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 195
-				}
+			FROM = {
+				controls_state = 195
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -256,12 +242,10 @@ defined_text = {
 	name = get_kyiv_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 1285
-				}
+			FROM = {
+				controls_state = 1285
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -292,12 +276,10 @@ defined_text = {
 	name = get_tallinn_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 13
-				}
+			FROM = {
+				controls_state = 13
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -325,15 +307,13 @@ defined_text = {
 }
 
 defined_text = {
-	name = get_misk_status
+	name = get_minsk_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 206
-				}
+			FROM = {
+				controls_state = 206
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -364,12 +344,10 @@ defined_text = {
 	name = get_berlin_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 1378
-				}
+			FROM = {
+				controls_state = 1378
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -400,12 +378,10 @@ defined_text = {
 	name = get_paris_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 16
-				}
+			FROM = {
+				controls_state = 16
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -436,12 +412,10 @@ defined_text = {
 	name = get_rome_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 1493
-				}
+			FROM = {
+				controls_state = 1493
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -472,12 +446,10 @@ defined_text = {
 	name = get_london_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 126
-				}
+			FROM = {
+				controls_state = 126
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -508,12 +480,10 @@ defined_text = {
 	name = get_luxembourg_status
 	text = {
 		trigger = {
-			any_country = {
-				FROM = {
-					controls_state = 8
-				}
+			FROM = {
+				controls_state = 8
 			}
-		}	
+		}
 		localization_key = "our_control"
 	}
 	text = {
@@ -539,3 +509,52 @@ defined_text = {
 		localization_key = "enemy_control"
 	}
 }
+
+# startup
+
+# defined_text = {
+# 	name = start_menu_country_desc_TFRO
+
+# 	text = {
+# 		trigger = {
+# 			tag = YAK
+# 			has_government = nationalist
+# 		}
+# 		localization_key = "YAK_country_summary"
+# 	}
+# }
+
+# defined_text = {
+# 	name = start_menu_country_paths_TFRO
+
+# 	text = {
+# 		trigger = {
+# 			tag = YAK
+# 			has_government = nationalist
+# 		}
+# 		localization_key = "YAK_country_paths"
+# 	}
+# }
+
+# defined_text = {
+# 	name = start_menu_country_other_TFRO
+# 	text = {
+# 		trigger = {
+# 			tag = YAK
+# 			has_government = nationalist
+# 		}
+# 		localization_key = "YAK_country_other"
+# 	}
+# }
+
+# defined_text = {
+# 	name = GET_BACKGROUND
+
+# 	text = {
+# 		trigger = {
+# 			tag = YAK
+# 			has_government = nationalist
+# 		}
+# 		localization_key = "GFX_Omsk_BG"
+# 	}
+# }

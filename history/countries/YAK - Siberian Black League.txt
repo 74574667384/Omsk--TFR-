@@ -226,12 +226,18 @@
 	recruit_character = YAK_Stepan
 	recruit_character = YAK_Georgy
 	recruit_character = YAK_Oleg
+	recruit_character = YAK_Medvedev
 
 	set_politics = {	
 		ruling_party = nationalist 
 		last_election = "2018.1.1"
 		election_frequency = 48
 		elections_allowed = no
+	}
+
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		elections_allowed = yes
 	}
 
 	create_country_leader = {
@@ -247,6 +253,5 @@
 	add_ideas = {
 		Rise_hate
 		Uncontrolled_army
-		omsk_economy
 		collapse_USSR
 	}

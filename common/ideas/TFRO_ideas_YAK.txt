@@ -1,0 +1,1208 @@
+ideas = {
+	country = {
+		Rise_hate = {
+			allowed = {
+				original_tag = YAK
+			}
+			modifier = {
+				nationalist_drift = 0.3
+				political_power_factor = 0.10
+			}
+		}
+		 Uncontrolled_army = {
+			allowed = {
+				original_tag = YAK
+                has_government = nationalist
+			}
+			modifier = {
+                army_attack_factor = -0.25 # Заменено с attack_bonus_against для работы на всех врагов
+                army_defence_factor = -0.25
+                army_morale_factor = -0.1
+                army_org_factor = -0.15
+                recruitable_population_factor = -0.30
+                military_upkeep_factory = 0.15
+                military_development_monthly = -0.20
+            }
+		 }
+		 army_Great_Trial = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                   war_support_factor = 0.35
+                   stability_factor = -0.05
+                   army_attack_factor = 0.25
+                   army_defence_factor = 0.20
+                   breakthrough_factor = 0.25
+                   army_org_factor = 0.20
+                   army_morale_factor = 0.25
+                   planning_speed = 0.25
+                   max_planning = 0.20
+                   hard_attack_factor = 0.25
+                   soft_attack_factor = 0.15
+                   army_armor_attack_factor = 0.30
+                   army_artillery_attack_factor = 0.20
+                   supply_consumption_factor = -0.20
+                   attrition = -0.15
+                   land_reinforce_rate = 0.20
+                   recruitable_population_factor = 0.15
+                   political_power_gain = -0.10
+                   consumer_goods_factor = 0.03
+            }
+        }
+        collapse_USSR = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                stability_factor = -0.25
+                # army_org_regain = -0.10 
+                war_support_factor = -0.10
+                consumer_goods_factor = 0.10
+                production_factory_efficiency_gain_factor = -0.15
+                production_factory_max_efficiency_factor = -0.12
+                business_value_factor = -0.10
+                income_growth_factor = -0.20
+                academic_development_monthly = -0.05
+                industrial_development_monthly = -0.20
+            }
+        }
+        omsk_economy_full = {
+            allowed = {
+                original_tag = YAK
+            }
+             modifier = {
+                 industrial_capacity_factory = 0.35
+                 industrial_capacity_dockyard = 0.15
+                 production_factory_efficiency_gain_factor = 0.15
+                 production_factory_max_efficiency_factor = 0.10
+                 production_speed_arms_factory_factor = 0.20
+                 production_speed_industrial_complex_factor = -0.10
+                 construction_speed_factor = 0.10
+                 consumer_goods_factor = 0.05
+                 military_factory_cost_factor = -0.10
+                 recruitable_population_factor = 0.05
+                 supply_consumption_factor = -0.15
+                 war_support_factor = 0.10
+                 research_speed_factor = 0.25
+                 political_power_gain = -0.05
+                 income_growth_factor = 0.20
+                 personal_value_factor = 0.15
+                 business_value_factor = 0.15
+                 military_development_monthly = -0.025
+               }
+        }
+        omsk_civil_industry = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                 industrial_capacity_factory = 0
+                 industrial_capacity_dockyard = 0
+                 production_factory_efficiency_gain_factor = 0
+                 production_factory_max_efficiency_factor = 0
+                 production_speed_arms_factory_factor = 0
+                 production_speed_industrial_complex_factor = 0.05
+                 construction_speed_factor = 0.10
+                 consumer_goods_factor = 0.05
+                 military_factory_cost_factor = -0
+                 supply_consumption_factor = -0.15
+                 research_speed_factor = 0.30
+                 political_power_gain = -0.05
+                 income_growth_factor = 0
+                 personal_value_factor = 0
+                 business_value_factor = 0
+                 military_development_monthly = -0
+               }
+        }
+
+#         update_army = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             # modifier = {
+#             #     army_attack_factor = -0.10
+#             #     army_defence_factor = -0.05
+#             #     army_morale_factor = -0.05
+#             #     army_org_factor = 0.00
+#             #     recruitable_population_factor = -0.20
+#             #     unit_upkeep_attrition_factor = 0.15
+#             #     military_upkeep_factory = 0.10
+#             #     military_development_monthly = -0.10
+#             #     war_support_factor = 0.05
+#             #     political_power_gain = -0.05
+#             #     army_attack_factor = -0.10 # Заменено с attack_bonus_against для работы на всех врагов
+#             #     army_defense_factor = -0.05
+#             #     army_armor_defence_factor = -0.15
+#             #     army_morale_factor = 0
+#             #     army_org_factor = 0
+#             #     planning_speed = -0.1
+#             #     max_planning = -0.3
+#             #     recruitable_population_factor = -0.30
+#             #     unit_upkeep_attrition_factor = -0.15
+#             #     military_upkeep_factory = 0.05
+#             #     military_development_monthly = -0.10
+#             # }
+
+#             # modifier = {
+#             #     army_attack_factor = -0.20 # Заменено с attack_bonus_against для работы на всех врагов
+#             #     army_defense_factor = -0.10
+#             #     # army_armor_defence_factor = -0.15
+#             #     army_morale_factor = 0.05
+#             #     # planning_speed = -0.1
+#             #     # max_planning = -0.3
+#             #     recruitable_population_factor = -0.05
+#             #     unit_upkeep_attrition_factor = -0.05
+#             #     military_upkeep_factory = 0.10
+#             #     military_development_monthly = -0.05
+#             # }
+
+#             modifier = {
+#                 army_attack_factor = -0.20 # Заменено с attack_bonus_against для работы на всех врагов
+#                 army_defence_factor = -0.20
+#                 # army_armor_defence_factor = -0.15
+#                 army_morale_factor = -0.05
+#                 army_org_factor = -0.05
+#                 # planning_speed = -0.1
+#                 # max_planning = -0.3
+#                 recruitable_population_factor = -0.25
+#                 military_upkeep_factory = -0.15
+#                 military_development_monthly = -0.20
+#             }
+#         }
+
+#         update_army_2 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             # modifier = {
+#             #     army_attack_factor = -0.05
+#             #     army_defence_factor = -0.05
+#             #     army_morale_factor = 0
+#             #     army_org_factor = 0.05
+#             #     # recruitable_population_factor = -0.10
+#             #     unit_upkeep_attrition_factor = 0.05
+#             #     military_upkeep_factory = 0.05
+#             #     land_reinforce_rate = 0.05
+#             # }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.20       
+#                 equipment_conversion_speed = 0.15
+#                 org_loss_when_moving = -0.05
+#                 supply_consumption_factor = +0.05
+#                 recruitable_population_factor = -0.25
+#                 military_development_monthly = -0.20       
+#             }
+#     }
+
+#     update_army_3 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.20
+#                 army_speed_factor = 0.0450
+#                 army_org_factor = 0.05
+#                 # planning_speed = 0.10
+#                 recruitable_population_factor = -0.20
+#                 military_development_monthly = -0.15
+#                 # land_reinforce_rate = 0.10
+#                 # recon_factor = 0.15
+#     }
+# }
+
+#     update_army_4 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.15
+#                 army_morale_factor = 0.05
+#                 army_org_factor = 0.10
+#                 # planning_speed = 0.10
+#                 recruitable_population_factor = 0.00
+#                 war_support_factor = 0.04500
+#                 land_reinforce_rate = 0.15
+#                 army_artillery_attack_factor = 0.25
+#             }
+#     }
+
+#      update_army_5 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             # modifier = {
+#             #     army_attack_factor = 0.10
+#             #     army_defence_factor = 0.10
+#             #     army_morale_factor = 0.15
+#             #     army_org_factor = 0.15
+#             #     planning_speed = 0.15
+#             #     recruitable_population_factor = 0.05
+#             #     war_support_factor = 0.20
+#             #     planning_speed = 0.10
+#             #     land_reinforce_rate = 0.15
+#             # }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.15
+#                 army_morale_factor = 0.05
+#                 army_org_factor = 0.10
+#                 planning_speed = 0.10
+#                 recon_factor = 0.15
+#                 # recruitable_population_factor = -0.05
+#                 war_support_factor = 0.04500
+#                 land_reinforce_rate = 0.15
+#                 army_artillery_attack_factor = 0.25
+#                 max_planning = 0.05
+#             }
+#     }
+#     update_army_6 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.10
+#                 army_morale_factor = 0.05
+#                 recon_factor = 0.15
+#                 army_org_factor = 0.15
+#                 planning_speed = 0.10
+#                 max_planning = 0.05
+#                 supply_consumption_factor = -0.05
+#                 recruitable_population_factor = 0
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.0450
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.15
+#                 production_factory_max_efficiency_factor = 0.10
+#                 land_reinforce_rate = 0.15
+#             }
+#     }
+#     update_army_7 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.20
+#                 army_defence_factor = -0.10
+#                 army_morale_factor = 0.15
+#                 recon_factor = 0.15
+#                 army_org_factor = 0.15
+#                 planning_speed = 0.10
+#                 max_planning = 0.05
+#                 supply_consumption_factor = -0.05
+#                 weekly_manpower = 1500
+#                 recruitable_population_factor = 0.15
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.10
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.15
+#                 production_factory_max_efficiency_factor = 0.10
+#                 land_reinforce_rate = 0.15
+#             }
+#     }
+#     update_army_8 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.10
+#                 army_defence_factor = -0.05
+#                 army_morale_factor = 0.30
+#                 recon_factor = 0.15
+#                 army_org_factor = 0.25
+#                 planning_speed = 0.10
+#                 max_planning = 0.05
+#                 supply_consumption_factor = -0.05
+#                 weekly_manpower = 1500
+#                 recruitable_population_factor = 0.15
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.10
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.20
+#                 production_factory_max_efficiency_factor = 0.20
+#                 land_reinforce_rate = 0.25
+#                 supply_consumption_factor = -0.20
+#                 military_development_monthly = 0.0540
+#             }
+#     }
+#     update_army_9 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.10
+#                 army_defence_factor = -0.05
+#                 army_morale_factor = 0.30
+#                 recon_factor = 0.25
+#                 army_org_factor = 0.25
+#                 planning_speed = 0.20
+#                 max_planning = 0.10
+#                 supply_consumption_factor = -0.05
+#                 weekly_manpower = 1500
+#                 recruitable_population_factor = 0.15
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.10
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.20
+#                 production_factory_max_efficiency_factor = 0.20
+#                 land_reinforce_rate = 0.25
+#                 supply_consumption_factor = -0.3040
+#                 military_development_monthly = 0.0540
+#             }
+#     }
+#     update_army_10 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 army_attack_factor = -0.10
+#                 army_defence_factor = -0.05
+#                 army_morale_factor = 0.35
+#                 recon_factor = 0.25
+#                 army_org_factor = 0.30400
+#                 planning_speed = 0.20
+#                 max_planning = 0.10
+#                 supply_consumption_factor = -0.05
+#                 weekly_manpower = 1500
+#                 recruitable_population_factor = 0.20
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.25
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.20
+#                 production_factory_max_efficiency_factor = 0.20
+#                 land_reinforce_rate = 0.25
+#                 supply_consumption_factor = -0.3040
+#                 military_development_monthly = 0.0540
+#             }
+#     }
+#     update_army_11 = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             # modifier = {
+#             #     army_attack_factor = 0.22
+#             #     army_defence_factor = 0.19
+#             #     breakthrough_factor = 0.24
+#             #     hard_attack_factor = 0.22
+#             #     army_armor_attack_factor = 0.25
+#             # }
+#             modifier = {
+#                 army_attack_factor = -0.05
+#                 army_defence_factor = 0
+#                 army_morale_factor = 0.35
+#                 recon_factor = 0.25
+#                 army_org_factor = 0.30400
+#                 planning_speed = 0.20
+#                 max_planning = 0.10
+#                 supply_consumption_factor = -0.05
+#                 weekly_manpower = 3500
+#                 recruitable_population_factor = 0.20
+#                 army_artillery_attack_factor = 0.25
+#                 war_support_factor = 0.25
+#                 army_armor_attack_factor = 0.15
+#                 production_factory_efficiency_gain_factor = 0.20
+#                 production_factory_max_efficiency_factor = 0.20
+#                 land_reinforce_rate = 0.25
+#                 supply_consumption_factor = -0.3040
+#                 military_development_monthly = 0.0540
+#             }
+#     }
+
+             update_army = {
+                allowed = {
+                    original_tag = YAK
+                }
+            modifier = {
+                army_attack_factor = -0.20 # Заменено с attack_bonus_against для работы на всех врагов
+                army_defence_factor = -0.20
+                # army_armor_defence_factor = -0.15
+                army_morale_factor = -0.05
+                army_org_factor = -0.05
+                # planning_speed = -0.1
+                # max_planning = -0.3
+                recruitable_population_factor = -0.25
+                military_upkeep_factory = -0.15
+                military_development_monthly = -0.20
+            }
+        }
+
+        update_army_2 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.20
+                army_defence_factor = -0.20       
+                equipment_conversion_speed = 0.15
+                org_loss_when_moving = -0.05
+                supply_consumption_factor = +0.05
+                recruitable_population_factor = -0.25
+                military_development_monthly = -0.20       
+            }
+        }
+
+       update_army_3 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.20
+                army_defence_factor = -0.20
+                army_speed_factor = 0.0450
+                army_org_factor = 0.05
+                # planning_speed = 0.10
+                recruitable_population_factor = -0.20
+                military_development_monthly = -0.15
+                # land_reinforce_rate = 0.10
+                # recon_factor = 0.15
+            }
+    }
+
+      update_army_4 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            army_attack_factor = -0.20
+            army_defence_factor = -0.15
+            army_morale_factor = 0.05
+            army_org_factor = 0.10
+            recruitable_population_factor = 0.00
+            war_support_factor = 0.04500
+            land_reinforce_rate = 0.15
+            army_artillery_attack_factor = 0.25
+        }
+    }
+
+       update_army_5 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            army_attack_factor = -0.20
+            army_defence_factor = -0.15
+            army_morale_factor = 0.05
+            army_org_factor = 0.10
+            planning_speed = 0.10
+            recon_factor = 0.15
+            war_support_factor = 0.04500
+            land_reinforce_rate = 0.15
+            army_artillery_attack_factor = 0.25
+            max_planning = 0.05
+        }
+    }
+        update_army_6 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.20
+                army_defence_factor = -0.10
+                army_morale_factor = 0.05
+                recon_factor = 0.15
+                army_org_factor = 0.15
+                planning_speed = 0.10
+                max_planning = 0.05
+                supply_consumption_factor = -0.05
+                recruitable_population_factor = 0
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.0450
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.10
+                land_reinforce_rate = 0.15
+            }
+    }
+        update_army_7 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.20
+                army_defence_factor = -0.10
+                army_morale_factor = 0.15
+                recon_factor = 0.15
+                army_org_factor = 0.15
+                planning_speed = 0.10
+                max_planning = 0.05
+                supply_consumption_factor = -0.05
+                weekly_manpower = 1500
+                recruitable_population_factor = 0.15
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.10
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.10
+                land_reinforce_rate = 0.15
+            }
+    }
+        update_army_8 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.10
+                army_defence_factor = -0.05
+                army_morale_factor = 0.30
+                recon_factor = 0.15
+                army_org_factor = 0.25
+                planning_speed = 0.10
+                max_planning = 0.05
+                supply_consumption_factor = -0.05
+                weekly_manpower = 1500
+                recruitable_population_factor = 0.15
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.10
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_max_efficiency_factor = 0.20
+                land_reinforce_rate = 0.25
+                supply_consumption_factor = -0.20
+                military_development_monthly = 0.0540
+            }
+    }
+        update_army_9 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.10
+                army_defence_factor = -0.05
+                army_morale_factor = 0.30
+                recon_factor = 0.25
+                army_org_factor = 0.25
+                planning_speed = 0.20
+                max_planning = 0.10
+                supply_consumption_factor = -0.05
+                weekly_manpower = 1500
+                recruitable_population_factor = 0.15
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.10
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_max_efficiency_factor = 0.20
+                land_reinforce_rate = 0.25
+                supply_consumption_factor = -0.3040
+                military_development_monthly = 0.0540
+            }
+    }
+        update_army_10 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.10
+                army_defence_factor = -0.05
+                army_morale_factor = 0.35
+                recon_factor = 0.25
+                army_org_factor = 0.30400
+                planning_speed = 0.20
+                max_planning = 0.10
+                supply_consumption_factor = -0.05
+                weekly_manpower = 1500
+                recruitable_population_factor = 0.20
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.25
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_max_efficiency_factor = 0.20
+                land_reinforce_rate = 0.25
+                supply_consumption_factor = -0.3040
+                military_development_monthly = 0.0540
+            }
+    }
+        update_army_11 = {
+            allowed = {
+                original_tag = YAK
+            }
+            modifier = {
+                army_attack_factor = -0.05
+                army_defence_factor = 0
+                army_morale_factor = 0.35
+                recon_factor = 0.25
+                army_org_factor = 0.30400
+                planning_speed = 0.20
+                max_planning = 0.10
+                supply_consumption_factor = -0.05
+                weekly_manpower = 3500
+                recruitable_population_factor = 0.20
+                army_artillery_attack_factor = 0.25
+                war_support_factor = 0.25
+                army_armor_attack_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_max_efficiency_factor = 0.20
+                land_reinforce_rate = 0.25
+                supply_consumption_factor = -0.3040
+                military_development_monthly = 0.0540
+            }
+        }
+
+    omsk_economy = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_start_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0
+				industrial_capacity_factory = 0
+                recruitable_population_factor = 0
+                supply_consumption_factor = -0
+                war_support_factor = 0
+                research_speed_factor = 0
+                political_power_gain = -0
+				local_resources_factor = 0
+				trade_opinion_factor = 0
+				income_growth_factor = 0
+                industrial_capacity_factory = 0.10
+                industrial_capacity_dockyard = 0.15
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0
+				dtg_threshold = 0
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0
+				production_speed_office_park_factor = 0
+				production_speed_infrastructure_factor = 0
+				business_value_factor = 0
+				personal_value_factor = -0.05
+				industrial_development_monthly = 0
+				farming_development_monthly = 0
+				research_speed_factor = 0
+				stability_factor = 0
+				monthly_population = 0
+			}
+    }
+    economy_update_1 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0
+				industrial_capacity_factory = 0
+                war_support_factor = 0
+                research_speed_factor = 0
+                political_power_gain = -0
+				local_resources_factor = 0
+				trade_opinion_factor = 0
+				income_growth_factor = 0
+                industrial_capacity_factory = 0.1350
+                industrial_capacity_dockyard = 0.15
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0
+				dtg_threshold = 0
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0
+				production_speed_office_park_factor = 0
+				production_speed_infrastructure_factor = 0
+				business_value_factor = 0.10
+				personal_value_factor = -0.05
+				industrial_development_monthly = 0.05
+				farming_development_monthly = 0
+                military_development_monthly = 0.05
+				research_speed_factor = 0
+				stability_factor = 0
+				monthly_population = 0
+			}
+    }
+    economy_update_2 = {
+        allowed = {
+            original_tag = YAK
+        }
+        # modifier = {
+        #     industrial_capacity_factory = 0.15
+        #     industrial_capacity_dockyard = 0.30
+        #     production_factory_efficiency_gain_factor = 0.10
+        #     production_factory_max_efficiency_factor = 0.10
+        #     production_speed_arms_factory_factor = 0.10
+        #     production_speed_industrial_complex_factor = 0.010
+        #     construction_speed_factor = 0
+        #     consumer_goods_factor = 0
+        #     military_factory_cost_factor = -0
+        #     recruitable_population_factor = 0
+        #     supply_consumption_factor = -0
+        #     war_support_factor = 0
+        #     research_speed_factor = 0
+        #     political_power_gain = -0
+        #     income_growth_factor = 0
+        #     personal_value_factor = 0
+        #     business_value_factor = 0
+        #     military_development_monthly = -0
+        # }
+
+        modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0
+				industrial_capacity_factory = 0
+                war_support_factor = 0
+                research_speed_factor = 0
+                political_power_gain = -0
+				local_resources_factor = 0.05
+				trade_opinion_factor = 0
+				income_growth_factor = 0.05
+                industrial_capacity_factory = 0.1350
+                industrial_capacity_dockyard = 0.15
+                production_speed_bunker_factor = -0.15
+                stability_weekly_factor = -0.0230
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.05
+				dtg_threshold = 0
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0
+				production_speed_office_park_factor = 0
+				production_speed_infrastructure_factor = 0
+				business_value_factor = 0.15
+				personal_value_factor = 0.05
+				industrial_development_monthly = 0.05
+				farming_development_monthly = 0
+                military_development_monthly = 0
+				research_speed_factor = 0.10
+				stability_factor = 0
+			}
+    }
+    economy_update_3 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0.15
+            industrial_capacity_dockyard = 0.30
+            production_factory_efficiency_gain_factor = 0.10
+            production_factory_max_efficiency_factor = 0.10
+            production_speed_arms_factory_factor = 0.10
+            production_speed_bunker_factor = 0.15
+            production_speed_industrial_complex_factor = 0.010
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            military_factory_cost_factor = -0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0
+            business_value_factor = 0
+            military_development_monthly = -0
+        }
+    }
+
+    economy_update_4 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.20
+            production_factory_max_efficiency_factor = 0.15
+            production_speed_arms_factory_factor = 0.25
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            military_factory_cost_factor = -0
+            recruitable_population_factor = 0
+            supply_consumption_factor = 0.2350
+            war_support_factor = 0
+            research_speed_factor = 0.1430
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.25
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+
+    economy_update_5 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0.20
+            production_speed_arms_factory_factor = 0.25
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            military_factory_cost_factor = -0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.25
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+
+    economy_update_6 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0.20
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.25
+            production_factory_max_efficiency_factor = 0.20
+            production_speed_arms_factory_factor = 0.25
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0
+            construction_speed_factor = 0
+            consumer_goods_factor = -0.15
+            military_factory_cost_factor = -0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.25
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+
+    economy_update_7 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0.25
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0
+            line_change_production_efficiency_factor = 0.1950
+            production_speed_arms_factory_factor = 0.25
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            military_factory_cost_factor = 0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0.10
+            personal_value_factor = 0.35
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+
+    civil_ecomony_1 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0.20
+            resource_gain_efficiency_factor = 0
+            production_speed_arms_factory_factor = 0
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0.05
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            # local_resources_oil_factor = 0.20
+            military_factory_cost_factor = 0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.25
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+    civil_ecomony_2 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0.20
+            industrial_development_monthly = 0.05
+            resource_gain_efficiency_factor = 0.20
+            production_speed_arms_factory_factor = 0
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0.05
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            # local_resources_oil_factor = 0.20
+            military_factory_cost_factor = 0.20
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.20
+            business_value_factor = 0.30
+            military_development_monthly = -0
+        }
+    }
+    civil_ecomony_3 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0.20
+            industrial_development_monthly = 0.10
+            resource_gain_efficiency_factor = 0.20
+            production_speed_arms_factory_factor = 0
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0.05
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            # local_resources_oil_factor = 0.20
+            military_factory_cost_factor = 0.20
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0.05
+            personal_value_factor = 0.25
+            business_value_factor = 0.35
+            military_development_monthly = -0
+            society_development_monthly = 0.05
+        }
+    }
+
+    economy_update_9 = {
+        allowed = {
+            original_tag = YAK
+        }
+        modifier = {
+            industrial_capacity_factory = 0
+            industrial_capacity_dockyard = 0
+            production_factory_efficiency_gain_factor = 0.15
+            production_factory_max_efficiency_factor = 0.20
+            production_speed_arms_factory_factor = 0.25
+            production_speed_bunker_factor = 0
+            production_speed_industrial_complex_factor = 0
+            construction_speed_factor = 0
+            consumer_goods_factor = 0
+            military_factory_cost_factor = -0
+            recruitable_population_factor = 0
+            supply_consumption_factor = -0
+            war_support_factor = 0
+            research_speed_factor = 0
+            political_power_gain = -0
+            income_growth_factor = 0
+            personal_value_factor = 0.25
+            business_value_factor = 0.20
+            military_development_monthly = -0
+        }
+    }
+}
+}
+
+
+# ideas = {
+#     country = {
+#         collapse_USSR = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 stability_factor = -0.25
+#                 # army_org_regain = -0.10 
+#                 war_support_factor = -0.10
+#                 consumer_goods_factor = 0.10
+#                 production_factory_efficiency_gain_factor = -0.15
+#                 production_factory_max_efficiency_factor = -0.12
+#                 business_value_factor = -0.10
+#                 income_growth_factor = -0.20
+#                 academic_development_monthly = -0.05
+#                 industrial_development_monthly = -0.20
+#             }
+#         }
+#     }
+# }
+
+
+# ideas = {
+#     hidden_ideas = {
+        
+#     }
+# }
+
+# ideas = {
+#     country = {
+#         collapse_USSR = {
+#             allowed = {
+#                 original_tag = YAK
+#             }
+#             modifier = {
+#                 stability_factor = -0.25
+#                 # army_org_regain = -0.10 
+#                 war_support_factor = -0.10
+#                 consumer_goods_factor = 0.10
+#                 production_factory_efficiency_gain_factor = -0.15
+#                 production_factory_max_efficiency_factor = -0.12
+#                 business_value_factor = -0.10
+#                 income_growth_factor = -0.20
+#                 academic_development_monthly = -0.05
+#                 industrial_development_monthly = -0.20
+#             }
+#         }
+#     }
+# }
+# Kazakhstan
+
+ideas = {
+	country = {
+		Shield_of_the_Great_Trial = {
+			allowed = {
+                if = {
+                    limit = {
+                        has_government = nationalist
+                    }
+                }
+				tag = KAZ
+				tag = YAK
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.10
+				recruitable_population_factor = -0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+	}
+}
+
+
+
+#Ukraine
+
+ideas = {
+    country = {
+        march_new_army = {
+            allowed = {
+                tag = UKR
+                has_government = nationalist
+            }
+            modifier = {
+                attack_bonus_against = 0.10
+            }
+        }
+    }
+}
+
+ideas = {
+    country = {
+        death_teutonic_slava_ukraine = {
+            allowed = {
+                tag = UKR
+                has_government = nationalist
+            }
+            modifier = {
+                popularity = 0.2
+                army_attack_factor = 0.09
+            }
+        }
+    }
+}
+
+#Europe
+
+ideas = {
+	country = {
+		infection_of_tunnel_systems = {
+			allowed = {tag = YAK OR = { tag = GER } }
+            picture = GFX_idea_trojans_injector
+			modifier = {
+                industrial_capacity_factory = -0.25      # -25% эффективность фабрик
+                industrial_capacity_dockyard = -0.20     # -20% эффективность верфей
+                production_speed_buildings_factor = -0.30 # -30% скорость строительства
+                consumer_goods_factor = 0.15
+				army_org_factor = -0.15                  # -15% организация армии
+                supply_consumption_factor = 0.20         # +20% потребление снабжения
+                land_reinforce_rate = -0.10               # -10% шанс пополнения инициативы
+                planning_speed = -0.25
+                air_mission_efficiency_factor = -0.25
+                air_accidents_factor = 0.35
+                intel_factor = -0.30
+                decryption_factor = -0.25                  # +15% товаров народного потребления (паника)
+
+            }
+		}
+	}
+}
+
+ideas = {
+    country = {
+        remove_mittaly_basedate = {
+            allowed = {tag = YAK}
+            picture = GFX_ZZZ
+            modifier = {
+                air_accidents_factor = -0.21
+                army_org_factor = -0.22
+                military_industrial_organization_funds_gain = -25
+                decryption_power = -25
+                army_speed_factor_for_controller = -0.15
+                army_defence_factor = -0.30
+                army_defence_against_major_factor = -0.25
+            }
+            }
+        }
+    }
+
+ideas = {
+    country = {
+        legacy_of_the_great_trial = {
+            allowed = {
+                if = {
+                    tag = LUX
+                    has_government = nationalist
+                }
+            }
+            modifier = {
+                stability_factor = -0.25
+                war_support_factor = 0.50
+                political_power_gain = -0.15
+                production_speed_buildings_factor = 0.10
+                production_speed_arms_factory_factor = 0.20
+                production_speed_bunker_factor = 0.30
+                production_factory_efficiency_gain_factor = -0.5
+                consumer_goods_factor = -0.05
+                conscription_factor = 0.05
+                land_reinforce_rate = 0.10
+                training_time_factor = -0.15
+            }
+        }
+    }
+}

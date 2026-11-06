@@ -16,9 +16,9 @@ country_event = {
 
 news_event = {
 	id = news_victory.1
-	title = "Omsk Victory"
+	title = omsk.victory.t
 
-	desc = omsk_win.1.d
+	desc = omsk.victory.1.d
 
 	picture = GFX_Victory
 

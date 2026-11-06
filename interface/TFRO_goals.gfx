@@ -214,4 +214,21 @@ spriteTypes = {
 		name = "GFX_new_path_omsk"
 		texturefile = "gfx/interface/goals/YAK/YAK_new_path_omsk.png"
 	}
+
+	SpriteType = {
+		name = "GFX_formation_alliance"
+		texturefile = "gfx/interface/goals/YAK/formation_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_contant_from_china"
+		texturefile = "gfx/interface/goals/YAK/contant_from_china.png"
+	}
+	spriteType = {
+		name = "GFX_we_lost"
+		texturefile = "gfx/interface/goals/YAK/we_lost.png"
+	}
+	spriteType = {
+		name = "GFX_omsk_protest"
+		textureFile = "gfx/interface/goals/YAK/omsk_protest.png"
+	}
 }

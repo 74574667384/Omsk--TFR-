@@ -32,6 +32,38 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_omsk_forces_moscow"
-		texturefile = "gfx/event_picures/Omsk_forces_in_Moscow.png"
+		texturefile = "gfx/event_picures/news_event/omsk_forces_in_moscow.png"
+	}
+	spriteType = {
+		name = "GFX_new_hope_for_omsk"
+		textureFile = "gfx/event_picures/new_hope_for_the_people.png"
+	}
+	spriteType = {
+		name = "GFX_medvedev_party"
+		textureFile = "gfx/event_picures/New_face.png"
+	}
+	spriteType = {
+		name = "GFX_legacy_soviet"
+		texturefile = "gfx/event_picures/legacy_soviet.png"
+	}
+	spriteType = {
+		name = "GFX_stint_league"
+		texturefile = "gfx/event_picures/stint_league.png"
+	}
+	spriteType = {
+		name = "GFX_mass_raliy"
+		texturefile = "gfx/event_picures/rally_omsk.png"
+	}
+	spriteType = {
+		name = "GFX_mobians_black_league"
+		texturefile = "gfx/event_picures/mobians_black_league.png"
+	}
+	spriteType = {
+		name = "GFX_future_airfighter"
+		texturefile = "gfx/event_picures/AL-631.png"
+	}
+	spriteType = {
+		name = "GFX_asia_beijing"
+		texturefile = "gfx/event_picures/asia_beijing.png"
 	}
 }

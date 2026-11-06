@@ -1,0 +1,6 @@
+music = {
+	track = {
+		name = "Bismarck"
+		file = "Bismarck_spotdown.ogg"
+	}
+}

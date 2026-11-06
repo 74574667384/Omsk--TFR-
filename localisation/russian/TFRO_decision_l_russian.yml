@@ -1,0 +1,34 @@
+﻿l_russian: 
+ YAK_black_league_unification:0 "§HРоссия Воссоединение§!"
+
+ russian_unification:0 "Обьединить Россия"
+ army_reform:0 "Воруженный сил черная лига"
+
+ #War warload
+
+ war_warload:0 "[YAM.GetFlag] Операция: §AКрасный закат§!"
+ war_warloar_2:0 "[STV.GetFlag] Операция: §YКарбышев§!"
+ war_warload_3:0 "[NFJ.GetFlag] Операция: §GЖелезный пояс§!"
+ war_warload_4:0 "[PUR.GetFlag] Операция: §CУран§!"
+ war_warload_5:0 "[BSK.GetFlag] Операция: §OСатурн§!"
+ war_warload_6:0 "[SOL.GetFlag] Операция: §PКорабль§!"
+ war_warload_8:0 "[CKK.GetFlag] [UDM.GetFlag] [BSK.GetFlag] [SOL.GetFlag] [CKK.GetFlag] [CHU.GetFlag] Операция: §LКолец§!"
+ war_warload_9:0 "[FLN.GetFlag] Операция: §5Пограничный пост Карбышевский§!"
+ war_warload_11:0 "[OCC.GetFlag] Операция: §dРед Уда§!"
+ war_warload_12:0 "[SEY.GetFlag] Операция: §4Снег§!"
+ war_warload_13:0 "[KIR.GetFlag] Операция: §pДальний Восток§!"
+ war_warload_14:0 "[KKP.GetFlag] Операция: §GВолга§!"
+
+ build_virus_for_veagen:0 "Нулевой День"
+ build_virus_for_veagen_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n§!Глобальная сеть — это не пространство свободы; это ахиллесова пята «Стального пакта». Пока враг полагается на свои автоматизированные системы связи, радары и логистические суперкомпьютеры, мы превратим их технологии в их собственный надгробный камень. Полная изоляция наших серверов завершена. Пришло время выпустить дремлющих троянцев. Великий суд начнётся в цифровом мире и закончится на поле боя.\n\n Проект MEMZ-T: §Y[?YAK.memz_progress]%§!\n\n Проект «Сухоруков»: §Y[?YAK.suxnet_progress]%§! \n\n Проект «Redemption-26»: §Y[?YAK.petya_progress]%§!"
+ research_memz:0 "Исследовательские MEMZ"
+ memz_progress_tt:0 "Темпы разработки MEMZ-T увеличились на §G+25%§!"
+ research_suxnet:0 "Исследование Suxnet"
+ suxnet_progress_tt:0 "Темпы реализации проекта «Сухоруков» увеличились на §G+25%§!"
+ research_petya:0 "Исследование «Petya»"
+ petya_progress_tt:0 "Прогресс в работе над проектом «Redemption-26» увеличился на §G+25%§!"
+ combine_viruses:0 "создать троян "Язов-Ф834""
+ combine_viruses_desc:0 "Нам удалось создать смертоносные вирусы, распространяющиеся по сетевым туннелям, а также разработать военные средства, которые дают нам больше времени для начала наступления"
+ PETYA_PROGRESS_COMPLETED:0 "§GCompleted§!"
+ MEMZ_PROGRESS_COMPLETED:0 "§GCompleted§!"
+ SUXNET_PROGRESS_COMPLETED:0 "§GCompleted§!"

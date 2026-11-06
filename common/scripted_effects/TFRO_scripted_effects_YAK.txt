@@ -31,44 +31,16 @@ YAK_black_league_victory_in_4nd_European_War = {
 	}
 	YAK = {
 		set_country_flag = YAK_league_4nd_victory_flag
-	}
 
-	if = {
-		limit = {
-			NOT ={
-				has_country_flag = ENL_member
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = NEL_member
+				}
 			}
-			create_faction = ENL_member
-			set_country_flag = ENL_member
+			set_country_flag = NEL_member
 		}
 
-		annex_country = {
-			target = SOV
-			transfer_troops = no
-		}
-		annex_country = {
-			target = NOA
-			transfer_troops = no
-		}
-	}
-
-	# YAK = {
-	# 	coun
-	# }
-
-	# UKR = {
-	# 	transfer_state = 196
-	# 	transfer_state = 137
-	# 	transfer_state = 200
-	# 	transfer_state = 1374
-	# 	transfer_state = 227
-	# 	transfer_state = 1091
-	# 	transfer_state = 1090
-	# 	transfer_state = 1375
-	# 	transfer_state = 240
-	# }
-
-	YAK = {
 		annex_country = {
 			target = SOV
 			transfer_troops = no
@@ -85,6 +57,21 @@ YAK_black_league_victory_in_4nd_European_War = {
 			target = GEO
 			transfer_troops = no	
 		}
+
+		set_autonomy = { target = KAZ autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = FAF autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = ENG autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = SPR autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = BUL autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = SER autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = ROM autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = TUR autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = ITA autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = GER autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = SWE autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = GRE autonomy_state = autonomy_league_puppet}
+		set_autonomy = { target = PLD autonomy_state = autonomy_league_puppet}
+
 	}
 
 	set_autonomy = {
@@ -126,28 +113,38 @@ YAK_black_league_victory_in_4nd_European_War = {
 		remove_state_core = 65
 		remove_state_core = 68
 		add_state_core = 99
-		transfer_state = 99
 		add_state_core = 37
-		transfer_state = 37
 		add_state_core = 151
-		transfer_state = 151
-			set_cosmetic_tag = GER_puppet_league
-			YAK = {
-				puppet = GER
-			}
-			annex_country = {
-				target = DEN
-				transfer_troops = no
-			}
-			annex_country = {
-				target = SWI
-				transfer_troops = no
-			}
-			create_country_leader = {
-				name = GFX_portrait_military_Oleg
-				picture = GFX_
-				ideology = military_junta
-			}
+
+		YAK = {
+			puppet = GER
+		}
+		set_popularities = {
+			nationalist = 50
+			fascist = 10
+			conservative = 2
+			social_democrat = 0.1
+			libertarian_socialist = 0.1
+		}
+		annex_country = {
+			target = DEN
+			transfer_troops = no
+		}
+		annex_country = {
+			target = SWI
+			transfer_troops = no
+		}
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = GER_puppet_league
+
+			# create_country_leader = {
+			# 	name = GFX_portrait_military_Oleg
+			# 	picture = GFX_
+			# 	ideology = military_junta
+			# }
 			clr_country_flag = global_ass_lol
 		}
 		FRA = {
@@ -336,18 +333,32 @@ YAK_black_league_victory_in_4nd_European_War = {
 			clr_country_flag = global_ass_lol
 		}
 		ITA = {
-			set_cosmetic_tag = ITA_puppet_league
 			YAK = {
 				puppet = ITA
 			}
-			create_country_leader = {
-                name = "Francesco Paolo Figliuolo"
-                picture = "GFX_portrait_Figliuolo"
-				expire = "1.1.1"
-                ideology = military_junta
-				traits = {
-				}
-            }
+			set_popularities = {
+				nationalist = 50
+			    fascist = 10
+			    conservative = 2
+			    social_democrat = 0.1
+			    libertarian_socialist = 0.1
+			}
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			set_cosmetic_tag = ITA_puppet_league
+			# YAK = {
+			# 	puppet = ITA
+			# }
+			# create_country_leader = {
+            #     name = "Francesco Paolo Figliuolo"
+            #     picture = "GFX_portrait_Figliuolo"
+			# 	expire = "1.1.1"
+            #     ideology = military_junta
+			# 	traits = {
+			# 	}
+            # }
 		}
 		ROM = {
 
@@ -481,17 +492,17 @@ YAK_black_league_victory_in_4nd_European_War = {
 			clr_country_flag = global_ass_lol
 		}
 		KAZ = {
-		add_state_core = 406
+		# add_state_core = 406
 		transfer_state = 406
-		add_state_core = 402
+		# add_state_core = 402
 		transfer_state = 402
-		add_state_core = 404
+		# add_state_core = 404
 		transfer_state = 404
-		add_state_core = 589
+		# add_state_core = 589
 		transfer_state = 589
-		add_state_core = 804
+		# add_state_core = 804
 		transfer_state = 804
-		add_state_core = 805
+		# add_state_core = 805
 		transfer_state = 805
 		set_cosmetic_tag = KAZ_puppet_league
 		YAK = {
@@ -500,7 +511,11 @@ YAK_black_league_victory_in_4nd_European_War = {
 		clr_country_flag = global_ass_lol
 	}
 	
-	BLR = { 
+	BLR = {
+		transfer_state = 206
+		transfer_state = 808
+		transfer_state = 94
+
 		set_cosmetic_tag = BLR_puppet_league
 		YAK = {
 			puppet = BLR
@@ -508,12 +523,50 @@ YAK_black_league_victory_in_4nd_European_War = {
 		create_country_leader = {
             name = "Slavamir Adamovich"
             picture = "GFX_portrait_Henrichovich"
-			expire = "1.1.1"
             ideology = military_junta
         }
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
            
 	}
 
+	LUX = {
+		transfer_state = 8
+		transfer_state = 34
+		transfer_state = 6
+		transfer_state = 7
+		transfer_state = 35
+		transfer_state = 36
+		transfer_state = 841
+		transfer_state = 1364
+		transfer_state = 1490
+		# transfer_state = 8
+		# transfer_state = 34
+		# transfer_state = 6
+		# transfer_state = 7
+		# transfer_state = 35
+		# transfer_state = 36
+		# transfer_state = 841
+		# transfer_state = 1364
+		# transfer_state = 1490
+	}
+	YAK = {
+		puppet = LUX
+	}
+	set_popularities = {
+			nationalist = 50
+			fascist = 10
+			conservative = 2
+			social_democrat = 0.1
+			libertarian_socialist = 0.1
+	}
+	set_politics = {
+		ruling_party = nationalist
+		elections_allowed = no
+	}
+	set_cosmetic_tag = LUX_puppet_league
 }
 }
 	# UKR = {

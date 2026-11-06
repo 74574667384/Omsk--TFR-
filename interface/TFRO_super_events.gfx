@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 	spriteType = {
 		name = "GFX_victory_omsk_4EW_super_event"
@@ -6,7 +6,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	
+
 	spriteType = {
 		name = "GFX_4EW_omsk_super_event"
 		texturefile = "gfx/super_events/4EW_war.png"

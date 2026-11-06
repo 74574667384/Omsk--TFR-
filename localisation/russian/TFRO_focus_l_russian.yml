@@ -1,0 +1,84 @@
+﻿l_russian:
+
+ YAK_new_path_omsk:0 "Новый путь омск"
+ YAK_ban_nazbol:0 "Запретить §RНацистский§! популярность"
+ YAK_we_revenge:0 "Мы отомстим"
+ YAK_We_remebmer:0 "Мы помним"
+ great_expedition:0 "Наш великий поход"
+ integrate_Sibirian:0 "Интегрировать Сибирия"
+ integrate_east:0 "Интегрировать восток"
+ expand_resources:0 "Расширить ресурсы"
+ open_the_hatch:0 "Откройте люк"
+ readliness_of_nuclear_weapons:0 "Боеготовность ядерного оружия"
+ formation_of_the_Alliance:0 "Создание альянса NEFFTEOE"
+ look_Kazakstan:0 "Взгляд на Казахстан"
+ connection_of_the_moscow:0 "Связь между Москвой и поставцев"
+ mass_mobilization:0 "Массовая мобилизация"
+ Be_prepared:0 "Будьте готовы"
+ last_march_West:0 "Последний марш на запад"
+ great_trial_begin:0 "Операция Мести"
+ contant_from_japan:0 "Договор с Токио"
+ contant_from_china:0 "Контакты с Пекином"
+ YAK_ZZZ10:0 "Удлинить поезд"
+ YAK_ZZZ6:0 "Курсовая стоимость валюты"
+ YAK_ZZZ18:0 "Строительство крипты"
+ YAK_ZZZ2:0 "Сверхмощность оружия"
+ YAK_ZZZ12:0 "Эра цифровой России"
+
+#mittaly focus
+
+ the_great_trial_awaits:0 "§dTHE GREAT TRIAL AWAITS§!"
+ YAK_form_national_vengeance:0 "Восстановить армию"
+ YAK_legacy_army_USSR_air:0 "Используйте оставшееся оружие после 2EW"
+ omsk_network_staring:0 "Сеть «Омск-Центральный»"
+ our_league_fighting_spirit:0 "Боевой дух нашей Лиги"
+ new_oath:0 "Новая присяга России"
+ spirit_speech_yazov:0 "Речь Духа Язова"
+ Art_power:0 "ставку на артиллерию"
+ Tank_power:0 "ставку на Танк"
+ future_army_russia:0 "Будущее солдат"
+ review_the_new_2030_intelligence_report:0 "Восстановление интеллекта"
+ black_league_all_storaige:0 "Черная армия всех сильней"
+ update_air:0 "Обновление системы управления воздушным движением"
+ black_helicopter:0 "Лига Вертолеты"
+ project_black_spear:0 "Проект «Черное копье»"
+ project_black_sky:0 "Проект «Project Black Sky»"
+ Expand_the_APC:0 "Расширение завода APC"
+ nuclear_weapon:0 "Восстановить ядерное оружие"
+ YAK_legacy_army_USSR_air:0 "Укрепить нашу мощь"
+ use_old_air:0 "Использовать старую авиация"
+
+#economy
+
+ YAK_restore_the_economy:0 "Начать экономическую реформу"
+ YAK_restore_the_economy:0 "Создание экономику Омска"
+ black_water:0 "Чёрная нефть"
+ larger_buildings_factories:0 "большие здания заводы"
+ YAK_mitally_path_economy:0 "Строить военные заводы"
+ increase_workers_wages:0 "Повысить заработную плату работникам"
+ Siberia_and_Far_East:0 "Расширить Сибири и Дальний Восток."
+ YAK_ZZZ:0 "Расширить парк военной техники."
+ more_weapons:0 "Производите больше оружия"
+ ai_weapon:0 "военное оборудование с искусственным интеллектом"
+ resume_arms_deliveries:0 "Возобновить поставки оружия"
+ military_plant_in_siberia:0 "Военный завод Сибири"
+ build_bunker:0 "бункер Омск"
+ inrector_oil:0 "Инверстировать нефти"
+
+
+#trojan
+
+ trojan:0 "Проект «Цифровое укрепление»"
+ trojan_2:0 "Коллапс логистики: отчет Петя"
+ trojan_3:0 "Оружие возмездия: Протокол MEMZ"
+ trojan_4:0 "Асимметричная кибератака"
+ trojan_5:0 "Заражение немецский терминалы"
+ trojan_6:0 "«H-HOUR»: ЦИФРОВОЙ ВЕЛИКИЙ СУД"
+
+
+#text_tt
+
+ trojan_focus_effects_tt:0 "§Yразработки «Трояна» увеличились на§!: §G+5%§!."
+ petya_focus_effects_tt:0 "§Yразработки «Petya» увеличились на§!: §G+20%§!."
+ memz_focus_effects_tt:0 "§Yразработки MEMZ увеличились на§!: §G+20%§!."
+ suxnet_focus_effects_tt:0 "§Yразработки Suxnet увеличились на§!: §G+20%§!"

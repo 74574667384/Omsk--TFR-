@@ -1,0 +1,31 @@
+# music_station = {
+# 	name = "Omsk Resurrection OST"
+# 	songs = {
+# 		Bismarck
+# 		The Black League Rises
+# 	}
+# }
+
+music_station = "omsk_music"
+
+music = {
+	song = "bismarck"
+	chance = {
+		base = 0.1
+		modifier = {
+			add = 0.9
+			has_country_flag = YAK_league_path
+		}
+	}
+}
+
+music = {
+	song = "the_black_league_rises"
+	chance = {
+		base = 0.1
+		modifier = {
+			add = 0.9
+			has_country_flag = YAK_league_path
+		}
+	}
+}

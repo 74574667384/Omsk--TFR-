@@ -1,8 +1,24 @@
-add_namespace = Omsk
-add_namespace = europe
-add_namespace = Omsk_flavor
-add_namespace = super
+add_namespace = omsk
+add_namespace = league_moscow
 
+country_event = {
+    id = omsk.raliy_omsk
+    title = omsk.raliy_omsk.t
+    desc = omsk.raliy_omsk.d
+    picture = GFX_mass_raliy
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = omsk.raliy_omsk.a
+
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.15
+        }
+    }
+
+}
 country_event = {
     id = omsk.1
     title = omsk.1.t
@@ -47,7 +63,7 @@ country_event = {
                 change_government_type_ai_governance = yes
                 change_economy_type_military_controlled = yes
                 hidden_effect = {
-            set_country_flag = YAK_desire_for_revenge
+            set_country_flag = YAK_wake_up_flag
             load_focus_tree = {
                 tree = YAK_wake_up
                 keep_completed = yes
@@ -70,12 +86,10 @@ country_event = {
     is_triggered_only = yes
     picture = GFX_nazbol_ban
 	fire_only_once = yes
-
     trigger = {
         tag = YAK
-        date > 2018.1.1
+        # date > 2018.1.1
     }
-
 	option = {
 		name = omsk.ban_nazbol.a
 
@@ -83,19 +97,32 @@ country_event = {
 
 		set_party_name = {
 			ideology = national_socialist
-			long_name = banned_national_socialist_party_long
-			name = banned_national_socialist_party
-		}
+			long_name = YAK_banned_national_socialist_party_long
+			name = YAK_banned_national_socialist_party
+        
         custom_effect_tooltip = teutonic_no_in_russia
-
-		# set_country_flag = national_socialist_banned
-		# set_country_flag = fascist_banned
-		# set_cosmetic_tag = banned
 	}
-
-	option = {
-		name = omsk.ban_nazbol2.a
+}
+    option = {
+		name = omsk.ban_nazbol.b
 	}
+}
+
+country_event = {
+    id = omsk.mobians_black_league
+
+    title = "lox"
+    desc = "Sam"
+    is_triggered_only = yes
+    picture = GFX_mobians_black_league
+    option = {
+        name = "takoy"
+
+        add_popularity = { ideology = nationalist popularity = 0.10 }
+        add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }
+        add_popularity = { ideology = fascist popularity = 0.05 }
+        add_war_support = 0.05
+    }
 }
 
 # country_event = {
@@ -135,26 +162,25 @@ country_event = {
 
 country_event = {
     id = omsk.4
-    title = "The factories are silent"
-    desc = "The economic situation in the USSR remains uncertain for the next week or longer, and the extent of the reforms is unclear, but the old economy will help heal our wounds, and we must make changes so that we do not repeat the mistakes of the pre-COVID era or the American Civil War in the future. We need to implement economic reforms in Omsk. We know that there are a few key industries in Omsk, such as oil and energy—these are the most important—as well as natural resources and manufacturing, and we need to stabilize our country. Unification requires a lot of money and time, as well as GDP."
+    title = omsk.economy.t
+    desc = omsk.economy.d
     picture = GFX_night_day_omsk
     is_triggered_only = yes
     option = {
-        name = "It's time to boost our economy"
+        name = omsk.economy.a
 
         add_ideas = omsk_economy
     }
 }
 
-
 country_event = {
     id = omsk.5
-    title = "former LRPD party"
-    desc = "A party called RNP (“Russia National Patriots”) plans to run for the Omsk parliament and appoint its own ministers of both the economy and defense."
+    title = omsk.formar_lrpd.t
+    desc = omsk.formar_lrpd.d
     picture = GFX_create_party
     is_triggered_only = yes
     option = {
-        name = "It might come in handy in the future"
+        name = omsk.formar_lrpd.a
         add_political_power = 100
         set_party_name = {
             ideology = fascist
@@ -165,39 +191,112 @@ country_event = {
 				ideology = fascist
 				popularity = 0.05
 			}
-        trigger = {
-			NOT = {
-				has_government = fascist
-				check_variable = {
-					political_power_ideology_var = token:fascist
-				}
-				is_in_array = {
-					ROOT.coalition_partners_array = token:fascist
-				}
-			}
-		}
+			set_temp_variable = {coalition_partner_var_temp = token:fascist }
+            add_to_coalition = yes
+        }
+	}
+
+country_event = {
+    id = omsk.6
+    title = omsk.unfied_russia_league.t
+    desc = omsk.unfied_russia_league.d
+    picture = GFX_medvedev_party
+    is_triggered_only = yes
+    option = {
+        name = omsk.unfied_russia_league.a
+        add_political_power = 100
+        add_war_support = 0.10
+        set_party_name = { ideology = authoritarian_democrat long_name = authoritarian_democrat_party_long name = authoritarian_democrat_party }
+        add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }
+        set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+        add_to_coalition = yes
+    #     create_country_leader = {
+    #         name = "Dmitry Medvedev"
+    #         desc = "TODO"
+    #         expire = "1.1.1"
+    #         ideology = authoritarian_democrat
+    #         traits = {}
+    # }
+    promote_character = YAK_Medvedev
+}
+}
+
+country_event = {
+    id = omsk.7
+    title = omsk.new_hope.t
+    desc = omsk.new_hope.d
+    picture = GFX_new_hope_for_omsk
+    is_triggered_only = yes
+    option = {
+        name = omsk.new_hope.a
+        add_war_support = 0.20
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.15
+        }
     }
 }
 
 country_event = {
-	#Black Screen/Not Needed anymore
-	id = super.2
-	title = super.2.t
-	desc = super.2.d
-	picture = GFX_report_event_diplomatic_message
-	is_triggered_only = yes
-	trigger = {
-		tag = YAK
-	}
-	fire_only_once = yes
-	option = {
-		name = super.2.a
-		set_temp_variable = {
-            var = coaltition_parther_var_temo
-            value = token:authoritarian_democrat
-        }
-	}
+    id = omsk.8
+    title = omsk.legacy_ussr.t
+    desc = omsk.legacy_ussr.d
+    picture = GFX_legacy_soviet
+    is_triggered_only = yes
+    option = {
+        name = omsk.legacy_ussr.a
+        army_experience = 20
+    }
 }
+country_event = {
+    id = omsk.9
+    title = omsk.stint_black_league.t
+    desc = omsk.stint_black_league.d
+    picture = GFX_stint_league
+    is_triggered_only = yes
+    option = {
+        name = omsk.stint_black_league.a
+        add_stability = 0.20
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.05 
+        }
+    }
+}
+
+country_event = {
+    id = omsk.10
+    title = omsk.update_army.t
+    desc = omsk.update_army.d
+    picture = GFX_ZZZ
+    is_triggered_only = yes
+    option = {
+        name = omsk.update_army.a
+        swap_ideas = {
+            remove_idea = Uncontrolled_army
+            add_idea = update_army
+        }
+    }
+}
+# country_event = {
+# 	#Black Screen/Not Needed anymore
+# 	id = super.2
+# 	title = super.2.t
+# 	desc = super.2.d
+# 	picture = GFX_report_event_diplomatic_message
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = YAK
+# 	}
+# 	fire_only_once = yes
+# 	option = {
+# 		name = super.2.a
+# 		set_temp_variable = {
+#             var = coaltition_parther_var_temo
+#             value = token:authoritarian_democrat
+#         }
+# 	}
+# }
 
 country_event = {
     id = omsk.asia_tokyo
@@ -245,7 +344,7 @@ country_event = {
     id = omsk.asia_beijing
     title = omsk.asia_beijing.t
     desc = omsk.asia_beijing.d
-    picture = GFX_beijing_support_omsk
+    picture = GFX_asia_beijing
     is_triggered_only = yes
     trigger = {
         tag = YAK
@@ -285,7 +384,44 @@ country_event = {
         add_income = yes    
     }
 }
-# News
+
+country_event = {
+    id = omsk.furry_create_patry
+    title = omsk.furry_create_patry.t
+    desc = omsk.furry_create_patry.d
+    is_triggered_only = yes
+    option = {
+        name = omsk.furry_create_patry.a
+
+        set_party_name = {
+            ideology = conservative
+            long_name = conservative_patry_long
+            name = conservative_patry
+        }
+        add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			set_temp_variable = {coalition_partner_var_temp = token:conservative }
+            add_to_coalition = yes
+        }
+        option = {
+            name = omsk.furry_create_patry.b
+    }
+}
+
+country_event = {
+    id = omsk.al-631
+    title = omsk.al-631.t
+    picture = GFX_future_airfighter
+    desc = omsk.al-631.d
+    is_triggered_only = yes
+    option = {
+        name = omsk.al-631.a
+    }
+}
+
+#* News
 
 news_event = {
     id = omsk.league
@@ -325,118 +461,114 @@ news_event = {
 }
 
 news_event = {
-    id = league_moscow
-    title = league_moscow
+    id = omsk.league_moscow
+    title = omsk.league_moscow.t
     picture = GFX_omsk_forces_moscow
-    desc = league_moscow
+    desc = omsk.league_moscow.d
     is_triggered_only = yes
-    trigger = {
-        YAK = {
-            
-        }
+    option = {
+        name = omsk.league_moscow.a
+        add_stability = 0.10
     }
     option = {
-        name = league_moscow.a
-    }
-    option = {
-        name = fail_moscow.d
+        name = fail_moscow.b
     }
 }
 
 #Russian reunification
-news_event = {
-    id = europe.1
-    title = europe.1.t
-    desc = europe.1.d
-    picture = GFX_russian_reunification
+# news_event = {
+#     id = europe.1
+#     title = europe.1.t
+#     desc = europe.1.d
+#     picture = GFX_russian_reunification
 
-    is_triggered_only = yes 
+#     is_triggered_only = yes 
 
-    option = {
-        name = europe.1.a
-        trigger = {
-            is_ai = no
-        }
-        # hidden_effect = {
-        #     set_country_flag = Omsk_reunfication_se_flag
-        #     scoped_sound_effect = TRF_se_russian_unfication
-        #     scoped_play_song = "one_minute_of_silence"
-        # }
-        if = {
-            limit = {
-                is_ai = no
-            }
-            set_country_flag = YAK_final_war_super
-            scoped_sound_effect = TFR_se_russian_unfication
-            scoped_play_song = "one_minute_of_silence"
+#     option = {
+#         name = europe.1.a
+#         trigger = {
+#             is_ai = no
+#         }
+#         # hidden_effect = {
+#         #     set_country_flag = Omsk_reunfication_se_flag
+#         #     scoped_sound_effect = TRF_se_russian_unfication
+#         #     scoped_play_song = "one_minute_of_silence"
+#         # }
+#         if = {
+#             limit = {
+#                 is_ai = no
+#             }
+#             set_country_flag = YAK_final_war_super
+#             scoped_sound_effect = TFR_se_russian_unfication
+#             scoped_play_song = "one_minute_of_silence"
 
-        }
-    }
-} #and now the other events #nationalist movements support Germany
-country_event = { 
-    id = europe.3
-    title = europe.3.t
-    desc = europe.3.d
-    picture = GFX_nationalist_movements_support_Germany
-    is_triggered_only = yes
-    trigger = {
-        tag = GER
-    }
+#         }
+#     }
+# } #and now the other events #nationalist movements support Germany
+# country_event = { 
+#     id = europe.3
+#     title = europe.3.t
+#     desc = europe.3.d
+#     picture = GFX_nationalist_movements_support_Germany
+#     is_triggered_only = yes
+#     trigger = {
+#         tag = GER
+#     }
 
-    option = {
-        name = europe.3.a 
-        add_manpower = 10000
-        unlock_decision_tooltip = GER_organizes_riots_against_Omsk
-        YAK = { 
-               country_event = { id = Omsk_flavor.1 days = 2 }
-        }
-    } 
-}
-#Separatist movements revolt against Omsk
-country_event = {
-    id = Omsk_flavor.1
-    title = OMsk_falvor_1.t
-    desc = omsk_falvor_1.d
-    picture = GFX_YAK_Omsk_riots
-    major = yes
-    is_triggered_only = yes
-    trigger = {
-        tag = YAK
-    }
+#     option = {
+#         name = europe.3.a 
+#         add_manpower = 10000
+#         unlock_decision_tooltip = GER_organizes_riots_against_Omsk
+#         YAK = { 
+#                country_event = { id = Omsk_flavor.1 days = 2 }
+#         }
+#     } 
+# }
+# #Separatist movements revolt against Omsk
+# country_event = {
+#     id = Omsk_flavor.1
+#     title = OMsk_falvor_1.t
+#     desc = omsk_falvor_1.d
+#     picture = GFX_YAK_Omsk_riots
+#     major = yes
+#     is_triggered_only = yes
+#     trigger = {
+#         tag = YAK
+#     }
 
-    option = {
-        name = Omsk_flavor.1.a
+#     option = {
+#         name = Omsk_flavor.1.a
 
-        add_stability = -0.15
-        add_war_support = -0.09
+#         add_stability = -0.15
+#         add_war_support = -0.09
 
-        add_popularity = {
-            ideology = national_socialist
-            popularity = 0.10
-        }
-        add_popularity = {
-            ideology = fascist
-            popularity = 0.10
-        }
-        add_popularity = {
-            ideology = communist
-            popularity = 0.10
-        }
-        add_popularity = {
-            ideology = totalitarian_socialist
-            popularity = 0.10
-        }
-    }
-}
+#         add_popularity = {
+#             ideology = national_socialist
+#             popularity = 0.10
+#         }
+#         add_popularity = {
+#             ideology = fascist
+#             popularity = 0.10
+#         }
+#         add_popularity = {
+#             ideology = communist
+#             popularity = 0.10
+#         }
+#         add_popularity = {
+#             ideology = totalitarian_socialist
+#             popularity = 0.10
+#         }
+#     }
+# }
 
 
 #victory omsk 
 
 country_event = {
     id = omsk_victory
-    title = omsk.win.t
+    title = omsk.victory.t
 
-    desc = omsk.win.d
+    desc = omsk.victory.d
 
     picture = GFX_YAK_omsk_victory
 
@@ -452,31 +584,10 @@ country_event = {
     }
 
     option = {
-        name = omsk.win.a
+        name = omsk.victory.a
 
         YAK = {
             id = super_omsk.1
         }
-    }
-}
-
-news_event = {
-    id = Omsk_flavor.1
-    title = Omsk_flavor.1.t
-    desc = Omsk_flavor.1.d
-
-    picture = test
-
-    major = yes
-    is_triggered_only = yes
-    immediate = {
-        play_music = "super_event"
-        set_country_flag = tfr_my_superevent_active
-
-        # set_global_flag = super_event_1
-    }
-
-    option = {
-        name = "test"
     }
 }
